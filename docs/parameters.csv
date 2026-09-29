@@ -1,0 +1,1324 @@
+file,parameter,type,original,new,factor,rule
+Param/Actor/ActorWaterFall.byml,mCycle,s32,8,16,2,update count x2
+Param/Actor/BbsBirdActor.byml,mNightHoldFrame,s32,4,8,2,update count x2
+Param/Actor/BbsBirdActor.byml,mNightFlySpeed,f32,1.3,0.65,0.5,speed x1/2
+Param/Actor/BbsBirdActor.byml,mDayMoveSpeed,f32,0.4,0.2,0.5,speed x1/2
+Param/Actor/BbsBirdActor.byml,mDayFlySpeed,f32,1.65,0.825,0.5,speed x1/2
+Param/Actor/BbsBirdActor.byml,mPhotoIslandDayFlySpeed,f32,1.8,0.9,0.5,speed x1/2
+Param/Actor/BbsBirdActor.byml,mNightDownScale,f32,0.98,0.9899495,1.01015,other: per-update decay k -> sqrt(k)
+Param/Actor/BbsBirdActor.byml,mPhotoIslandDayDownScale,f32,0.6,0.7745967,1.29099,other: per-update decay k -> sqrt(k)
+Param/Actor/BbsBirdActor.byml,mDayDownScale,f32,0.6,0.7745967,1.29099,other: per-update decay k -> sqrt(k)
+Param/Actor/CreatureShowActorMgr.byml,mShellfishAlphaOutFrame,f32,10,20,2,update count x2
+Param/Actor/CreatureShowActorMgr.byml,0x49562be6[0],f32,1.2,0.6,0.5,speed x1/2
+Param/Actor/CreatureShowActorMgr.byml,0x49562be6[1],f32,1.08,0.54,0.5,speed x1/2
+Param/Actor/CreatureShowActorMgr.byml,0x49562be6[2],f32,0.96,0.48,0.5,speed x1/2
+Param/Actor/CreatureShowActorMgr.byml,mShellfishReleaseXZSpeed,f32,0.22,0.11,0.5,speed x1/2
+Param/Actor/CreatureShowActorMgr.byml,0x0a9bf76f[0],f32,0.3,0.15,0.5,speed x1/2
+Param/Actor/CreatureShowActorMgr.byml,0x0a9bf76f[1],f32,0.27,0.135,0.5,speed x1/2
+Param/Actor/CreatureShowActorMgr.byml,0x0a9bf76f[2],f32,0.24,0.12,0.5,speed x1/2
+Param/Actor/CreatureShowActorMgr.byml,mGravity,f32,1.5,0.375,0.25,acceleration/gravity x1/4
+Param/Actor/CreatureShowActorMgr.byml,mShellfishGravity,f32,0.65,0.1625,0.25,acceleration/gravity x1/4
+Param/Actor/FishFieldActor.byml,mMoveSpeedMin,f32,0.125,0.0625,0.5,speed x1/2
+Param/Actor/FishFieldActor.byml,mMoveSpeedMax,f32,0.25,0.125,0.5,speed x1/2
+Param/Actor/FishFieldActor.byml,mScaleOutFrame,f32,15,30,2,update count x2
+Param/Actor/FishFieldActor.byml,mScaleInFrame,f32,30,60,2,update count x2
+Param/Actor/FtrActor.byml,mLeafGravity,f32,0.1,0.025,0.25,acceleration/gravity x1/4
+Param/Actor/FtrActor.byml,mDemiseScaleDownFrame,f32,7,14,2,update count x2
+Param/Actor/FtrActor.byml,mLocalWindAddCalcMaxDecrement,f32,0.05,0.025,0.5,speed x1/2
+Param/Actor/FtrActor.byml,mLocalWindAddCalcMaxIncrement,f32,0.15,0.075,0.5,speed x1/2
+Param/Actor/FtrActor.byml,mLeafFlyFrame,f32,20,40,2,update count x2
+Param/Actor/ItemPreviewSwapActor.byml,mCatalogRotateSpeed,f32,1,0.5,0.5,speed x1/2
+Param/Actor/ItemPreviewSwapActor.byml,mMyDesignRotateSpeed,f32,1.4,0.7,0.5,speed x1/2
+Param/Actor/ObjectBalloonActor.byml,mDefaultSpeed,f32,0.085,0.0425,0.5,speed x1/2
+Param/Actor/PlayerActor.byml,mToolBreakTurnAddCalcRate,f32,0.45,0.25838014,0.574178,smoothing r -> 1-sqrt(1-r)
+Param/Actor/PlayerActor.byml,mDiveMoveZeroSpeedChaseValue,f32,0.0035,0.000875,0.25,acceleration/gravity x1/4
+Param/Actor/PlayerActor.byml,mWalkToAim_TurnMax,f32,45,22.5,0.5,speed x1/2
+Param/Actor/PlayerActor.byml,mWalkToAim_TurnMin,f32,0.5,0.25,0.5,speed x1/2
+Param/Actor/PlayerActor.byml,mAddCalcAngleRate_ShowTurn,f32,0.25,0.1339746,0.535898,smoothing r -> 1-sqrt(1-r)
+Param/Actor/PlayerActor.byml,mAddCalcAngleRate,f32,0.37,0.20627461,0.557499,smoothing r -> 1-sqrt(1-r)
+Param/Actor/PlayerActor.byml,mDiveMoveFastSpeed,f32,0.35,0.175,0.5,speed x1/2
+Param/Actor/PlayerActor.byml,mPipeEnterScaleDownStartFrame,u32,0,1,,other: start frame 0 -> 1 (timing alignment)
+Param/Actor/PlayerActor.byml,mScoopChaseTimer,u32,11,22,2,update count x2
+Param/Actor/PlayerActor.byml,mDiveInOutSpeedChaseValue,f32,0.3,0.075,0.25,acceleration/gravity x1/4
+Param/Actor/PlayerActor.byml,mBreathEndTimer,u32,60,120,2,update count x2
+Param/Actor/PlayerActor.byml,mSwimWaitSlowSpeed,f32,0.1,0.05,0.5,speed x1/2
+Param/Actor/PlayerActor.byml,mAddCalcPosRate_ChestOperate,f32,0.12,0.061916847,0.515974,smoothing r -> 1-sqrt(1-r)
+Param/Actor/PlayerActor.byml,mPipeExitPopCameraFrame,u32,12,24,2,update count x2
+Param/Actor/PlayerActor.byml,mPipeEnterFallStartFrame,u32,0,1,,other: start frame 0 -> 1 (timing alignment)
+Param/Actor/PlayerActor.byml,mActionWaitFrameByEmotionRingMenu,s32,5,10,2,update count x2
+Param/Actor/PlayerActor.byml,mStickMorphSpeed,f32,0.2,0.1,0.5,speed x1/2
+Param/Actor/PlayerActor.byml,mDiveInEndRootMorphPosRate,f32,0.015,0.0075283377,0.501889,smoothing r -> 1-sqrt(1-r)
+Param/Actor/PlayerActor.byml,mStateWalkOutSceneChangeTimer,s32,30,60,2,update count x2
+Param/Actor/PlayerActor.byml,mPipeExitRiseSpeedY,f32,0.4,0.2,0.5,speed x1/2
+Param/Actor/PlayerActor.byml,mPushStickCancelTimer,u32,15,30,2,update count x2
+Param/Actor/PlayerActor.byml,mSpeedYMin,f32,-2.1,-1.05,0.5,speed x1/2
+Param/Actor/PlayerActor.byml,mDiveMoveFastSpeedChaseValue,f32,0.125,0.03125,0.25,acceleration/gravity x1/4
+Param/Actor/PlayerActor.byml,mPipeExitFadeInDelayFrame,u32,10,20,2,update count x2
+Param/Actor/PlayerActor.byml,mLinecarAddCalcRate,f32,0.8,0.5527864,0.690983,smoothing r -> 1-sqrt(1-r)
+Param/Actor/PlayerActor.byml,mSwimMoveTurnChaseDegreeY,f32,2.5,1.25,0.5,speed x1/2
+Param/Actor/PlayerActor.byml,mJumpInWaterMinSpeedY,f32,-10,-5,0.5,speed x1/2
+Param/Actor/PlayerActor.byml,mShowIconOffsetCoInterpolationRate,f32,0.25,0.1339746,0.535898,smoothing r -> 1-sqrt(1-r)
+Param/Actor/PlayerActor.byml,mSwimWaitSlowSpeedChaseValue,f32,0.005,0.00125,0.25,acceleration/gravity x1/4
+Param/Actor/PlayerActor.byml,mMoveSpeedMin,f32,0.2,0.1,0.5,speed x1/2
+Param/Actor/PlayerActor.byml,mTurnMoveSpeedMin,f32,0.4,0.2,0.5,speed x1/2
+Param/Actor/PlayerActor.byml,mMoveSpeedMax,f32,1.8,0.9,0.5,speed x1/2
+Param/Actor/PlayerActor.byml,mDiveCameraStartFrame,u32,20,40,2,update count x2
+Param/Actor/PlayerActor.byml,mDiveWaitTurnChaseDegreeY,f32,2,1,0.5,speed x1/2
+Param/Actor/PlayerActor.byml,mStickSpeedAddCalcRate,f32,0.25,0.1339746,0.535898,smoothing r -> 1-sqrt(1-r)
+Param/Actor/PlayerActor.byml,mEscapeSpeedTimer,u32,2,4,2,update count x2
+Param/Actor/PlayerActor.byml,mDiveInRootMorphMinusFrame,u32,11,22,2,update count x2
+Param/Actor/PlayerActor.byml,mPipeEnterScaleDownSpeed,f32,0.02,0.01,0.5,speed x1/2
+Param/Actor/PlayerActor.byml,mPassOverTimer,u32,26,52,2,update count x2
+Param/Actor/PlayerActor.byml,mCancelPadTimerBySharePlayModeChange,u32,6,12,2,update count x2
+Param/Actor/PlayerActor.byml,mAngleYChaseDegreeStep,f32,19,9.5,0.5,speed x1/2
+Param/Actor/PlayerActor.byml,mSwimWaitFastSpeed,f32,0.23,0.115,0.5,speed x1/2
+Param/Actor/PlayerActor.byml,mPickupTurnAddCalcRate,f32,0.5,0.29289323,0.585786,smoothing r -> 1-sqrt(1-r)
+Param/Actor/PlayerActor.byml,mAddCalcPosRate,f32,0.23,0.122503564,0.532624,smoothing r -> 1-sqrt(1-r)
+Param/Actor/PlayerActor.byml,mBreathTimer,u32,220,440,2,update count x2
+Param/Actor/PlayerActor.byml,mJumpInWaterUpSpeedChaseRateXZ,f32,0.1,0.0513167,0.513167,smoothing r -> 1-sqrt(1-r)
+Param/Actor/PlayerActor.byml,mSwimMoveSlowSpeedChaseValue,f32,0.01,0.0025,0.25,acceleration/gravity x1/4
+Param/Actor/PlayerActor.byml,mDiveInOutTurnChaseDegreeY,f32,5,2.5,0.5,speed x1/2
+Param/Actor/PlayerActor.byml,mCancelBalloonHasAnyKeyTimer,u32,15,30,2,update count x2
+Param/Actor/PlayerActor.byml,mDiveMoveSlowSpeed,f32,0.11,0.055,0.5,speed x1/2
+Param/Actor/PlayerActor.byml,mDiveWaitFastSpeedChaseValue,f32,0.014,0.0035,0.25,acceleration/gravity x1/4
+Param/Actor/PlayerActor.byml,mWalkRunAngleYSpeedMax,f32,0.95,0.475,0.5,speed x1/2
+Param/Actor/PlayerActor.byml,mSWalkInAddCalcRate,f32,0.75,0.5,0.666667,smoothing r -> 1-sqrt(1-r)
+Param/Actor/PlayerActor.byml,mToolBreakStartWaitTimer,u32,13,26,2,update count x2
+Param/Actor/PlayerActor.byml,mPipeExitScaleUpSpeed,f32,0.02,0.01,0.5,speed x1/2
+Param/Actor/PlayerActor.byml,mDiveMoveTurnChaseDegreeY,f32,2,1,0.5,speed x1/2
+Param/Actor/PlayerActor.byml,mPassOverTrunRate,f32,0.18,0.09446149,0.524786,smoothing r -> 1-sqrt(1-r)
+Param/Actor/PlayerActor.byml,mSwimWaitTurnChaseDegreeY,f32,4,2,0.5,speed x1/2
+Param/Actor/PlayerActor.byml,mDashAngleYSpeedMax,f32,0.95,0.475,0.5,speed x1/2
+Param/Actor/PlayerActor.byml,mPipeExitPipeSEStartFrame,u32,23,46,2,update count x2
+Param/Actor/PlayerActor.byml,mJumpInWaterGravity,f32,-0.35,-0.0875,0.25,acceleration/gravity x1/4
+Param/Actor/PlayerActor.byml,mDiveWaitZeroSpeedChaseValue,f32,0.01,0.0025,0.25,acceleration/gravity x1/4
+Param/Actor/PlayerActor.byml,mLongStickJumpGravity,f32,-0.13,-0.0325,0.25,acceleration/gravity x1/4
+Param/Actor/PlayerActor.byml,mDiveWaitSlowSpeed,f32,0.1,0.05,0.5,speed x1/2
+Param/Actor/PlayerActor.byml,mFtrHoldChangeSwitchAcceptTimer,u32,10,20,2,update count x2
+Param/Actor/PlayerActor.byml,mJumpValleyShapeSpeedDegreeMax,f32,20,10,0.5,speed x1/2
+Param/Actor/PlayerActor.byml,mBrakeSpeedChaseStep,f32,0.55,0.1375,0.25,acceleration/gravity x1/4
+Param/Actor/PlayerActor.byml,mWalkToAim_FrontHit_PosAddCalcRate,f32,0.27,0.14559963,0.539258,smoothing r -> 1-sqrt(1-r)
+Param/Actor/PlayerActor.byml,mStickSpeedChangeValue,f32,0.2,0.1,0.5,speed x1/2
+Param/Actor/PlayerActor.byml,mDiveOutSpeedY,f32,0.7,0.35,0.5,speed x1/2
+Param/Actor/PlayerActor.byml,mSwimMoveFastSpeed,f32,0.46,0.23,0.5,speed x1/2
+Param/Actor/PlayerActor.byml,mAddCalcPosRate_Door,f32,0.125,0.064585656,0.516685,smoothing r -> 1-sqrt(1-r)
+Param/Actor/PlayerActor.byml,mPipeEnterTurnAddCalcRate,f32,0.3,0.16333999,0.544467,smoothing r -> 1-sqrt(1-r)
+Param/Actor/PlayerActor.byml,mToolBreakLookWaitTimer,u32,120,240,2,update count x2
+Param/Actor/PlayerActor.byml,mSharePlaySubWarpTimer,u32,60,120,2,update count x2
+Param/Actor/PlayerActor.byml,mWalkToAim_FrontHit_AngleAddCalcRate,f32,0.27,0.14559963,0.539258,smoothing r -> 1-sqrt(1-r)
+Param/Actor/PlayerActor.byml,mPipeEnterFallSpeedY,f32,0.4,0.2,0.5,speed x1/2
+Param/Actor/PlayerActor.byml,mDefaultGravity,f32,-0.25,-0.0625,0.25,acceleration/gravity x1/4
+Param/Actor/PlayerActor.byml,mWalkToAim_TurnAddCalcRate,f32,0.3,0.16333999,0.544467,smoothing r -> 1-sqrt(1-r)
+Param/Actor/PlayerActor.byml,mSwimWaitLeanShapeDegreeXChaseValue,f32,0.02,0.01,0.5,speed x1/2
+Param/Actor/PlayerActor.byml,mJumpInWaterDownSpeedChaseRateY,f32,0.25,0.1339746,0.535898,smoothing r -> 1-sqrt(1-r)
+Param/Actor/PlayerActor.byml,mSharePlayMainGetCancelTimer,u32,30,60,2,update count x2
+Param/Actor/PlayerActor.byml,mSwimWaitZeroSpeedChaseValue,f32,0.01,0.0025,0.25,acceleration/gravity x1/4
+Param/Actor/PlayerActor.byml,mPipeEnterFadeOutStartFrame,u32,16,34,2.125,other: x2 + 2 (timing alignment)
+Param/Actor/PlayerActor.byml,mJumpInTimerHigh,s32,25,50,2,update count x2
+Param/Actor/PlayerActor.byml,mAngleYChaseDegreeSpeedUpStep,f32,6,3,0.5,speed x1/2
+Param/Actor/PlayerActor.byml,mSWalkOutAddCalcRate,f32,0.75,0.5,0.666667,smoothing r -> 1-sqrt(1-r)
+Param/Actor/PlayerActor.byml,mDiveMoveSlowSpeedChaseValue,f32,0.005,0.00125,0.25,acceleration/gravity x1/4
+Param/Actor/PlayerActor.byml,mAngleXChaseStep,f32,0.35,0.175,0.5,speed x1/2
+Param/Actor/PlayerActor.byml,mPipeExitRiseStartFrame,u32,27,54,2,update count x2
+Param/Actor/PlayerActor.byml,mSwimWaitFastSpeedChaseValue,f32,0.015,0.00375,0.25,acceleration/gravity x1/4
+Param/Actor/PlayerActor.byml,mRunSpeedMax,f32,1.25,0.625,0.5,speed x1/2
+Param/Actor/PlayerActor.byml,mSwimMoveZeroSpeedChaseValue,f32,0.003,0.00075,0.25,acceleration/gravity x1/4
+Param/Actor/PlayerActor.byml,mHoneySurpriseTimer,f32,20,40,2,update count x2
+Param/Actor/PlayerActor.byml,mDiveActionUseBreathTimer,u32,3,6,2,update count x2
+Param/Actor/PlayerActor.byml,mDiveInOutSpeed,f32,0.2,0.1,0.5,speed x1/2
+Param/Actor/PlayerActor.byml,mSwimMoveFastSpeedChaseValue,f32,0.21,0.0525,0.25,acceleration/gravity x1/4
+Param/Actor/PlayerActor.byml,mJumpInWaterUpSpeedChaseRateY,f32,0.12,0.061916847,0.515974,smoothing r -> 1-sqrt(1-r)
+Param/Actor/PlayerActor.byml,mDiveWaitSlowSpeedChaseValue,f32,0.005,0.00125,0.25,acceleration/gravity x1/4
+Param/Actor/PlayerActor.byml,mJumpValleyJudgeTimer,u32,8,16,2,update count x2
+Param/Actor/PlayerActor.byml,mWalkRunSpeedChaseStep,f32,0.4,0.1,0.25,acceleration/gravity x1/4
+Param/Actor/PlayerActor.byml,mJumpInWaterDownSpeedChaseRateXZ,f32,0.3,0.16333999,0.544467,smoothing r -> 1-sqrt(1-r)
+Param/Actor/PlayerActor.byml,mDashSpeedChaseStep,f32,0.75,0.1875,0.25,acceleration/gravity x1/4
+Param/Actor/PlayerActor.byml,mFtrCancelTimerToWait,u32,1,2,2,update count x2
+Param/Actor/PlayerActor.byml,mFoodPowerupTimer,u32,5400,10800,2,update count x2
+Param/Actor/PlayerActor.byml,mPipeCommonJumpGravity,f32,0.4,0.1,0.25,acceleration/gravity x1/4
+Param/Actor/PlayerActor.byml,mJumpInTimer,s32,20,40,2,update count x2
+Param/Actor/PlayerActor.byml,mSwimMoveSlowSpeed,f32,0.12,0.06,0.5,speed x1/2
+Param/Actor/PlayerActor.byml,mStickSpeedAddCalcMax,f32,0.16,0.08,0.5,speed x1/2
+Param/Actor/PlayerActor.byml,mWalkSpeedMax,f32,0.7,0.35,0.5,speed x1/2
+Param/Actor/PlayerActor.byml,mStickSpeedAddCalcMin,f32,0.07,0.035,0.5,speed x1/2
+Param/Actor/PlayerActor.byml,mToolReflectKnockbackFrame,u32,3,6,2,update count x2
+Param/Actor/PlayerActor.byml,mDiveWaitFastSpeed,f32,0.26,0.13,0.5,speed x1/2
+Param/Actor/StructureHouseDoorDecoActor.byml,mDemiseScaleDownFrame,f32,7,14,2,update count x2
+Param/Camera/AirPlane_DemoInterporateParams.byml,0x23be9c62[0]/mFrame,s32,60,120,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0x1972620c/mFrame,s32,30,60,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0x1c28616e/mFrame,s32,45,90,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0x2576e119/mFrame,s32,18,36,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0x27756876/mFrame,s32,24,48,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0x27f10007/mFrame,s32,24,48,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0x2f88b36e/mFrame,s32,24,48,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0x2fbace2a/mFrame,s32,24,48,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0x38722b9a/mFrame,s32,16,32,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0x38f3f3b6/mFrame,s32,24,48,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0x392a1985/mFrame,s32,24,48,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0x4c6e6133/mFrame,s32,36,72,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0x4cd71332/mFrame,s32,24,48,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0x4f845502/mFrame,s32,30,60,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0x5109787a/mFrame,s32,36,72,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0x5c8b054a/mFrame,s32,24,48,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0x5cb35eb6/mFrame,s32,18,36,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0x5ed69e58/mFrame,s32,30,60,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0x68fae395/mFrame,s32,16,32,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0x06e25f19/mFrame,s32,24,48,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0x70a5c347/mFrame,s32,16,32,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0x78a96358/mFrame,s32,20,40,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0x7cdf0bf1/mFrame,s32,30,60,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0x85316f8c/mFrame,s32,24,48,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0x8ac99e0c/mFrame,s32,24,48,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0x96721d1a/mFrame,s32,30,60,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0x9ca12ef3/mFrame,s32,20,40,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0x9e909d2f/mFrame,s32,100,200,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0xaf35c57b/mFrame,s32,24,48,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0xb62a6693/mFrame,s32,24,48,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0xb9b544a2/mFrame,s32,24,48,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0xbaa0d54b/mFrame,s32,60,120,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0xc2ae3658/mFrame,s32,16,32,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0xc34ce62f/mFrame,s32,24,48,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0xc9fd6cec/mFrame,s32,60,120,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0xcd907c1a/mFrame,s32,24,48,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0xd1d6e14e/mFrame,s32,30,60,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0xd38b7a5c/mFrame,s32,24,48,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0xda259a28/mFrame,s32,60,120,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0xdedb8a2e/mFrame,s32,36,72,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0xe868cac3/mFrame,s32,24,48,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0x0f0dc9c3/mFrame,s32,30,60,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0xf5d6934a/mFrame,s32,40,80,2,update count x2
+Param/Camera/CameraInterpolateParams.byml,0x4ead583d/0xfe7bd6b2/mFrame,s32,24,48,2,update count x2
+Param/Camera/CloudIsland_DemoInterporateParams.byml,0x23be9c62[0]/mFrame,s32,150,300,2,update count x2
+Param/Camera/CloudIsland_DemoInterporateParams.byml,0x23be9c62[1]/mFrame,s32,30,60,2,update count x2
+Param/Camera/IdrAirPortDemoDeparture_DemoInterporateParams.byml,0x23be9c62[0]/mFrame,s32,120,240,2,update count x2
+Param/Camera/IdrDream_DemoInterporateParams.byml,0x23be9c62[0]/mFrame,s32,150,300,2,update count x2
+Param/Camera/IdrHotelRoom_DemoInterporateParams.byml,0x23be9c62[0]/mFrame,s32,100,200,2,update count x2
+Param/Camera/IdrHotelRoom_DemoInterporateParams.byml,0x23be9c62[1]/mFrame,s32,15,30,2,update count x2
+Param/Camera/IdrHotelRoom_DemoInterporateParams.byml,0x23be9c62[2]/mFrame,s32,20,40,2,update count x2
+Param/Camera/IdrHotelRoom_DemoInterporateParams.byml,0x23be9c62[3]/mFrame,s32,20,40,2,update count x2
+Param/Camera/IdrMuseumArt_0_DemoInterporateParams.byml,0x23be9c62[0]/mFrame,s32,42,84,2,update count x2
+Param/Camera/IdrMuseumArt_0_DemoInterporateParams.byml,0x23be9c62[1]/mFrame,s32,42,84,2,update count x2
+Param/Camera/IdrMuseumArt_0_DemoInterporateParams.byml,0x23be9c62[2]/mFrame,s32,42,84,2,update count x2
+Param/Camera/IdrMuseumArt_0_DemoInterporateParams.byml,0x23be9c62[3]/mFrame,s32,42,84,2,update count x2
+Param/Camera/IdrMuseumArt_0_DemoInterporateParams.byml,0x23be9c62[4]/mFrame,s32,42,84,2,update count x2
+Param/Camera/IdrMuseumArt_0_DemoInterporateParams.byml,0x23be9c62[5]/mFrame,s32,42,84,2,update count x2
+Param/Camera/IdrMuseumArt_0_DemoInterporateParams.byml,0x23be9c62[6]/mFrame,s32,42,84,2,update count x2
+Param/Camera/IdrMuseumArt_0_DemoInterporateParams.byml,0x23be9c62[7]/mFrame,s32,42,84,2,update count x2
+Param/Camera/IdrMuseumArt_0_DemoInterporateParams.byml,0x23be9c62[8]/mFrame,s32,42,84,2,update count x2
+Param/Camera/IdrMuseumArt_0_DemoInterporateParams.byml,0x23be9c62[9]/mFrame,s32,42,84,2,update count x2
+Param/Camera/IdrMuseumCafe_DemoInterporateParams.byml,0x23be9c62[0]/mFrame,s32,60,120,2,update count x2
+Param/Camera/IdrMuseumCafe_DemoInterporateParams.byml,0x23be9c62[1]/mFrame,s32,24,48,2,update count x2
+Param/Camera/IdrMuseumEnt00_DemoInterporateParams.byml,0x23be9c62[0]/mFrame,s32,24,48,2,update count x2
+Param/Camera/IdrMuseumEnt01_DemoInterporateParams.byml,0x23be9c62[0]/mFrame,s32,24,48,2,update count x2
+Param/Camera/IdrMuseumFish_0_DemoInterporateParams.byml,0x23be9c62[0]/mFrame,s32,24,48,2,update count x2
+Param/Camera/IdrMuseumFish_0_DemoInterporateParams.byml,0x23be9c62[1]/mFrame,s32,32,64,2,update count x2
+Param/Camera/IdrMuseumFish_0_DemoInterporateParams.byml,0x23be9c62[2]/mFrame,s32,32,64,2,update count x2
+Param/Camera/IdrMuseumFish_0_DemoInterporateParams.byml,0x23be9c62[3]/mFrame,s32,32,64,2,update count x2
+Param/Camera/IdrMuseumFish_1_DemoInterporateParams.byml,0x23be9c62[0]/mFrame,s32,24,48,2,update count x2
+Param/Camera/IdrMuseumFish_1_DemoInterporateParams.byml,0x23be9c62[1]/mFrame,s32,30,60,2,update count x2
+Param/Camera/IdrMuseumFish_1_DemoInterporateParams.byml,0x23be9c62[2]/mFrame,s32,30,60,2,update count x2
+Param/Camera/IdrMuseumFish_1_DemoInterporateParams.byml,0x23be9c62[3]/mFrame,s32,30,60,2,update count x2
+Param/Camera/IdrMuseumFish_1_DemoInterporateParams.byml,0x23be9c62[4]/mFrame,s32,24,48,2,update count x2
+Param/Camera/IdrMuseumFish_2_DemoInterporateParams.byml,0x23be9c62[0]/mFrame,s32,24,48,2,update count x2
+Param/Camera/IdrMuseumFish_2_DemoInterporateParams.byml,0x23be9c62[1]/mFrame,s32,36,72,2,update count x2
+Param/Camera/IdrMuseumFish_2_DemoInterporateParams.byml,0x23be9c62[2]/mFrame,s32,36,72,2,update count x2
+Param/Camera/IdrMuseumFish_2_DemoInterporateParams.byml,0x23be9c62[3]/mFrame,s32,36,72,2,update count x2
+Param/Camera/IdrMuseumFish_2_DemoInterporateParams.byml,0x23be9c62[4]/mFrame,s32,42,84,2,update count x2
+Param/Camera/IdrMuseumFossil_0_DemoInterporateParams.byml,0x23be9c62[0]/mFrame,s32,24,48,2,update count x2
+Param/Camera/IdrMuseumFossil_0_DemoInterporateParams.byml,0x23be9c62[1]/mFrame,s32,24,48,2,update count x2
+Param/Camera/IdrMuseumFossil_0_DemoInterporateParams.byml,0x23be9c62[2]/mFrame,s32,24,48,2,update count x2
+Param/Camera/IdrMuseumFossil_1_DemoInterporateParams.byml,0x23be9c62[0]/mFrame,s32,24,48,2,update count x2
+Param/Camera/IdrMuseumFossil_1_DemoInterporateParams.byml,0x23be9c62[1]/mFrame,s32,36,72,2,update count x2
+Param/Camera/IdrMuseumFossil_1_DemoInterporateParams.byml,0x23be9c62[2]/mFrame,s32,42,84,2,update count x2
+Param/Camera/IdrMuseumFossil_1_DemoInterporateParams.byml,0x23be9c62[3]/mFrame,s32,42,84,2,update count x2
+Param/Camera/IdrMuseumFossil_2_DemoInterporateParams.byml,0x23be9c62[0]/mFrame,s32,24,48,2,update count x2
+Param/Camera/IdrMuseumFossil_2_DemoInterporateParams.byml,0x23be9c62[1]/mFrame,s32,36,72,2,update count x2
+Param/Camera/IdrMuseumInsect_0_DemoInterporateParams.byml,0x23be9c62[0]/mFrame,s32,30,60,2,update count x2
+Param/Camera/IdrMuseumInsect_0_DemoInterporateParams.byml,0x23be9c62[1]/mFrame,s32,36,72,2,update count x2
+Param/Camera/IdrMuseumInsect_1_DemoInterporateParams.byml,0x23be9c62[0]/mFrame,s32,24,48,2,update count x2
+Param/Camera/IdrMuseumInsect_1_DemoInterporateParams.byml,0x23be9c62[1]/mFrame,s32,24,48,2,update count x2
+Param/Camera/IdrMuseumInsect_1_DemoInterporateParams.byml,0x23be9c62[2]/mFrame,s32,24,48,2,update count x2
+Param/Camera/IdrMuseumInsect_1_DemoInterporateParams.byml,0x23be9c62[3]/mFrame,s32,24,48,2,update count x2
+Param/Camera/IdrMuseumInsect_2_DemoInterporateParams.byml,0x23be9c62[0]/mFrame,s32,30,60,2,update count x2
+Param/Camera/MainFieldDemoCeremony_DemoInterporateParams.byml,0x23be9c62[0]/mFrame,s32,240,480,2,update count x2
+Param/Camera/MainFieldDemoFirstLive_DemoInterporateParams.byml,0x23be9c62[0]/mFrame,s32,30,60,2,update count x2
+Param/Camera/MainFieldDemoFirstLive_DemoInterporateParams.byml,0x23be9c62[1]/mFrame,s32,60,120,2,update count x2
+Param/Camera/MainFieldDemoLandingNet_DemoInterporateParams.byml,0x23be9c62[0]/mFrame,s32,1200,2400,2,update count x2
+Param/Camera/MainFieldDemoLanding_DemoInterporateParams.byml,0x23be9c62[0]/mFrame,s32,1200,2400,2,update count x2
+Param/Camera/MainField_DemoInterporateParams.byml,0x23be9c62[0]/mFrame,s32,150,300,2,update count x2
+Param/Camera/MainField_DemoInterporateParams.byml,0x23be9c62[1]/mFrame,s32,150,300,2,update count x2
+Param/Camera/MainField_DemoInterporateParams.byml,0x23be9c62[2]/mFrame,s32,150,300,2,update count x2
+Param/Camera/MainField_DemoInterporateParams.byml,0x23be9c62[3]/mFrame,s32,45,90,2,update count x2
+Param/Camera/MainField_DemoInterporateParams.byml,0x23be9c62[4]/mFrame,s32,60,120,2,update count x2
+Param/Camera/MainField_DemoInterporateParams.byml,0x23be9c62[5]/mFrame,s32,30,60,2,update count x2
+Param/Camera/MainField_DemoInterporateParams.byml,0x23be9c62[6]/mFrame,s32,60,120,2,update count x2
+Param/Camera/MainField_DemoInterporateParams_RVer_10400.byml,0x23be9c62[0]/mFrame,s32,150,300,2,update count x2
+Param/Camera/MainField_DemoInterporateParams_RVer_10400.byml,0x23be9c62[1]/mFrame,s32,150,300,2,update count x2
+Param/Camera/MainField_DemoInterporateParams_RVer_10400.byml,0x23be9c62[2]/mFrame,s32,150,300,2,update count x2
+Param/Camera/MainField_DemoInterporateParams_RVer_10400.byml,0x23be9c62[3]/mFrame,s32,45,90,2,update count x2
+Param/Camera/MainField_DemoInterporateParams_RVer_10400.byml,0x23be9c62[4]/mFrame,s32,60,120,2,update count x2
+Param/Camera/MainField_DemoInterporateParams_RVer_10400.byml,0x23be9c62[5]/mFrame,s32,30,60,2,update count x2
+Param/Camera/MainField_DemoInterporateParams_RVer_10400.byml,0x23be9c62[6]/mFrame,s32,60,120,2,update count x2
+Param/Camera/MainField_DemoInterporateParams_RVer_10400.byml,0x23be9c62[7]/mFrame,s32,150,300,2,update count x2
+Param/Camera/MainField_DemoInterporateParams_RVer_10600.byml,0x23be9c62[0]/mFrame,s32,150,300,2,update count x2
+Param/Camera/MainField_DemoInterporateParams_RVer_10600.byml,0x23be9c62[1]/mFrame,s32,150,300,2,update count x2
+Param/Camera/MainField_DemoInterporateParams_RVer_10600.byml,0x23be9c62[2]/mFrame,s32,150,300,2,update count x2
+Param/Camera/MainField_DemoInterporateParams_RVer_10600.byml,0x23be9c62[3]/mFrame,s32,45,90,2,update count x2
+Param/Camera/MainField_DemoInterporateParams_RVer_10600.byml,0x23be9c62[4]/mFrame,s32,60,120,2,update count x2
+Param/Camera/MainField_DemoInterporateParams_RVer_10600.byml,0x23be9c62[5]/mFrame,s32,30,60,2,update count x2
+Param/Camera/MainField_DemoInterporateParams_RVer_10600.byml,0x23be9c62[6]/mFrame,s32,60,120,2,update count x2
+Param/Camera/MainField_DemoInterporateParams_RVer_10600.byml,0x23be9c62[7]/mFrame,s32,150,300,2,update count x2
+Param/Camera/MainField_DemoInterporateParams_RVer_10600.byml,0x23be9c62[8]/mFrame,s32,130,260,2,update count x2
+Param/Camera/MainField_DemoInterporateParams_RVer_10700.byml,0x23be9c62[0]/mFrame,s32,150,300,2,update count x2
+Param/Camera/MainField_DemoInterporateParams_RVer_10700.byml,0x23be9c62[1]/mFrame,s32,150,300,2,update count x2
+Param/Camera/MainField_DemoInterporateParams_RVer_10700.byml,0x23be9c62[2]/mFrame,s32,150,300,2,update count x2
+Param/Camera/MainField_DemoInterporateParams_RVer_10700.byml,0x23be9c62[3]/mFrame,s32,45,90,2,update count x2
+Param/Camera/MainField_DemoInterporateParams_RVer_10700.byml,0x23be9c62[4]/mFrame,s32,60,120,2,update count x2
+Param/Camera/MainField_DemoInterporateParams_RVer_10700.byml,0x23be9c62[5]/mFrame,s32,30,60,2,update count x2
+Param/Camera/MainField_DemoInterporateParams_RVer_10700.byml,0x23be9c62[6]/mFrame,s32,60,120,2,update count x2
+Param/Camera/MainField_DemoInterporateParams_RVer_10700.byml,0x23be9c62[7]/mFrame,s32,150,300,2,update count x2
+Param/Camera/MainField_DemoInterporateParams_RVer_10700.byml,0x23be9c62[8]/mFrame,s32,130,260,2,update count x2
+Param/Camera/MainField_DemoInterporateParams_RVer_10700.byml,0x23be9c62[9]/mFrame,s32,12,24,2,update count x2
+Param/Camera/MainField_DemoInterporateParams_RVer_10700.byml,0x23be9c62[10]/mFrame,s32,12,24,2,update count x2
+Param/Camera/MainField_DemoInterporateParams_RVer_10700.byml,0x23be9c62[11]/mFrame,s32,18,36,2,update count x2
+Param/Camera/MainField_DemoInterporateParams_RVer_10700.byml,0x23be9c62[12]/mFrame,s32,25,50,2,update count x2
+Param/Camera/MainField_DemoInterporateParams_RVer_10700.byml,0x23be9c62[13]/mFrame,s32,25,50,2,update count x2
+Param/Camera/PhotoStudio_DemoInterporateParams.byml,0x23be9c62[0]/mFrame,s32,40,80,2,update count x2
+Param/Camera/PlayerHouse_DemoInterporateParams.byml,0x23be9c62[0]/mFrame,s32,300,600,2,update count x2
+Param/Camera/PlayerHouse_DemoInterporateParams_RVer_10400.byml,0x23be9c62[0]/mFrame,s32,300,600,2,update count x2
+Param/Camera/PlayerHouse_DemoInterporateParams_RVer_10400.byml,0x23be9c62[1]/mFrame,s32,150,300,2,update count x2
+Param/Camera/SeaDemoToKappeiIsland_DemoInterporateParams.byml,0x23be9c62[0]/mFrame,s32,300,600,2,update count x2
+Param/Camera/SeaDemoToKappeiIsland_DemoInterporateParams.byml,0x23be9c62[1]/mFrame,s32,250,500,2,update count x2
+Param/Camera/SeaDemoToMainField_DemoInterporateParams.byml,0x23be9c62[0]/mFrame,s32,300,600,2,update count x2
+Param/Camera/SeaDemoToMainField_DemoInterporateParams.byml,0x23be9c62[1]/mFrame,s32,250,500,2,update count x2
+Param/Camera/Title_DemoInterporateParams.byml,0x23be9c62[0]/mFrame,s32,150,300,2,update count x2
+Param/Camera/Title_DemoInterporateParams.byml,0x23be9c62[1]/mFrame,s32,150,300,2,update count x2
+Param/Camera/WherearenEditIndoor_DemoInterporateParams.byml,0x23be9c62[0]/mFrame,s32,180,360,2,update count x2
+Param/Camera/WherearenEditIndoor_DemoInterporateParams.byml,0x23be9c62[1]/mFrame,s32,50,100,2,update count x2
+Param/Camera/WherearenEditIndoor_DemoInterporateParams.byml,0x23be9c62[2]/mFrame,s32,240,480,2,update count x2
+Param/Camera/WherearenEditIndoor_DemoInterporateParams.byml,0x23be9c62[3]/mFrame,s32,90,180,2,update count x2
+Param/Camera/WherearenEditIndoor_DemoInterporateParams.byml,0x23be9c62[4]/mFrame,s32,90,180,2,update count x2
+Param/Camera/WherearenMainIsland_DemoInterporateParams.byml,0x23be9c62[0]/mFrame,s32,60,120,2,update count x2
+Param/Camera/WherearenMainIsland_DemoInterporateParams.byml,0x23be9c62[1]/mFrame,s32,60,120,2,update count x2
+Param/Camera/WherearenMainIsland_DemoInterporateParams.byml,0x23be9c62[2]/mFrame,s32,60,120,2,update count x2
+Param/Camera/WherearenMainIsland_DemoInterporateParams.byml,0x23be9c62[3]/mFrame,s32,30,60,2,update count x2
+Param/Camera/WherearenMainIsland_DemoInterporateParams.byml,0x23be9c62[4]/mFrame,s32,120,240,2,update count x2
+Param/Camera/WherearenMainIsland_DemoInterporateParams.byml,0x23be9c62[5]/mFrame,s32,200,400,2,update count x2
+Param/Camera/WherearenMainIsland_DemoInterporateParams.byml,0x23be9c62[6]/mFrame,s32,200,400,2,update count x2
+Param/Camera/WherearenMainIsland_DemoInterporateParams.byml,0x23be9c62[7]/mFrame,s32,240,480,2,update count x2
+Param/Camera/WherearenMainIsland_DemoInterporateParams.byml,0x23be9c62[8]/mFrame,s32,5,10,2,update count x2
+Param/Camera/WherearenMainIsland_DemoInterporateParams.byml,0x23be9c62[9]/mFrame,s32,210,420,2,update count x2
+Param/Camera/WherearenMainIsland_DemoInterporateParams.byml,0x23be9c62[10]/mFrame,s32,60,120,2,update count x2
+Param/Camera/WherearenMainIsland_DemoInterporateParams.byml,0x23be9c62[11]/mFrame,s32,300,600,2,update count x2
+Param/Camera/WherearenMainIsland_DemoInterporateParams.byml,0x23be9c62[12]/mFrame,s32,900,1800,2,update count x2
+Param/Camera/WherearenMainIsland_DemoInterporateParams.byml,0x23be9c62[13]/mFrame,s32,300,600,2,update count x2
+Param/Camera/WherearenMainIsland_DemoInterporateParams.byml,0x23be9c62[14]/mFrame,s32,48,96,2,update count x2
+Param/Camera/WherearenMainIsland_DemoInterporateParams.byml,0x23be9c62[15]/mFrame,s32,68,136,2,update count x2
+Param/Camera/WherearenMainIsland_DemoInterporateParams.byml,0x23be9c62[16]/mFrame,s32,48,96,2,update count x2
+Param/Camera/WherearenMainIsland_DemoInterporateParams.byml,0x23be9c62[17]/mFrame,s32,600,1200,2,update count x2
+Param/Camera/WherearenMainIsland_DemoInterporateParams.byml,0x23be9c62[18]/mFrame,s32,80,160,2,update count x2
+Param/Camera/WherearenNpcGarden_DemoInterporateParams.byml,0x23be9c62[0]/mFrame,s32,100,200,2,update count x2
+Param/Camera/WherearenNpcGarden_DemoInterporateParams.byml,0x23be9c62[1]/mFrame,s32,240,480,2,update count x2
+Param/Camera/WherearenNpcGarden_DemoInterporateParams.byml,0x23be9c62[2]/mFrame,s32,240,480,2,update count x2
+Param/Camera/WherearenNpcGarden_DemoInterporateParams.byml,0x23be9c62[3]/mFrame,s32,240,480,2,update count x2
+Param/Camera/WherearenNpcGarden_DemoInterporateParams.byml,0x23be9c62[4]/mFrame,s32,240,480,2,update count x2
+Param/Camera/WherearenNpcGarden_DemoInterporateParams.byml,0x23be9c62[5]/mFrame,s32,240,480,2,update count x2
+Param/Camera/WherearenNpcGarden_DemoInterporateParams.byml,0x23be9c62[6]/mFrame,s32,45,90,2,update count x2
+Param/Camera/WherearenNpcGarden_DemoInterporateParams.byml,0x23be9c62[7]/mFrame,s32,240,480,2,update count x2
+Param/Camera/WherearenNpcGarden_DemoInterporateParams.byml,0x23be9c62[8]/mFrame,s32,90,180,2,update count x2
+Param/Camera/WherearenNpcGarden_DemoInterporateParams.byml,0x23be9c62[9]/mFrame,s32,90,180,2,update count x2
+Param/Camera/WherearenNpcHouse_DemoInterporateParams.byml,0x23be9c62[0]/mFrame,s32,180,360,2,update count x2
+Param/Camera/WherearenNpcHouse_DemoInterporateParams.byml,0x23be9c62[1]/mFrame,s32,420,840,2,update count x2
+Param/Camera/WherearenNpcHouse_DemoInterporateParams.byml,0x23be9c62[2]/mFrame,s32,240,480,2,update count x2
+Param/Camera/WherearenNpcHouse_DemoInterporateParams.byml,0x23be9c62[3]/mFrame,s32,90,180,2,update count x2
+Param/Camera/WherearenNpcHouse_DemoInterporateParams.byml,0x23be9c62[4]/mFrame,s32,90,180,2,update count x2
+Param/Camera/WherearenNpcHouse_DemoInterporateParams.byml,0x23be9c62[5]/mFrame,s32,90,180,2,update count x2
+Param/Camera/WherearenNpcHouse_DemoInterporateParams.byml,0x23be9c62[6]/mFrame,s32,90,180,2,update count x2
+Param/Fg/BeatAwayStumpParam.byml,mRollingY,f32,1,0.5,0.5,speed x1/2
+Param/Fg/BeatAwayStumpParam.byml,mRollingZ,f32,1.5,0.75,0.5,speed x1/2
+Param/Fg/BeatAwayStumpParam.byml,mSpeedY,f32,1.5,0.75,0.5,speed x1/2
+Param/Fg/BeatAwayStumpParam.byml,mSpeedXZ,f32,0.5,0.25,0.5,speed x1/2
+Param/Fg/BeatAwayStumpParam.byml,mEndTime,s32,17,34,2,update count x2
+Param/Fg/BeatAwayStumpParam.byml,mGravity,f32,0.2,0.05,0.25,acceleration/gravity x1/4
+Param/Fish/Museum/AntiStream/FishMuseum02.byml,0x4f59dc47[0]/mDriftFrameMin,f32,10,20,2,update count x2
+Param/Fish/Museum/AntiStream/FishMuseum02.byml,0x4f59dc47[0]/mDriftFrameMax,f32,30,60,2,update count x2
+Param/Fish/Museum/AntiStream/FishMuseum02.byml,0x4f59dc47[1]/mDriftFrameMin,f32,2,4,2,update count x2
+Param/Fish/Museum/AntiStream/FishMuseum02.byml,0x4f59dc47[1]/mDriftFrameMax,f32,10,20,2,update count x2
+Param/Fish/Museum/AntiStream/FishMuseum02.byml,0x4f59dc47[2]/mDriftFrameMin,f32,10,20,2,update count x2
+Param/Fish/Museum/AntiStream/FishMuseum02.byml,0x4f59dc47[2]/mDriftFrameMax,f32,30,60,2,update count x2
+Param/Fish/Museum/AntiStream/FishMuseum02.byml,0x4f59dc47[3]/mDriftFrameMin,f32,60,120,2,update count x2
+Param/Fish/Museum/AntiStream/FishMuseum02.byml,0x4f59dc47[3]/mDriftFrameMax,f32,93.75,187.5,2,update count x2
+Param/Fish/Museum/AntiStream/FishMuseum02.byml,0x4f59dc47[4]/mDriftFrameMin,f32,10,20,2,update count x2
+Param/Fish/Museum/AntiStream/FishMuseum02.byml,0x4f59dc47[4]/mDriftFrameMax,f32,30,60,2,update count x2
+Param/Fish/Museum/AntiStream/FishMuseum02.byml,0x4f59dc47[5]/mDriftFrameMin,f32,10,20,2,update count x2
+Param/Fish/Museum/AntiStream/FishMuseum02.byml,0x4f59dc47[5]/mDriftFrameMax,f32,30,60,2,update count x2
+Param/Fish/Museum/AntiStream/FishMuseum02.byml,0x4f59dc47[6]/mDriftFrameMin,f32,10,20,2,update count x2
+Param/Fish/Museum/AntiStream/FishMuseum02.byml,0x4f59dc47[6]/mDriftFrameMax,f32,30,60,2,update count x2
+Param/Fish/Museum/AntiStream/FishMuseum02.byml,0x4f59dc47[7]/mDriftFrameMin,f32,10,20,2,update count x2
+Param/Fish/Museum/AntiStream/FishMuseum02.byml,0x4f59dc47[7]/mDriftFrameMax,f32,30,60,2,update count x2
+Param/Fish/Museum/AntiStream/FishMuseum02.byml,0x4f59dc47[8]/mDriftFrameMin,f32,10,20,2,update count x2
+Param/Fish/Museum/AntiStream/FishMuseum02.byml,0x4f59dc47[8]/mDriftFrameMax,f32,30,60,2,update count x2
+Param/Fish/Museum/AntiStream/FishMuseum02.byml,0x4f59dc47[9]/mDriftFrameMin,f32,10,20,2,update count x2
+Param/Fish/Museum/AntiStream/FishMuseum02.byml,0x4f59dc47[9]/mDriftFrameMax,f32,30,60,2,update count x2
+Param/Fish/Museum/AntiStream/FishMuseum02.byml,0x4f59dc47[10]/mDriftFrameMin,f32,10,20,2,update count x2
+Param/Fish/Museum/AntiStream/FishMuseum02.byml,0x4f59dc47[10]/mDriftFrameMax,f32,30,60,2,update count x2
+Param/Fish/Museum/AntiStream/FishMuseum02.byml,0x4f59dc47[11]/mDriftFrameMin,f32,10,20,2,update count x2
+Param/Fish/Museum/AntiStream/FishMuseum02.byml,0x4f59dc47[11]/mDriftFrameMax,f32,30,60,2,update count x2
+Param/Fish/Museum/AntiStream/FishMuseum02.byml,0x4f59dc47[12]/mDriftFrameMin,f32,10,20,2,update count x2
+Param/Fish/Museum/AntiStream/FishMuseum02.byml,0x4f59dc47[12]/mDriftFrameMax,f32,30,60,2,update count x2
+Param/Fish/Museum/AntiStream/FishMuseum02.byml,0x4f59dc47[13]/mDriftFrameMin,f32,1,2,2,update count x2
+Param/Fish/Museum/AntiStream/FishMuseum02.byml,0x4f59dc47[13]/mDriftFrameMax,f32,2,4,2,update count x2
+Param/Fish/Museum/Layout/FishInsect00.byml,0x0313420a[0]/mBaseSpeed,f32,0.1,0.05,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishInsect00.byml,0x0313420a[1]/mBaseSpeed,f32,0.3,0.15,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishInsect00.byml,0x0313420a[2]/mBaseSpeed,f32,0.3,0.15,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishInsect00.byml,0x0313420a[3]/mBaseSpeed,f32,0.3,0.15,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishInsect00.byml,0x0313420a[4]/mBaseSpeed,f32,0.3,0.15,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishInsect00.byml,0x0313420a[5]/mBaseSpeed,f32,0.3,0.15,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishInsect00.byml,0x0313420a[6]/mBaseSpeed,f32,0.32,0.16,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishInsect00.byml,0x0313420a[7]/mBaseSpeed,f32,0.33,0.165,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishInsect00.byml,0x0313420a[8]/mBaseSpeed,f32,0.2,0.1,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishInsect00.byml,0x0313420a[9]/mBaseSpeed,f32,0.34,0.17,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishInsect00.byml,0x0313420a[10]/mBaseSpeed,f32,0.32,0.16,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishInsect00.byml,0x0313420a[11]/mBaseSpeed,f32,0.31,0.155,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishInsect00.byml,0x0313420a[12]/mBaseSpeed,f32,0.3,0.15,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishInsect00.byml,0x0313420a[13]/mBaseSpeed,f32,0.3,0.15,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishInsect00.byml,0x0313420a[14]/mBaseSpeed,f32,0.1,0.05,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishInsect00.byml,0x0313420a[15]/mBaseSpeed,f32,0.1,0.05,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishInsect00.byml,0x0313420a[16]/mBaseSpeed,f32,0.21,0.105,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishInsect00.byml,0x0313420a[17]/mBaseSpeed,f32,0.2,0.1,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishInsect01.byml,0x0313420a[1]/mBaseSpeed,f32,0.1,0.05,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum00.byml,0x0313420a[0]/mBaseSpeed,f32,0.04,0.02,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum00.byml,0x0313420a[1]/mBaseSpeed,f32,0.35,0.175,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum00.byml,0x0313420a[2]/mBaseSpeed,f32,0.16,0.08,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum00.byml,0x0313420a[3]/mBaseSpeed,f32,0.5,0.25,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum00.byml,0x0313420a[4]/mBaseSpeed,f32,0.5,0.25,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum00.byml,0x0313420a[5]/mBaseSpeed,f32,0.06,0.03,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum00.byml,0x0313420a[6]/mBaseSpeed,f32,0.2,0.1,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum00.byml,0x0313420a[7]/mBaseSpeed,f32,0.2,0.1,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum00.byml,0x0313420a[8]/mBaseSpeed,f32,0.3,0.15,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum00.byml,0x0313420a[9]/mBaseSpeed,f32,0.2,0.1,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum00.byml,0x0313420a[10]/mBaseSpeed,f32,0.2,0.1,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum00.byml,0x0313420a[11]/mBaseSpeed,f32,0.2,0.1,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum00.byml,0x0313420a[12]/mBaseSpeed,f32,0.08,0.04,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum00.byml,0x0313420a[13]/mBaseSpeed,f32,0.2,0.1,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum00.byml,0x0313420a[14]/mBaseSpeed,f32,0.1,0.05,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum00.byml,0x0313420a[15]/mBaseSpeed,f32,0.2,0.1,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum00.byml,0x0313420a[17]/mBaseSpeed,f32,0.1,0.05,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum00.byml,0x0313420a[18]/mBaseSpeed,f32,0.1,0.05,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum00.byml,0x0313420a[19]/mBaseSpeed,f32,0.11,0.055,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum00.byml,0x0313420a[20]/mBaseSpeed,f32,0.1,0.05,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum00.byml,0x0313420a[21]/mBaseSpeed,f32,0.1,0.05,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum00.byml,0x0313420a[22]/mBaseSpeed,f32,0.11,0.055,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum00.byml,0x0313420a[23]/mBaseSpeed,f32,0.23,0.115,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum00.byml,0x0313420a[24]/mBaseSpeed,f32,0.1,0.05,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum00.byml,0x0313420a[25]/mBaseSpeed,f32,0.23,0.115,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum00.byml,0x0313420a[26]/mBaseSpeed,f32,0.1,0.05,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum00.byml,0x0313420a[27]/mBaseSpeed,f32,0.3,0.15,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum00.byml,0x0313420a[28]/mBaseSpeed,f32,0.3,0.15,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum00.byml,0x0313420a[29]/mBaseSpeed,f32,0.55,0.275,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum00.byml,0x0313420a[30]/mBaseSpeed,f32,0.3,0.15,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum00.byml,0x0313420a[31]/mBaseSpeed,f32,0.3,0.15,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum01.byml,0x0313420a[0]/mBaseSpeed,f32,0.3,0.15,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum01.byml,0x0313420a[1]/mBaseSpeed,f32,0.05,0.025,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum01.byml,0x0313420a[2]/mBaseSpeed,f32,1.5,0.75,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum01.byml,0x0313420a[3]/mBaseSpeed,f32,0.5,0.25,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum01.byml,0x0313420a[4]/mBaseSpeed,f32,0.5,0.25,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum01.byml,0x0313420a[5]/mBaseSpeed,f32,0.5,0.25,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum01.byml,0x0313420a[6]/mBaseSpeed,f32,0.06,0.03,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum01.byml,0x0313420a[7]/mBaseSpeed,f32,0.05,0.025,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum01.byml,0x0313420a[8]/mBaseSpeed,f32,0.5,0.25,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum01.byml,0x0313420a[9]/mBaseSpeed,f32,0.5,0.25,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum01.byml,0x0313420a[10]/mBaseSpeed,f32,0.2,0.1,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum01.byml,0x0313420a[11]/mBaseSpeed,f32,0.5,0.25,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum01.byml,0x0313420a[12]/mBaseSpeed,f32,0.5,0.25,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum01.byml,0x0313420a[13]/mBaseSpeed,f32,0.5,0.25,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum01.byml,0x0313420a[14]/mBaseSpeed,f32,0.2,0.1,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum01.byml,0x0313420a[15]/mBaseSpeed,f32,0.6,0.3,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum01.byml,0x0313420a[16]/mBaseSpeed,f32,0.6,0.3,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum01.byml,0x0313420a[17]/mBaseSpeed,f32,0.6,0.3,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum01.byml,0x0313420a[18]/mBaseSpeed,f32,0.7,0.35,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum01.byml,0x0313420a[19]/mBaseSpeed,f32,0.7,0.35,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum01.byml,0x0313420a[20]/mBaseSpeed,f32,0.5,0.25,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[0]/mBaseSpeed,f32,0.5,0.25,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[1]/mBaseSpeed,f32,0.5,0.25,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[2]/mBaseSpeed,f32,0.5,0.25,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[3]/mBaseSpeed,f32,0.2,0.1,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[4]/mBaseSpeed,f32,0.2,0.1,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[5]/mBaseSpeed,f32,0.2,0.1,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[6]/mBaseSpeed,f32,0.2,0.1,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[7]/mBaseSpeed,f32,0.2,0.1,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[9]/mBaseSpeed,f32,0.3,0.15,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[10]/mBaseSpeed,f32,0.1,0.05,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[11]/mBaseSpeed,f32,0.4,0.2,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[12]/mBaseSpeed,f32,0.3,0.15,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[13]/mBaseSpeed,f32,0.2,0.1,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[15]/mBaseSpeed,f32,0.4,0.2,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[18]/mBaseSpeed,f32,0.26,0.13,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[19]/mBaseSpeed,f32,0.1,0.05,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[20]/mBaseSpeed,f32,0.1,0.05,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[25]/mBaseSpeed,f32,0.2,0.1,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[26]/mBaseSpeed,f32,0.2,0.1,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[27]/mBaseSpeed,f32,0.2,0.1,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[28]/mBaseSpeed,f32,0.3,0.15,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[29]/mBaseSpeed,f32,0.12,0.06,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[30]/mBaseSpeed,f32,0.12,0.06,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[31]/mBaseSpeed,f32,0.3,0.15,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[32]/mBaseSpeed,f32,0.2,0.1,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[33]/mBaseSpeed,f32,0.2,0.1,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[34]/mBaseSpeed,f32,0.5,0.25,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[35]/mBaseSpeed,f32,0.2,0.1,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[36]/mBaseSpeed,f32,0.2,0.1,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[37]/mBaseSpeed,f32,0.08,0.04,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[38]/mBaseSpeed,f32,0.1,0.05,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[39]/mBaseSpeed,f32,0.15,0.075,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[40]/mBaseSpeed,f32,0.2,0.1,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[41]/mBaseSpeed,f32,0.3,0.15,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[42]/mBaseSpeed,f32,0.06,0.03,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[43]/mBaseSpeed,f32,0.1,0.05,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[44]/mBaseSpeed,f32,0.2,0.1,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[45]/mBaseSpeed,f32,0.04,0.02,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[46]/mBaseSpeed,f32,0.3,0.15,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[47]/mBaseSpeed,f32,0.3,0.15,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[48]/mBaseSpeed,f32,0.3,0.15,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[49]/mBaseSpeed,f32,0.3,0.15,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[50]/mBaseSpeed,f32,0.3,0.15,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[51]/mBaseSpeed,f32,0.15,0.075,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[52]/mBaseSpeed,f32,0.2,0.1,0.5,speed x1/2
+Param/Fish/Museum/Layout/FishMuseum02.byml,0x0313420a[53]/mBaseSpeed,f32,0.1,0.05,0.5,speed x1/2
+Param/Fish/Museum/RoundsSwimming/FishInsect00.byml,0x5cd6a26b[0]/mWaitFrameRangeMin,f32,20,40,2,update count x2
+Param/Fish/Museum/RoundsSwimming/FishInsect00.byml,0x5cd6a26b[0]/mWaitFrameRangeMax,f32,90,180,2,update count x2
+Param/Fish/Museum/RoundsSwimming/FishMuseum00.byml,0x5cd6a26b[0]/mWaitFrameRangeMin,f32,30,60,2,update count x2
+Param/Fish/Museum/RoundsSwimming/FishMuseum00.byml,0x5cd6a26b[0]/mWaitFrameRangeMax,f32,120,240,2,update count x2
+Param/Fish/Museum/RoundsSwimming/FishMuseum00.byml,0x5cd6a26b[1]/mWaitFrameRangeMin,f32,10,20,2,update count x2
+Param/Fish/Museum/RoundsSwimming/FishMuseum00.byml,0x5cd6a26b[1]/mWaitFrameRangeMax,f32,60,120,2,update count x2
+Param/Fish/Museum/RoundsSwimming/FishMuseum00.byml,0x5cd6a26b[2]/mWaitFrameRangeMin,f32,10,20,2,update count x2
+Param/Fish/Museum/RoundsSwimming/FishMuseum00.byml,0x5cd6a26b[2]/mWaitFrameRangeMax,f32,30,60,2,update count x2
+Param/Fish/Museum/RoundsSwimming/FishMuseum00.byml,0x5cd6a26b[3]/mWaitFrameRangeMin,f32,20,40,2,update count x2
+Param/Fish/Museum/RoundsSwimming/FishMuseum00.byml,0x5cd6a26b[3]/mWaitFrameRangeMax,f32,60,120,2,update count x2
+Param/Fish/Museum/RoundsSwimming/FishMuseum00.byml,0x5cd6a26b[4]/mWaitFrameRangeMin,f32,30,60,2,update count x2
+Param/Fish/Museum/RoundsSwimming/FishMuseum00.byml,0x5cd6a26b[4]/mWaitFrameRangeMax,f32,90,180,2,update count x2
+Param/Fish/Museum/RoundsSwimming/FishMuseum02.byml,0x5cd6a26b[0]/mWaitFrameRangeMin,f32,20,40,2,update count x2
+Param/Fish/Museum/RoundsSwimming/FishMuseum02.byml,0x5cd6a26b[0]/mWaitFrameRangeMax,f32,60,120,2,update count x2
+Param/Fish/Museum/RoundsSwimming/FishMuseum02.byml,0x5cd6a26b[1]/mWaitFrameRangeMin,f32,10,20,2,update count x2
+Param/Fish/Museum/RoundsSwimming/FishMuseum02.byml,0x5cd6a26b[1]/mWaitFrameRangeMax,f32,30,60,2,update count x2
+Param/Gfx/CloudDrawer.byml,mWindScrollSpeedZ,f32,0.005,0.0025,0.5,speed x1/2
+Param/Gfx/CloudDrawer.byml,mProjectionShadowScrollSpeedX,f32,3,1.5,0.5,speed x1/2
+Param/Gfx/CloudDrawer.byml,mProjectionShadowScrollSpeedZ,f32,2,1,0.5,speed x1/2
+Param/Gfx/CloudDrawer.byml,mScrollSpeed,f32,0.00002,0.00001,0.5,speed x1/2
+Param/Gfx/FieldUnitModelMgr.byml,mUvScrollLoopTimingSRT1,u32,29,58,2,update count x2
+Param/Gfx/FieldUnitModelMgr.byml,mUvScrollLoopTimingSRT0,u32,40,80,2,update count x2
+Param/Gfx/FieldUnitModelMgr.byml,mUvScrollLoopTimingSRT2,u32,32,64,2,update count x2
+Param/Gfx/ShootingStarParam.byml,mLife,s32,90,180,2,update count x2
+Param/Gfx/ShootingStarParam.byml,mSpeed[0],f32,-2,-1,0.5,speed x1/2
+Param/Gfx/ShootingStarParam.byml,mSpeed[1],f32,-1,-0.5,0.5,speed x1/2
+Param/Gfx/WaveSimulation.byml,mPropagationFrame,u32,30,60,2,update count x2
+Param/Gfx/WaveSimulation.byml,mRainUnitRate,f32,0.004,0.002,0.5,speed x1/2
+Param/Gfx/WaveSimulation.byml,mSeaChoppyScrollRate2Min,f32,-0.1,-0.05,0.5,speed x1/2
+Param/Gfx/WaveSimulation.byml,mSeaChoppyScrollRate2Max,f32,-0.12,-0.06,0.5,speed x1/2
+Param/Gfx/WaveSimulation.byml,mChoppyScrollRate2Max,f32,-0.25,-0.125,0.5,speed x1/2
+Param/Gfx/WaveSimulation.byml,mChoppyScrollRate2Min,f32,-0.05,-0.025,0.5,speed x1/2
+Param/Gfx/WaveSimulation.byml,mSeaChoppyScrollRate1Max,f32,0.21,0.105,0.5,speed x1/2
+Param/Gfx/WaveSimulation.byml,mSeaChoppyScrollRate1Min,f32,0.12,0.06,0.5,speed x1/2
+Param/Gfx/WaveSimulation.byml,mChoppyScrollRate1Min,f32,0.2,0.1,0.5,speed x1/2
+Param/Gfx/WaveSimulation.byml,mChoppyScrollRate1Max,f32,0.25,0.125,0.5,speed x1/2
+Param/Insect/FieldAttackerParams.byml,0x248f269f/mMoveMinSec,f32,2,4,2,update count x2
+Param/Insect/FieldAttackerParams.byml,0x248f269f/mMoveMaxSec,f32,4,8,2,update count x2
+Param/Insect/FieldAttackerParams.byml,0x248f269f/mWaitMaxSec,f32,6,12,2,update count x2
+Param/Insect/FieldAttackerParams.byml,0x248f269f/mWaitMinSec,f32,1,2,2,update count x2
+Param/Insect/FieldAttackerParams.byml,0x35ab039e/mPursueSpeed,f32,1.5,0.75,0.5,speed x1/2
+Param/Insect/FieldAttackerParams.byml,0x35ab039e/mJumpSpeedH,f32,0.3125,0.15625,0.5,speed x1/2
+Param/Insect/FieldAttackerParams.byml,0x35ab039e/mMoveSpeed,f32,0.375,0.1875,0.5,speed x1/2
+Param/Insect/FieldAttackerParams.byml,0x35ab039e/mVanishSec,f32,10,20,2,update count x2
+Param/Insect/FieldAttackerParams.byml,0x35ab039e/mJumpSpeedV,f32,1.25,0.625,0.5,speed x1/2
+Param/Insect/FieldAttackerParams.byml,0x43bb2003/mMoveMinSec,f32,2,4,2,update count x2
+Param/Insect/FieldAttackerParams.byml,0x43bb2003/mMoveMaxSec,f32,4,8,2,update count x2
+Param/Insect/FieldAttackerParams.byml,0x43bb2003/mWaitMaxSec,f32,6,12,2,update count x2
+Param/Insect/FieldAttackerParams.byml,0x43bb2003/mWaitMinSec,f32,1,2,2,update count x2
+Param/Insect/FieldAttackerParams.byml,0xb8b250e4[0]/mPursueSpeed,f32,1.5,0.75,0.5,speed x1/2
+Param/Insect/FieldAttackerParams.byml,0xb8b250e4[0]/mJumpSpeedH,f32,0.3125,0.15625,0.5,speed x1/2
+Param/Insect/FieldAttackerParams.byml,0xb8b250e4[0]/mMoveSpeed,f32,0.3,0.15,0.5,speed x1/2
+Param/Insect/FieldAttackerParams.byml,0xb8b250e4[0]/mVanishSec,f32,10,20,2,update count x2
+Param/Insect/FieldAttackerParams.byml,0xb8b250e4[0]/mJumpSpeedV,f32,1.25,0.625,0.5,speed x1/2
+Param/Insect/FieldAttackerParams.byml,0xb8b250e4[1]/mPursueSpeed,f32,1.5,0.75,0.5,speed x1/2
+Param/Insect/FieldAttackerParams.byml,0xb8b250e4[1]/mMoveSpeed,f32,0.375,0.1875,0.5,speed x1/2
+Param/Insect/FieldAttackerParams.byml,0xb8b250e4[1]/mVanishSec,f32,10,20,2,update count x2
+Param/Insect/FieldAutumnLeafParams.byml,0x35ab039e/mDumpAccel,f32,0.00625,0.0015625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldAutumnLeafParams.byml,0x35ab039e/mDumpSpeed,f32,0.3125,0.15625,0.5,speed x1/2
+Param/Insect/FieldAutumnLeafParams.byml,0x35ab039e/mGravity,f32,-0.00625,-0.0015625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldAutumnLeafParams.byml,0x35ab039e/0xbbd5618d/mSpeedUpDown,f32,0.078125,0.0390625,0.5,speed x1/2
+Param/Insect/FieldAutumnLeafParams.byml,0x35ab039e/0xbbd5618d/mSpeedChaseMove,f32,0.011719,0.00292975,0.25,acceleration/gravity x1/4
+Param/Insect/FieldAutumnLeafParams.byml,0x35ab039e/0xbbd5618d/mSpeed,f32,0.15625,0.078125,0.5,speed x1/2
+Param/Insect/FieldAutumnLeafParams.byml,0x35ab039e/mDownSpeedMax,f32,-0.46875,-0.234375,0.5,speed x1/2
+Param/Insect/FieldAutumnLeafParams.byml,0xb8b250e4[0]/mDumpAccel,f32,0.00625,0.0015625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldAutumnLeafParams.byml,0xb8b250e4[0]/mDumpSpeed,f32,0.3125,0.15625,0.5,speed x1/2
+Param/Insect/FieldAutumnLeafParams.byml,0xb8b250e4[0]/mGravity,f32,-0.00625,-0.0015625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldAutumnLeafParams.byml,0xb8b250e4[0]/0xbbd5618d/mSpeedUpDown,f32,0.078125,0.0390625,0.5,speed x1/2
+Param/Insect/FieldAutumnLeafParams.byml,0xb8b250e4[0]/0xbbd5618d/mSpeedChaseMove,f32,0.011719,0.00292975,0.25,acceleration/gravity x1/4
+Param/Insect/FieldAutumnLeafParams.byml,0xb8b250e4[0]/0xbbd5618d/mSpeed,f32,0.15625,0.078125,0.5,speed x1/2
+Param/Insect/FieldAutumnLeafParams.byml,0xb8b250e4[0]/mDownSpeedMax,f32,-0.46875,-0.234375,0.5,speed x1/2
+Param/Insect/FieldBeeParams.byml,0x35ab039e/mAroundFrame,s32,60,120,2,update count x2
+Param/Insect/FieldBeeParams.byml,0x35ab039e/mSpeedUpDown,f32,0.15625,0.078125,0.5,speed x1/2
+Param/Insect/FieldBeeParams.byml,0x35ab039e/mMaxSpeed,f32,1.875,0.9375,0.5,speed x1/2
+Param/Insect/FieldBeeParams.byml,0x35ab039e/mAttackFrame,s32,60,120,2,update count x2
+Param/Insect/FieldBeeParams.byml,0x35ab039e/mAccel,f32,0.3125,0.078125,0.25,acceleration/gravity x1/4
+Param/Insect/FieldBeeParams.byml,0xb8b250e4[0]/mAroundFrame,s32,60,120,2,update count x2
+Param/Insect/FieldBeeParams.byml,0xb8b250e4[0]/mSpeedUpDown,f32,0.15625,0.078125,0.5,speed x1/2
+Param/Insect/FieldBeeParams.byml,0xb8b250e4[0]/mMaxSpeed,f32,1.8,0.9,0.5,speed x1/2
+Param/Insect/FieldBeeParams.byml,0xb8b250e4[0]/mAttackFrame,s32,60,120,2,update count x2
+Param/Insect/FieldBeeParams.byml,0xb8b250e4[0]/mAccel,f32,0.3125,0.078125,0.25,acceleration/gravity x1/4
+Param/Insect/FieldBeetleParams.byml,0x248f269f/mStopFramesMin,f32,90,180,2,update count x2
+Param/Insect/FieldBeetleParams.byml,0x248f269f/mStopFramesMax,f32,180,360,2,update count x2
+Param/Insect/FieldBeetleParams.byml,0x248f269f/mMoveFramesMax,f32,150,300,2,update count x2
+Param/Insect/FieldBeetleParams.byml,0x248f269f/mMoveFramesMin,f32,30,60,2,update count x2
+Param/Insect/FieldBeetleParams.byml,0x43bb2003/mStopFramesMin,f32,90,180,2,update count x2
+Param/Insect/FieldBeetleParams.byml,0x43bb2003/mStopFramesMax,f32,180,360,2,update count x2
+Param/Insect/FieldBeetleParams.byml,0x43bb2003/mMoveFramesMax,f32,150,300,2,update count x2
+Param/Insect/FieldBeetleParams.byml,0x43bb2003/mMoveFramesMin,f32,30,60,2,update count x2
+Param/Insect/FieldButterflyParams.byml,0x248f269f/mApproachCycle,f32,300,600,2,update count x2
+Param/Insect/FieldButterflyParams.byml,0x248f269f/mRestTime,f32,90,180,2,update count x2
+Param/Insect/FieldButterflyParams.byml,0x248f269f/mSpeedForwardStep,f32,0.007813,0.00195325,0.25,acceleration/gravity x1/4
+Param/Insect/FieldButterflyParams.byml,0x248f269f/mSpeedUpDown,f32,0.03125,0.015625,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0x35ab039e/mSpeedForward,f32,0.25,0.125,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0x35ab039e/mSpeedApproach,f32,0.117188,0.058594,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0x35ab039e/mRotateAngleYStep,u32,17891328,8945664,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0x43bb2003/mApproachCycle,f32,300,600,2,update count x2
+Param/Insect/FieldButterflyParams.byml,0x43bb2003/mRestTime,f32,90,180,2,update count x2
+Param/Insect/FieldButterflyParams.byml,0x43bb2003/mSpeedForwardStep,f32,0.007813,0.00195325,0.25,acceleration/gravity x1/4
+Param/Insect/FieldButterflyParams.byml,0x43bb2003/mSpeedUpDown,f32,0.03125,0.015625,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[0]/mSpeedForward,f32,0.1875,0.09375,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[0]/mSpeedApproach,f32,0.078125,0.0390625,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[0]/mRotateAngleYStep,u32,17891328,8945664,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[1]/mSpeedForward,f32,0.1875,0.09375,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[1]/mSpeedApproach,f32,0.078125,0.0390625,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[1]/mRotateAngleYStep,u32,17891328,8945664,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[2]/mSpeedForward,f32,0.25,0.125,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[2]/mSpeedApproach,f32,0.117188,0.058594,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[2]/mRotateAngleYStep,u32,17891328,8945664,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[3]/mSpeedForward,f32,0.25,0.125,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[3]/mSpeedApproach,f32,0.117188,0.058594,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[3]/mRotateAngleYStep,u32,17891328,8945664,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[4]/mSpeedForward,f32,0.25,0.125,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[4]/mSpeedApproach,f32,0.117188,0.058594,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[4]/mRotateAngleYStep,u32,17891328,8945664,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[5]/mSpeedForward,f32,0.25,0.125,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[5]/mSpeedApproach,f32,0.117188,0.058594,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[5]/mRotateAngleYStep,u32,17891328,8945664,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[6]/mSpeedForward,f32,0.75,0.375,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[6]/mSpeedApproach,f32,0.117188,0.058594,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[6]/mRotateAngleYStep,u32,17891328,8945664,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[7]/mSpeedForward,f32,0.25,0.125,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[7]/mSpeedApproach,f32,0.117188,0.058594,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[7]/mRotateAngleYStep,u32,17891328,8945664,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[8]/mSpeedForward,f32,0.375,0.1875,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[8]/mSpeedApproach,f32,0.117188,0.058594,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[8]/mRotateAngleYStep,u32,8978432,4489216,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[9]/mSpeedForward,f32,0.25,0.125,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[9]/mSpeedApproach,f32,0.117188,0.058594,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[9]/mRotateAngleYStep,u32,17891328,8945664,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[10]/mSpeedForward,f32,0.25,0.125,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[10]/mSpeedApproach,f32,0.117188,0.058594,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[10]/mRotateAngleYStep,u32,17891328,8945664,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[11]/mSpeedForward,f32,0.25,0.125,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[11]/mSpeedApproach,f32,0.117188,0.058594,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[11]/mRotateAngleYStep,u32,17891328,8945664,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[12]/mSpeedForward,f32,0.25,0.125,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[12]/mSpeedApproach,f32,0.117188,0.058594,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[12]/mRotateAngleYStep,u32,17891328,8945664,0.5,speed x1/2
+Param/Insect/FieldCastOffSkinParams.byml,0x35ab039e/mDumpAccel,f32,0.03125,0.0078125,0.25,acceleration/gravity x1/4
+Param/Insect/FieldCastOffSkinParams.byml,0x35ab039e/mDumpSpeed,f32,0.625,0.3125,0.5,speed x1/2
+Param/Insect/FieldCastOffSkinParams.byml,0x35ab039e/mGravity,f32,-0.0625,-0.015625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldCastOffSkinParams.byml,0x35ab039e/mDownSpeedMax,f32,-0.9375,-0.46875,0.5,speed x1/2
+Param/Insect/FieldCastOffSkinParams.byml,0xb8b250e4[0]/mDumpAccel,f32,0.03125,0.0078125,0.25,acceleration/gravity x1/4
+Param/Insect/FieldCastOffSkinParams.byml,0xb8b250e4[0]/mDumpSpeed,f32,0.625,0.3125,0.5,speed x1/2
+Param/Insect/FieldCastOffSkinParams.byml,0xb8b250e4[0]/mGravity,f32,-0.0625,-0.015625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldCastOffSkinParams.byml,0xb8b250e4[0]/mDownSpeedMax,f32,-0.9375,-0.46875,0.5,speed x1/2
+Param/Insect/FieldDragonflyParams.byml,0x248f269f/mApproachCycle,f32,600,1200,2,update count x2
+Param/Insect/FieldDragonflyParams.byml,0x248f269f/mRestTime,f32,90,180,2,update count x2
+Param/Insect/FieldDragonflyParams.byml,0x248f269f/mAppSpeedMax,f32,1.09375,0.546875,0.5,speed x1/2
+Param/Insect/FieldDragonflyParams.byml,0x248f269f/mAppSpeedMin,f32,0.03125,0.015625,0.5,speed x1/2
+Param/Insect/FieldDragonflyParams.byml,0x248f269f/mUpSpeedMax,f32,0.078125,0.0390625,0.5,speed x1/2
+Param/Insect/FieldDragonflyParams.byml,0x248f269f/mChaseSpeed,f32,0.039063,0.0195315,0.5,speed x1/2
+Param/Insect/FieldDragonflyParams.byml,0x248f269f/mDownSpeed,f32,-0.390625,-0.1953125,0.5,speed x1/2
+Param/Insect/FieldDragonflyParams.byml,0x35ab039e/mWaitingFrame,s32,30,60,2,update count x2
+Param/Insect/FieldDragonflyParams.byml,0x35ab039e/mRotateSpeed,f32,2,1,0.5,speed x1/2
+Param/Insect/FieldDragonflyParams.byml,0x35ab039e/mMoveFrame,f32,45,90,2,update count x2
+Param/Insect/FieldDragonflyParams.byml,0x43bb2003/mApproachCycle,f32,600,1200,2,update count x2
+Param/Insect/FieldDragonflyParams.byml,0x43bb2003/mRestTime,f32,90,180,2,update count x2
+Param/Insect/FieldDragonflyParams.byml,0x43bb2003/mAppSpeedMax,f32,1.09375,0.546875,0.5,speed x1/2
+Param/Insect/FieldDragonflyParams.byml,0x43bb2003/mAppSpeedMin,f32,0.03125,0.015625,0.5,speed x1/2
+Param/Insect/FieldDragonflyParams.byml,0x43bb2003/mUpSpeedMax,f32,0.078125,0.0390625,0.5,speed x1/2
+Param/Insect/FieldDragonflyParams.byml,0x43bb2003/mChaseSpeed,f32,0.039063,0.0195315,0.5,speed x1/2
+Param/Insect/FieldDragonflyParams.byml,0x43bb2003/mDownSpeed,f32,-0.390625,-0.1953125,0.5,speed x1/2
+Param/Insect/FieldDragonflyParams.byml,0xb8b250e4[0]/mWaitingFrame,s32,15,30,2,update count x2
+Param/Insect/FieldDragonflyParams.byml,0xb8b250e4[0]/mRotateSpeed,f32,5,2.5,0.5,speed x1/2
+Param/Insect/FieldDragonflyParams.byml,0xb8b250e4[0]/mMoveFrame,f32,45,90,2,update count x2
+Param/Insect/FieldDragonflyParams.byml,0xb8b250e4[1]/mWaitingFrame,s32,5,10,2,update count x2
+Param/Insect/FieldDragonflyParams.byml,0xb8b250e4[1]/mRotateSpeed,f32,4,2,0.5,speed x1/2
+Param/Insect/FieldDragonflyParams.byml,0xb8b250e4[1]/mMoveFrame,f32,30,60,2,update count x2
+Param/Insect/FieldDragonflyParams.byml,0xb8b250e4[2]/mWaitingFrame,s32,5,10,2,update count x2
+Param/Insect/FieldDragonflyParams.byml,0xb8b250e4[2]/mRotateSpeed,f32,12,6,0.5,speed x1/2
+Param/Insect/FieldDragonflyParams.byml,0xb8b250e4[2]/mMoveFrame,f32,30,60,2,update count x2
+Param/Insect/FieldDragonflyParams.byml,0xb8b250e4[3]/mWaitingFrame,s32,20,40,2,update count x2
+Param/Insect/FieldDragonflyParams.byml,0xb8b250e4[3]/mRotateSpeed,f32,4,2,0.5,speed x1/2
+Param/Insect/FieldDragonflyParams.byml,0xb8b250e4[3]/mMoveFrame,f32,45,90,2,update count x2
+Param/Insect/FieldDytiscidaeParams.byml,0x35ab039e/mNidusTimeMin,s32,150,300,2,update count x2
+Param/Insect/FieldDytiscidaeParams.byml,0x35ab039e/mNidusTimeMax,s32,300,600,2,update count x2
+Param/Insect/FieldDytiscidaeParams.byml,0x35ab039e/mBreathFrame,s32,10,20,2,update count x2
+Param/Insect/FieldDytiscidaeParams.byml,0x35ab039e/mDiveSpeed,f32,0.15,0.075,0.5,speed x1/2
+Param/Insect/FieldDytiscidaeParams.byml,0x35ab039e/mEscapeSpeed,f32,0.1,0.05,0.5,speed x1/2
+Param/Insect/FieldDytiscidaeParams.byml,0x35ab039e/mUpSpeed,f32,0.1,0.05,0.5,speed x1/2
+Param/Insect/FieldDytiscidaeParams.byml,0x35ab039e/mBreathWaitFrame,s32,15,30,2,update count x2
+Param/Insect/FieldDytiscidaeParams.byml,0xb8b250e4[0]/mBreathFrame,s32,45,90,2,update count x2
+Param/Insect/FieldDytiscidaeParams.byml,0xb8b250e4[0]/mDiveSpeed,f32,0.05,0.025,0.5,speed x1/2
+Param/Insect/FieldDytiscidaeParams.byml,0xb8b250e4[0]/mEscapeSpeed,f32,0.2,0.1,0.5,speed x1/2
+Param/Insect/FieldDytiscidaeParams.byml,0xb8b250e4[0]/mUpSpeed,f32,0.03,0.015,0.5,speed x1/2
+Param/Insect/FieldDytiscidaeParams.byml,0xb8b250e4[0]/mBreathWaitFrame,s32,10,20,2,update count x2
+Param/Insect/FieldDytiscidaeParams.byml,0xb8b250e4[1]/mNidusTimeMin,s32,300,600,2,update count x2
+Param/Insect/FieldDytiscidaeParams.byml,0xb8b250e4[1]/mNidusTimeMax,s32,600,1200,2,update count x2
+Param/Insect/FieldDytiscidaeParams.byml,0xb8b250e4[1]/mBreathFrame,s32,30,60,2,update count x2
+Param/Insect/FieldDytiscidaeParams.byml,0xb8b250e4[1]/mDiveSpeed,f32,0.05,0.025,0.5,speed x1/2
+Param/Insect/FieldDytiscidaeParams.byml,0xb8b250e4[1]/mEscapeSpeed,f32,0.1,0.05,0.5,speed x1/2
+Param/Insect/FieldDytiscidaeParams.byml,0xb8b250e4[1]/mUpSpeed,f32,0.03,0.015,0.5,speed x1/2
+Param/Insect/FieldDytiscidaeParams.byml,0xb8b250e4[1]/mBreathWaitFrame,s32,10,20,2,update count x2
+Param/Insect/FieldFeatherParams.byml,0x248f269f/0xbbd5618d/mSpeedUpDown,f32,0.078125,0.0390625,0.5,speed x1/2
+Param/Insect/FieldFeatherParams.byml,0x248f269f/0xbbd5618d/mSpeedChaseMove,f32,0.007813,0.00195325,0.25,acceleration/gravity x1/4
+Param/Insect/FieldFeatherParams.byml,0x248f269f/0xbbd5618d/mSpeed,f32,0.125,0.0625,0.5,speed x1/2
+Param/Insect/FieldFeatherParams.byml,0x43bb2003/0xbbd5618d/mSpeedUpDown,f32,0.078125,0.0390625,0.5,speed x1/2
+Param/Insect/FieldFeatherParams.byml,0x43bb2003/0xbbd5618d/mSpeedChaseMove,f32,0.011719,0.00292975,0.25,acceleration/gravity x1/4
+Param/Insect/FieldFeatherParams.byml,0x43bb2003/0xbbd5618d/mSpeed,f32,0.15625,0.078125,0.5,speed x1/2
+Param/Insect/FieldFireflyParams.byml,0x35ab039e/mMoveSpeed,f32,0.117188,0.058594,0.5,speed x1/2
+Param/Insect/FieldFireflyParams.byml,0x35ab039e/mSpeedY,f32,0.0625,0.03125,0.5,speed x1/2
+Param/Insect/FieldFireflyParams.byml,0xb8b250e4[0]/mMoveSpeed,f32,0.117188,0.058594,0.5,speed x1/2
+Param/Insect/FieldFireflyParams.byml,0xb8b250e4[0]/mSpeedY,f32,0.0625,0.03125,0.5,speed x1/2
+Param/Insect/FieldFlowerParams.byml,0x248f269f/mMoveSecMax,f32,3,6,2,update count x2
+Param/Insect/FieldFlowerParams.byml,0x248f269f/mMoveSecMin,f32,1,2,2,update count x2
+Param/Insect/FieldFlowerParams.byml,0x248f269f/mStopSecMax,f32,3,6,2,update count x2
+Param/Insect/FieldFlowerParams.byml,0x248f269f/mStopSecMin,f32,1,2,2,update count x2
+Param/Insect/FieldFlowerParams.byml,0x35ab039e/mStopWaitRotateAngleYStep,f32,5,2.5,0.5,speed x1/2
+Param/Insect/FieldFlowerParams.byml,0x35ab039e/mRotateAngleYStep,f32,3,1.5,0.5,speed x1/2
+Param/Insect/FieldFlowerParams.byml,0x35ab039e/mSpeed,f32,0.1,0.05,0.5,speed x1/2
+Param/Insect/FieldFlowerParams.byml,0x43bb2003/mMoveSecMax,f32,3,6,2,update count x2
+Param/Insect/FieldFlowerParams.byml,0x43bb2003/mMoveSecMin,f32,1,2,2,update count x2
+Param/Insect/FieldFlowerParams.byml,0x43bb2003/mStopSecMax,f32,3,6,2,update count x2
+Param/Insect/FieldFlowerParams.byml,0x43bb2003/mStopSecMin,f32,1,2,2,update count x2
+Param/Insect/FieldFlowerParams.byml,0xb8b250e4[0]/mStopWaitRotateAngleYStep,f32,5,2.5,0.5,speed x1/2
+Param/Insect/FieldFlowerParams.byml,0xb8b250e4[0]/mRotateAngleYStep,f32,3,1.5,0.5,speed x1/2
+Param/Insect/FieldFlowerParams.byml,0xb8b250e4[0]/mSpeed,f32,0.1,0.05,0.5,speed x1/2
+Param/Insect/FieldFlowerParams.byml,0xb8b250e4[1]/mStopWaitRotateAngleYStep,f32,5,2.5,0.5,speed x1/2
+Param/Insect/FieldFlowerParams.byml,0xb8b250e4[1]/mRotateAngleYStep,f32,3,1.5,0.5,speed x1/2
+Param/Insect/FieldFlowerParams.byml,0xb8b250e4[1]/mSpeed,f32,0.1,0.05,0.5,speed x1/2
+Param/Insect/FieldFlowerParams.byml,0xb8b250e4[2]/mStopWaitRotateAngleYStep,f32,5,2.5,0.5,speed x1/2
+Param/Insect/FieldFlowerParams.byml,0xb8b250e4[2]/mRotateAngleYStep,f32,3,1.5,0.5,speed x1/2
+Param/Insect/FieldFlowerParams.byml,0xb8b250e4[2]/mSpeed,f32,0.15,0.075,0.5,speed x1/2
+Param/Insect/FieldFlowerParams.byml,0xb8b250e4[3]/mStopWaitRotateAngleYStep,f32,5,2.5,0.5,speed x1/2
+Param/Insect/FieldFlowerParams.byml,0xb8b250e4[3]/mRotateAngleYStep,f32,1,0.5,0.5,speed x1/2
+Param/Insect/FieldFlowerParams.byml,0xb8b250e4[3]/mSpeed,f32,0.00625,0.003125,0.5,speed x1/2
+Param/Insect/FieldFlowerParams.byml,0xb8b250e4[4]/mStopWaitRotateAngleYStep,f32,5,2.5,0.5,speed x1/2
+Param/Insect/FieldFlowerParams.byml,0xb8b250e4[4]/mRotateAngleYStep,f32,3,1.5,0.5,speed x1/2
+Param/Insect/FieldFlowerParams.byml,0xb8b250e4[4]/mSpeed,f32,0.15,0.075,0.5,speed x1/2
+Param/Insect/FieldFlowerParams.byml,0xb8b250e4[5]/mStopWaitRotateAngleYStep,f32,5,2.5,0.5,speed x1/2
+Param/Insect/FieldFlowerParams.byml,0xb8b250e4[5]/mRotateAngleYStep,f32,2,1,0.5,speed x1/2
+Param/Insect/FieldFlowerParams.byml,0xb8b250e4[5]/mSpeed,f32,0.08,0.04,0.5,speed x1/2
+Param/Insect/FieldGerriadeParams.byml,0x35ab039e/mBorderSpeed,f32,0.5,0.25,0.5,speed x1/2
+Param/Insect/FieldGerriadeParams.byml,0xb8b250e4[0]/mBorderSpeed,f32,0.3,0.15,0.5,speed x1/2
+Param/Insect/FieldHermitCrabParams.byml,0x35ab039e/mMoveSpeed,f32,0.3125,0.15625,0.5,speed x1/2
+Param/Insect/FieldHermitCrabParams.byml,0x35ab039e/mVanishTime,f32,10,20,2,update count x2
+Param/Insect/FieldHermitCrabParams.byml,0x35ab039e/mRegistSpeed,f32,-0.015625,-0.00390625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldHermitCrabParams.byml,0x35ab039e/mSwingCycle,s32,40,80,2,update count x2
+Param/Insect/FieldHermitCrabParams.byml,0x35ab039e/mMoveFrame,s32,20,40,2,update count x2
+Param/Insect/FieldHermitCrabParams.byml,0xb8b250e4[0]/mMoveSpeed,f32,0.3125,0.15625,0.5,speed x1/2
+Param/Insect/FieldHermitCrabParams.byml,0xb8b250e4[0]/mVanishTime,f32,10,20,2,update count x2
+Param/Insect/FieldHermitCrabParams.byml,0xb8b250e4[0]/mRegistSpeed,f32,-0.015625,-0.00390625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldHermitCrabParams.byml,0xb8b250e4[0]/mSwingCycle,s32,8,16,2,update count x2
+Param/Insect/FieldHermitCrabParams.byml,0xb8b250e4[0]/mMoveFrame,s32,20,40,2,update count x2
+Param/Insect/FieldHoneyBeeParams.byml,0x35ab039e/mApproachCycle,f32,10,20,2,update count x2
+Param/Insect/FieldHoneyBeeParams.byml,0x35ab039e/mRestTime,f32,3,6,2,update count x2
+Param/Insect/FieldHoneyBeeParams.byml,0x35ab039e/mSpeedApproach,f32,0.078125,0.0390625,0.5,speed x1/2
+Param/Insect/FieldHoneyBeeParams.byml,0x35ab039e/mSpeedUpDown,f32,0.0625,0.03125,0.5,speed x1/2
+Param/Insect/FieldHoneyBeeParams.byml,0x35ab039e/mSpeedChaseMove,f32,0.0125,0.003125,0.25,acceleration/gravity x1/4
+Param/Insect/FieldHoneyBeeParams.byml,0x35ab039e/mSpeed,f32,0.25,0.125,0.5,speed x1/2
+Param/Insect/FieldHoneyBeeParams.byml,0xb8b250e4[0]/mApproachCycle,f32,10,20,2,update count x2
+Param/Insect/FieldHoneyBeeParams.byml,0xb8b250e4[0]/mRestTime,f32,3,6,2,update count x2
+Param/Insect/FieldHoneyBeeParams.byml,0xb8b250e4[0]/mSpeedApproach,f32,0.1,0.05,0.5,speed x1/2
+Param/Insect/FieldHoneyBeeParams.byml,0xb8b250e4[0]/mSpeedUpDown,f32,0.0625,0.03125,0.5,speed x1/2
+Param/Insect/FieldHoneyBeeParams.byml,0xb8b250e4[0]/mSpeedChaseMove,f32,0.0125,0.003125,0.25,acceleration/gravity x1/4
+Param/Insect/FieldHoneyBeeParams.byml,0xb8b250e4[0]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
+Param/Insect/FieldInsectParams.byml,0x248f269f/mEscapeAccelWorm,f32,-0.01,-0.0025,0.25,acceleration/gravity x1/4
+Param/Insect/FieldInsectParams.byml,0x248f269f/m1stSec,f32,60,120,2,update count x2
+Param/Insect/FieldInsectParams.byml,0x248f269f/mEscapeLastAngleXStepDeg,f32,4.394531,2.1972654,0.5,speed x1/2
+Param/Insect/FieldInsectParams.byml,0x248f269f/mEscapeSpeedFly,f32,0.625,0.3125,0.5,speed x1/2
+Param/Insect/FieldInsectParams.byml,0x248f269f/mGravity,f32,-0.15625,-0.0390625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldInsectParams.byml,0x248f269f/mMileStoneFrame,f32,20,40,2,update count x2
+Param/Insect/FieldInsectParams.byml,0x248f269f/mEscapeSpeedWorm,f32,0.25,0.125,0.5,speed x1/2
+Param/Insect/FieldInsectParams.byml,0x248f269f/mOtherSec,f32,10,20,2,update count x2
+Param/Insect/FieldInsectParams.byml,0x248f269f/mAlphaOutFrame,f32,30,60,2,update count x2
+Param/Insect/FieldInsectParams.byml,0x248f269f/mDownSpeedMax,f32,-1.5625,-0.78125,0.5,speed x1/2
+Param/Insect/FieldInsectParams.byml,0x248f269f/m2ndSec,f32,20,40,2,update count x2
+Param/Insect/FieldInsectParams.byml,0x35ab039e/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0x43bb2003/mEscapeAccelWorm,f32,-0.1,-0.025,0.25,acceleration/gravity x1/4
+Param/Insect/FieldInsectParams.byml,0x43bb2003/m1stSec,f32,60,120,2,update count x2
+Param/Insect/FieldInsectParams.byml,0x43bb2003/mEscapeLastAngleXStepDeg,f32,4.394531,2.1972654,0.5,speed x1/2
+Param/Insect/FieldInsectParams.byml,0x43bb2003/mEscapeSpeedFly,f32,0.625,0.3125,0.5,speed x1/2
+Param/Insect/FieldInsectParams.byml,0x43bb2003/mGravity,f32,-0.15625,-0.0390625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldInsectParams.byml,0x43bb2003/mMileStoneFrame,f32,20,40,2,update count x2
+Param/Insect/FieldInsectParams.byml,0x43bb2003/mEscapeSpeedWorm,f32,0.234375,0.1171875,0.5,speed x1/2
+Param/Insect/FieldInsectParams.byml,0x43bb2003/mOtherSec,f32,3,6,2,update count x2
+Param/Insect/FieldInsectParams.byml,0x43bb2003/mAlphaOutFrame,f32,30,60,2,update count x2
+Param/Insect/FieldInsectParams.byml,0x43bb2003/mDownSpeedMax,f32,-1.5625,-0.78125,0.5,speed x1/2
+Param/Insect/FieldInsectParams.byml,0x43bb2003/m2ndSec,f32,20,40,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[0]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[1]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[2]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[3]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[4]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[5]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[6]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[7]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[8]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[9]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[10]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[10]/mPlayerSpeedOffset,f32,-0.1,-0.05,0.5,speed x1/2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[11]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[12]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[13]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[14]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[15]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[16]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[17]/mSeaHoveringFrame,s32,9,18,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[18]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[19]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[20]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[21]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[22]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[23]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[24]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[25]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[26]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[27]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[28]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[29]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[30]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[31]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[32]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[33]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[34]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[35]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[36]/mSeaHoveringFrame,s32,11,22,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[36]/mPlayerSpeedOffset,f32,-0.7,-0.35,0.5,speed x1/2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[37]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[37]/mPlayerSpeedOffset,f32,-0.7,-0.35,0.5,speed x1/2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[38]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[39]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[40]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[40]/mPlayerSpeedOffset,f32,-0.1,-0.05,0.5,speed x1/2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[41]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[41]/mPlayerSpeedOffset,f32,-0.1,-0.05,0.5,speed x1/2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[42]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[43]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[44]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[45]/mSeaHoveringFrame,s32,10,20,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[46]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[47]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[47]/mPlayerSpeedOffset,f32,-0.1,-0.05,0.5,speed x1/2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[48]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[48]/mPlayerSpeedOffset,f32,-0.1,-0.05,0.5,speed x1/2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[49]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[49]/mPlayerSpeedOffset,f32,-0.1,-0.05,0.5,speed x1/2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[50]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[50]/mPlayerSpeedOffset,f32,-0.1,-0.05,0.5,speed x1/2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[51]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[51]/mPlayerSpeedOffset,f32,-0.1,-0.05,0.5,speed x1/2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[52]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[52]/mPlayerSpeedOffset,f32,-0.1,-0.05,0.5,speed x1/2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[53]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[53]/mPlayerSpeedOffset,f32,-0.1,-0.05,0.5,speed x1/2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[54]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[54]/mPlayerSpeedOffset,f32,-0.1,-0.05,0.5,speed x1/2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[55]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[55]/mPlayerSpeedOffset,f32,-0.1,-0.05,0.5,speed x1/2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[56]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[56]/mPlayerSpeedOffset,f32,-0.1,-0.05,0.5,speed x1/2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[57]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[57]/mPlayerSpeedOffset,f32,-0.1,-0.05,0.5,speed x1/2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[58]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[58]/mPlayerSpeedOffset,f32,-0.1,-0.05,0.5,speed x1/2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[59]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[59]/mPlayerSpeedOffset,f32,-0.1,-0.05,0.5,speed x1/2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[60]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[61]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[62]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[63]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[64]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[65]/mSeaHoveringFrame,s32,10,20,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[66]/mSeaHoveringFrame,s32,11,22,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[67]/mSeaHoveringFrame,s32,11,22,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[68]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[69]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[70]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[71]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[72]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[72]/mPlayerSpeedOffset,f32,-0.1,-0.05,0.5,speed x1/2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[73]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[73]/mPlayerSpeedOffset,f32,-0.1,-0.05,0.5,speed x1/2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[74]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[75]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[76]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[76]/mPlayerSpeedOffset,f32,-0.1,-0.05,0.5,speed x1/2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[77]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[77]/mPlayerSpeedOffset,f32,-0.1,-0.05,0.5,speed x1/2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[78]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[79]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[80]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[81]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[82]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[83]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[84]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[85]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[86]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[87]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[88]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldInsectParams.byml,0xb8b250e4[89]/mSeaHoveringFrame,s32,8,16,2,update count x2
+Param/Insect/FieldLigiaParams.byml,0x35ab039e/mEscapeSpeed,f32,1.875,0.9375,0.5,speed x1/2
+Param/Insect/FieldLigiaParams.byml,0xb8b250e4[0]/mEscapeSpeed,f32,1.875,0.9375,0.5,speed x1/2
+Param/Insect/FieldLocustParams.byml,0x248f269f/mStartChilpTime,s32,1,2,2,update count x2
+Param/Insect/FieldLocustParams.byml,0x248f269f/mRotateAngleYStep,u32,17891328,8945664,0.5,speed x1/2
+Param/Insect/FieldLocustParams.byml,0x35ab039e/mMoveFrames,f32,20,40,2,update count x2
+Param/Insect/FieldLocustParams.byml,0x35ab039e/mRegistSpeed,f32,-0.015625,-0.00390625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldLocustParams.byml,0x35ab039e/mStopFramesMin,f32,30,60,2,update count x2
+Param/Insect/FieldLocustParams.byml,0x35ab039e/mStopFramesMax,f32,300,600,2,update count x2
+Param/Insect/FieldLocustParams.byml,0x43bb2003/mStartChilpTime,s32,30,60,2,update count x2
+Param/Insect/FieldLocustParams.byml,0x43bb2003/mRotateAngleYStep,u32,17891328,8945664,0.5,speed x1/2
+Param/Insect/FieldLocustParams.byml,0xb8b250e4[0]/mMoveFrames,f32,35,70,2,update count x2
+Param/Insect/FieldLocustParams.byml,0xb8b250e4[0]/mRegistSpeed,f32,-0.015625,-0.00390625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldLocustParams.byml,0xb8b250e4[0]/mStopFramesMin,f32,60,120,2,update count x2
+Param/Insect/FieldLocustParams.byml,0xb8b250e4[0]/mStopFramesMax,f32,120,240,2,update count x2
+Param/Insect/FieldLocustParams.byml,0xb8b250e4[1]/mMoveFrames,f32,20,40,2,update count x2
+Param/Insect/FieldLocustParams.byml,0xb8b250e4[1]/mRegistSpeed,f32,-0.015625,-0.00390625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldLocustParams.byml,0xb8b250e4[1]/mStopFramesMin,f32,30,60,2,update count x2
+Param/Insect/FieldLocustParams.byml,0xb8b250e4[1]/mStopFramesMax,f32,60,120,2,update count x2
+Param/Insect/FieldLocustParams.byml,0xb8b250e4[2]/mMoveFrames,f32,15,30,2,update count x2
+Param/Insect/FieldLocustParams.byml,0xb8b250e4[2]/mRegistSpeed,f32,-0.015625,-0.00390625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldLocustParams.byml,0xb8b250e4[2]/mStopFramesMin,f32,15,30,2,update count x2
+Param/Insect/FieldLocustParams.byml,0xb8b250e4[2]/mStopFramesMax,f32,30,60,2,update count x2
+Param/Insect/FieldLocustParams.byml,0xb8b250e4[3]/mMoveFrames,f32,10,20,2,update count x2
+Param/Insect/FieldLocustParams.byml,0xb8b250e4[3]/mRegistSpeed,f32,-0.015625,-0.00390625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldLocustParams.byml,0xb8b250e4[3]/mStopFramesMin,f32,300,600,2,update count x2
+Param/Insect/FieldLocustParams.byml,0xb8b250e4[3]/mStopFramesMax,f32,600,1200,2,update count x2
+Param/Insect/FieldLocustParams.byml,0xb8b250e4[4]/mMoveFrames,f32,10,20,2,update count x2
+Param/Insect/FieldLocustParams.byml,0xb8b250e4[4]/mRegistSpeed,f32,-0.015625,-0.00390625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldLocustParams.byml,0xb8b250e4[4]/mStopFramesMin,f32,300,600,2,update count x2
+Param/Insect/FieldLocustParams.byml,0xb8b250e4[4]/mStopFramesMax,f32,600,1200,2,update count x2
+Param/Insect/FieldLocustParams.byml,0xb8b250e4[5]/mMoveFrames,f32,15,30,2,update count x2
+Param/Insect/FieldLocustParams.byml,0xb8b250e4[5]/mRegistSpeed,f32,-0.015625,-0.00390625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldLocustParams.byml,0xb8b250e4[5]/mStopFramesMin,f32,300,600,2,update count x2
+Param/Insect/FieldLocustParams.byml,0xb8b250e4[5]/mStopFramesMax,f32,600,1200,2,update count x2
+Param/Insect/FieldMosquitoParams.byml,0x35ab039e/mSpeedUpDown,f32,0.078125,0.0390625,0.5,speed x1/2
+Param/Insect/FieldMosquitoParams.byml,0x35ab039e/mSpeedChaseMove,f32,0.019531,0.00488275,0.25,acceleration/gravity x1/4
+Param/Insect/FieldMosquitoParams.byml,0x35ab039e/mSpeed,f32,0.15625,0.078125,0.5,speed x1/2
+Param/Insect/FieldMosquitoParams.byml,0xb8b250e4[0]/mSpeedUpDown,f32,0.078125,0.0390625,0.5,speed x1/2
+Param/Insect/FieldMosquitoParams.byml,0xb8b250e4[0]/mSpeedChaseMove,f32,0.019531,0.00488275,0.25,acceleration/gravity x1/4
+Param/Insect/FieldMosquitoParams.byml,0xb8b250e4[0]/mSpeed,f32,0.15625,0.078125,0.5,speed x1/2
+Param/Insect/FieldMuscidaeParams.byml,0x35ab039e/mApproachCycle,f32,1,2,2,update count x2
+Param/Insect/FieldMuscidaeParams.byml,0x35ab039e/mRestTime,f32,8,16,2,update count x2
+Param/Insect/FieldMuscidaeParams.byml,0x35ab039e/mSpeedApproach,f32,0.9375,0.46875,0.5,speed x1/2
+Param/Insect/FieldMuscidaeParams.byml,0x35ab039e/mSpeedUpDown,f32,0.15625,0.078125,0.5,speed x1/2
+Param/Insect/FieldMuscidaeParams.byml,0x35ab039e/mSpeedChaseMove,f32,0.15625,0.0390625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldMuscidaeParams.byml,0x35ab039e/mSpeed,f32,0.9375,0.46875,0.5,speed x1/2
+Param/Insect/FieldMuscidaeParams.byml,0xb8b250e4[0]/mApproachCycle,f32,1,2,2,update count x2
+Param/Insect/FieldMuscidaeParams.byml,0xb8b250e4[0]/mRestTime,f32,8,16,2,update count x2
+Param/Insect/FieldMuscidaeParams.byml,0xb8b250e4[0]/mSpeedApproach,f32,0.9375,0.46875,0.5,speed x1/2
+Param/Insect/FieldMuscidaeParams.byml,0xb8b250e4[0]/mSpeedUpDown,f32,0.25,0.125,0.5,speed x1/2
+Param/Insect/FieldMuscidaeParams.byml,0xb8b250e4[0]/mSpeedChaseMove,f32,0.15625,0.0390625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldMuscidaeParams.byml,0xb8b250e4[0]/mSpeed,f32,0.9375,0.46875,0.5,speed x1/2
+Param/Insect/FieldPetalParams.byml,0x35ab039e/mDumpAccel,f32,0.00625,0.0015625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldPetalParams.byml,0x35ab039e/mDumpSpeed,f32,0.3125,0.15625,0.5,speed x1/2
+Param/Insect/FieldPetalParams.byml,0x35ab039e/mGravity,f32,-0.00625,-0.0015625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldPetalParams.byml,0x35ab039e/0xbbd5618d/mSpeedUpDown,f32,0.078125,0.0390625,0.5,speed x1/2
+Param/Insect/FieldPetalParams.byml,0x35ab039e/0xbbd5618d/mSpeedChaseMove,f32,0.011719,0.00292975,0.25,acceleration/gravity x1/4
+Param/Insect/FieldPetalParams.byml,0x35ab039e/0xbbd5618d/mSpeed,f32,0.15625,0.078125,0.5,speed x1/2
+Param/Insect/FieldPetalParams.byml,0x35ab039e/mDownSpeedMax,f32,-0.46875,-0.234375,0.5,speed x1/2
+Param/Insect/FieldPetalParams.byml,0xb8b250e4[0]/mDumpAccel,f32,0.00625,0.0015625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldPetalParams.byml,0xb8b250e4[0]/mDumpSpeed,f32,0.3125,0.15625,0.5,speed x1/2
+Param/Insect/FieldPetalParams.byml,0xb8b250e4[0]/mGravity,f32,-0.00625,-0.0015625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldPetalParams.byml,0xb8b250e4[0]/0xbbd5618d/mSpeedUpDown,f32,0.078125,0.0390625,0.5,speed x1/2
+Param/Insect/FieldPetalParams.byml,0xb8b250e4[0]/0xbbd5618d/mSpeedChaseMove,f32,0.011719,0.00292975,0.25,acceleration/gravity x1/4
+Param/Insect/FieldPetalParams.byml,0xb8b250e4[0]/0xbbd5618d/mSpeed,f32,0.15625,0.078125,0.5,speed x1/2
+Param/Insect/FieldPetalParams.byml,0xb8b250e4[0]/mDownSpeedMax,f32,-0.46875,-0.234375,0.5,speed x1/2
+Param/Insect/FieldPhylliumParams.byml,0x35ab039e/mEscapeMaxSec,f32,2,4,2,update count x2
+Param/Insect/FieldPhylliumParams.byml,0x35ab039e/mEscapeMinSec,f32,1,2,2,update count x2
+Param/Insect/FieldPhylliumParams.byml,0x35ab039e/mMoveSpeed,f32,0.15625,0.078125,0.5,speed x1/2
+Param/Insect/FieldPhylliumParams.byml,0x35ab039e/mRegistSpeed,f32,-0.015625,-0.00390625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldPhylliumParams.byml,0x35ab039e/mVanishSec,f32,10,20,2,update count x2
+Param/Insect/FieldPhylliumParams.byml,0x35ab039e/mWaitingSec,f32,0.5,1,2,update count x2
+Param/Insect/FieldPhylliumParams.byml,0x35ab039e/mMoveFrame,s32,20,40,2,update count x2
+Param/Insect/FieldPhylliumParams.byml,0x35ab039e/mCycleFrame,s32,25,50,2,update count x2
+Param/Insect/FieldPhylliumParams.byml,0xb8b250e4[0]/mEscapeMaxSec,f32,8,16,2,update count x2
+Param/Insect/FieldPhylliumParams.byml,0xb8b250e4[0]/mEscapeMinSec,f32,2,4,2,update count x2
+Param/Insect/FieldPhylliumParams.byml,0xb8b250e4[0]/mMoveSpeed,f32,0.11,0.055,0.5,speed x1/2
+Param/Insect/FieldPhylliumParams.byml,0xb8b250e4[0]/mRegistSpeed,f32,-0.015625,-0.00390625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldPhylliumParams.byml,0xb8b250e4[0]/mVanishSec,f32,10,20,2,update count x2
+Param/Insect/FieldPhylliumParams.byml,0xb8b250e4[0]/mWaitingSec,f32,1,2,2,update count x2
+Param/Insect/FieldPhylliumParams.byml,0xb8b250e4[0]/mMoveFrame,s32,25,50,2,update count x2
+Param/Insect/FieldPhylliumParams.byml,0xb8b250e4[0]/mCycleFrame,s32,7,14,2,update count x2
+Param/Insect/FieldPopStoneParams.byml,0x248f269f/mEscapeRefreshCycle,f32,2,4,2,update count x2
+Param/Insect/FieldPopStoneParams.byml,0x35ab039e/mRegistSpeed,f32,-0.015625,-0.00390625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldPopStoneParams.byml,0x35ab039e/mVanishSec,f32,15,30,2,update count x2
+Param/Insect/FieldPopStoneParams.byml,0x35ab039e/mMoveFrame,s32,20,40,2,update count x2
+Param/Insect/FieldPopStoneParams.byml,0x35ab039e/mSpeed,f32,0.09375,0.046875,0.5,speed x1/2
+Param/Insect/FieldPopStoneParams.byml,0x43bb2003/mEscapeRefreshCycle,f32,2,4,2,update count x2
+Param/Insect/FieldPopStoneParams.byml,0xb8b250e4[0]/mRegistSpeed,f32,-0.015625,-0.00390625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldPopStoneParams.byml,0xb8b250e4[0]/mVanishSec,f32,15,30,2,update count x2
+Param/Insect/FieldPopStoneParams.byml,0xb8b250e4[0]/mMoveFrame,s32,20,40,2,update count x2
+Param/Insect/FieldPopStoneParams.byml,0xb8b250e4[0]/mSpeed,f32,0.09375,0.046875,0.5,speed x1/2
+Param/Insect/FieldPopStoneParams.byml,0xb8b250e4[1]/mRegistSpeed,f32,-0.015625,-0.00390625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldPopStoneParams.byml,0xb8b250e4[1]/mVanishSec,f32,15,30,2,update count x2
+Param/Insect/FieldPopStoneParams.byml,0xb8b250e4[1]/mMoveFrame,s32,20,40,2,update count x2
+Param/Insect/FieldPopStoneParams.byml,0xb8b250e4[1]/mSpeed,f32,0.125,0.0625,0.5,speed x1/2
+Param/Insect/FieldSnowCrystalParams.byml,0x35ab039e/mDumpAccel,f32,0.00625,0.0015625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldSnowCrystalParams.byml,0x35ab039e/mDumpSpeed,f32,0.3125,0.15625,0.5,speed x1/2
+Param/Insect/FieldSnowCrystalParams.byml,0x35ab039e/mGravity,f32,-0.00625,-0.0015625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldSnowCrystalParams.byml,0x35ab039e/0xbbd5618d/mSpeedUpDown,f32,0.078125,0.0390625,0.5,speed x1/2
+Param/Insect/FieldSnowCrystalParams.byml,0x35ab039e/0xbbd5618d/mSpeedChaseMove,f32,0.011719,0.00292975,0.25,acceleration/gravity x1/4
+Param/Insect/FieldSnowCrystalParams.byml,0x35ab039e/0xbbd5618d/mSpeed,f32,0.15625,0.078125,0.5,speed x1/2
+Param/Insect/FieldSnowCrystalParams.byml,0x35ab039e/mDownSpeedMax,f32,-0.46875,-0.234375,0.5,speed x1/2
+Param/Insect/FieldSnowCrystalParams.byml,0xb8b250e4[0]/mDumpAccel,f32,0.00625,0.0015625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldSnowCrystalParams.byml,0xb8b250e4[0]/mDumpSpeed,f32,0.3125,0.15625,0.5,speed x1/2
+Param/Insect/FieldSnowCrystalParams.byml,0xb8b250e4[0]/mGravity,f32,-0.00625,-0.0015625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldSnowCrystalParams.byml,0xb8b250e4[0]/0xbbd5618d/mSpeedUpDown,f32,0.078125,0.0390625,0.5,speed x1/2
+Param/Insect/FieldSnowCrystalParams.byml,0xb8b250e4[0]/0xbbd5618d/mSpeedChaseMove,f32,0.011719,0.00292975,0.25,acceleration/gravity x1/4
+Param/Insect/FieldSnowCrystalParams.byml,0xb8b250e4[0]/0xbbd5618d/mSpeed,f32,0.15625,0.078125,0.5,speed x1/2
+Param/Insect/FieldSnowCrystalParams.byml,0xb8b250e4[0]/mDownSpeedMax,f32,-0.46875,-0.234375,0.5,speed x1/2
+Param/Insect/FieldSnowCrystalParams.byml,0xb8b250e4[1]/mDumpAccel,f32,0.00625,0.0015625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldSnowCrystalParams.byml,0xb8b250e4[1]/mDumpSpeed,f32,0.3125,0.15625,0.5,speed x1/2
+Param/Insect/FieldSnowCrystalParams.byml,0xb8b250e4[1]/mGravity,f32,-0.00625,-0.0015625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldSnowCrystalParams.byml,0xb8b250e4[1]/0xbbd5618d/mSpeedUpDown,f32,0.078125,0.0390625,0.5,speed x1/2
+Param/Insect/FieldSnowCrystalParams.byml,0xb8b250e4[1]/0xbbd5618d/mSpeedChaseMove,f32,0.011719,0.00292975,0.25,acceleration/gravity x1/4
+Param/Insect/FieldSnowCrystalParams.byml,0xb8b250e4[1]/0xbbd5618d/mSpeed,f32,0.15625,0.078125,0.5,speed x1/2
+Param/Insect/FieldSnowCrystalParams.byml,0xb8b250e4[1]/mDownSpeedMax,f32,-0.46875,-0.234375,0.5,speed x1/2
+Param/Insect/FieldStumpParams.byml,0x248f269f/mMoveSecMax,f32,10,20,2,update count x2
+Param/Insect/FieldStumpParams.byml,0x248f269f/mMoveSecMin,f32,5,10,2,update count x2
+Param/Insect/FieldStumpParams.byml,0x248f269f/mStopSecMax,f32,5,10,2,update count x2
+Param/Insect/FieldStumpParams.byml,0x248f269f/mStopSecMin,f32,2.5,5,2,update count x2
+Param/Insect/FieldStumpParams.byml,0x35ab039e/mRotSpeedDeg,f32,1.40625,0.703125,0.5,speed x1/2
+Param/Insect/FieldStumpParams.byml,0x35ab039e/mSpeed,f32,0.03125,0.015625,0.5,speed x1/2
+Param/Insect/FieldStumpParams.byml,0x43bb2003/mMoveSecMax,f32,10,20,2,update count x2
+Param/Insect/FieldStumpParams.byml,0x43bb2003/mMoveSecMin,f32,5,10,2,update count x2
+Param/Insect/FieldStumpParams.byml,0x43bb2003/mStopSecMax,f32,5,10,2,update count x2
+Param/Insect/FieldStumpParams.byml,0x43bb2003/mStopSecMin,f32,2.5,5,2,update count x2
+Param/Insect/FieldStumpParams.byml,0xb8b250e4[0]/mRotSpeedDeg,f32,1.40625,0.703125,0.5,speed x1/2
+Param/Insect/FieldStumpParams.byml,0xb8b250e4[0]/mSpeed,f32,0.03125,0.015625,0.5,speed x1/2
+Param/Insect/FieldStumpParams.byml,0xb8b250e4[1]/mRotSpeedDeg,f32,1.40625,0.703125,0.5,speed x1/2
+Param/Insect/FieldStumpParams.byml,0xb8b250e4[1]/mSpeed,f32,0.03125,0.015625,0.5,speed x1/2
+Param/Insect/FieldStumpParams.byml,0xb8b250e4[2]/mRotSpeedDeg,f32,1.40625,0.703125,0.5,speed x1/2
+Param/Insect/FieldStumpParams.byml,0xb8b250e4[2]/mSpeed,f32,0.03125,0.015625,0.5,speed x1/2
+Param/Insect/FieldStumpParams.byml,0xb8b250e4[3]/mRotSpeedDeg,f32,1.40625,0.703125,0.5,speed x1/2
+Param/Insect/FieldStumpParams.byml,0xb8b250e4[3]/mSpeed,f32,0.03125,0.015625,0.5,speed x1/2
+Param/Insect/FieldThreadParams.byml,0x35ab039e/mDumpAccel,f32,0.05,0.0125,0.25,acceleration/gravity x1/4
+Param/Insect/FieldThreadParams.byml,0x35ab039e/mDumpSpeed,f32,1,0.5,0.5,speed x1/2
+Param/Insect/FieldThreadParams.byml,0x35ab039e/mGravity,f32,-0.1,-0.025,0.25,acceleration/gravity x1/4
+Param/Insect/FieldThreadParams.byml,0x35ab039e/mDownSpeedMax,f32,-1.5,-0.75,0.5,speed x1/2
+Param/Insect/FieldThreadParams.byml,0x35ab039e/mStopSecMax,f32,4,8,2,update count x2
+Param/Insect/FieldThreadParams.byml,0x35ab039e/mStopSecMin,f32,2,4,2,update count x2
+Param/Insect/FieldThreadParams.byml,0xb8b250e4[0]/mDumpAccel,f32,0.05,0.0125,0.25,acceleration/gravity x1/4
+Param/Insect/FieldThreadParams.byml,0xb8b250e4[0]/mDumpSpeed,f32,1,0.5,0.5,speed x1/2
+Param/Insect/FieldThreadParams.byml,0xb8b250e4[0]/mGravity,f32,-0.1,-0.025,0.25,acceleration/gravity x1/4
+Param/Insect/FieldThreadParams.byml,0xb8b250e4[0]/mDownSpeedMax,f32,-1.5,-0.75,0.5,speed x1/2
+Param/Insect/FieldThreadParams.byml,0xb8b250e4[0]/mStopSecMax,f32,4,8,2,update count x2
+Param/Insect/FieldThreadParams.byml,0xb8b250e4[0]/mStopSecMin,f32,2,4,2,update count x2
+Param/Insect/FieldThreadParams.byml,0xb8b250e4[1]/mDumpAccel,f32,0.05,0.0125,0.25,acceleration/gravity x1/4
+Param/Insect/FieldThreadParams.byml,0xb8b250e4[1]/mDumpSpeed,f32,0.1,0.05,0.5,speed x1/2
+Param/Insect/FieldThreadParams.byml,0xb8b250e4[1]/mGravity,f32,-0.1,-0.025,0.25,acceleration/gravity x1/4
+Param/Insect/FieldThreadParams.byml,0xb8b250e4[1]/mDownSpeedMax,f32,-1.5,-0.75,0.5,speed x1/2
+Param/Insect/FieldThreadParams.byml,0xb8b250e4[1]/mStopSecMax,f32,4,8,2,update count x2
+Param/Insect/FieldThreadParams.byml,0xb8b250e4[1]/mStopSecMin,f32,2,4,2,update count x2
+Param/Insect/FieldTigerBeetleParams.byml,0x35ab039e/mEscapeSpeed,f32,0.9375,0.46875,0.5,speed x1/2
+Param/Insect/FieldTigerBeetleParams.byml,0x35ab039e/mMoveSpeed,f32,0.15625,0.078125,0.5,speed x1/2
+Param/Insect/FieldTigerBeetleParams.byml,0x35ab039e/mMoveSecMax,f32,8,16,2,update count x2
+Param/Insect/FieldTigerBeetleParams.byml,0x35ab039e/mMoveSecMin,f32,2,4,2,update count x2
+Param/Insect/FieldTigerBeetleParams.byml,0x35ab039e/mWaitSecMin,f32,2,4,2,update count x2
+Param/Insect/FieldTigerBeetleParams.byml,0x35ab039e/mWaitSecMax,f32,8,16,2,update count x2
+Param/Insect/FieldTigerBeetleParams.byml,0x35ab039e/mAccel,f32,0.03125,0.0078125,0.25,acceleration/gravity x1/4
+Param/Insect/FieldTigerBeetleParams.byml,0xb8b250e4[0]/mEscapeSpeed,f32,1.345,0.6725,0.5,speed x1/2
+Param/Insect/FieldTigerBeetleParams.byml,0xb8b250e4[0]/mMoveSpeed,f32,0.2245,0.11225,0.5,speed x1/2
+Param/Insect/FieldTigerBeetleParams.byml,0xb8b250e4[0]/mMoveSecMax,f32,8,16,2,update count x2
+Param/Insect/FieldTigerBeetleParams.byml,0xb8b250e4[0]/mMoveSecMin,f32,4,8,2,update count x2
+Param/Insect/FieldTigerBeetleParams.byml,0xb8b250e4[0]/mWaitSecMin,f32,4,8,2,update count x2
+Param/Insect/FieldTigerBeetleParams.byml,0xb8b250e4[0]/mWaitSecMax,f32,8,16,2,update count x2
+Param/Insect/FieldTigerBeetleParams.byml,0xb8b250e4[0]/mAccel,f32,0.03125,0.0078125,0.25,acceleration/gravity x1/4
+Param/Insect/FieldTigerBeetleParams.byml,0xb8b250e4[1]/mEscapeSpeed,f32,0.1,0.05,0.5,speed x1/2
+Param/Insect/FieldTigerBeetleParams.byml,0xb8b250e4[1]/mMoveSpeed,f32,0.1,0.05,0.5,speed x1/2
+Param/Insect/FieldTigerBeetleParams.byml,0xb8b250e4[1]/mMoveSecMax,f32,6,12,2,update count x2
+Param/Insect/FieldTigerBeetleParams.byml,0xb8b250e4[1]/mMoveSecMin,f32,2,4,2,update count x2
+Param/Insect/FieldTigerBeetleParams.byml,0xb8b250e4[1]/mWaitSecMin,f32,1,2,2,update count x2
+Param/Insect/FieldTigerBeetleParams.byml,0xb8b250e4[1]/mWaitSecMax,f32,2,4,2,update count x2
+Param/Insect/FieldTigerBeetleParams.byml,0xb8b250e4[1]/mAccel,f32,0.01,0.0025,0.25,acceleration/gravity x1/4
+Param/Insect/FieldWispParams.byml,0x35ab039e/mMoveSpeed,f32,0.117188,0.058594,0.5,speed x1/2
+Param/Insect/FieldWispParams.byml,0x35ab039e/mSpeedY,f32,0.0625,0.03125,0.5,speed x1/2
+Param/Insect/FieldWispParams.byml,0xb8b250e4[0]/mMoveSpeed,f32,0.117188,0.058594,0.5,speed x1/2
+Param/Insect/FieldWispParams.byml,0xb8b250e4[0]/mSpeedY,f32,0.0625,0.03125,0.5,speed x1/2
+Param/Insect/MuseumBeetleBattleParams.byml,0x248f269f/mEscapeLastAngleXStepDeg,f32,10,5,0.5,speed x1/2
+Param/Insect/MuseumBeetleBattleParams.byml,0x248f269f/mKnockOverSpeed,f32,0.4,0.2,0.5,speed x1/2
+Param/Insect/MuseumBeetleBattleParams.byml,0x248f269f/mInitialChargeMaxSec,f32,3,6,2,update count x2
+Param/Insect/MuseumBeetleBattleParams.byml,0x248f269f/mInitialChargeMinSec,f32,1,2,2,update count x2
+Param/Insect/MuseumBeetleBattleParams.byml,0x248f269f/mEscapeSpeedFly,f32,0.625,0.3125,0.5,speed x1/2
+Param/Insect/MuseumBeetleBattleParams.byml,0x248f269f/mGrappleMaxSec,f32,2,4,2,update count x2
+Param/Insect/MuseumBeetleBattleParams.byml,0x248f269f/mGrappleMinSec,f32,0.1,0.2,2,update count x2
+Param/Insect/MuseumBeetleBattleParams.byml,0x248f269f/mAfterGrappleMinSec,f32,3,6,2,update count x2
+Param/Insect/MuseumBeetleBattleParams.byml,0x248f269f/mAfterGrappleMaxSec,f32,3,6,2,update count x2
+Param/Insect/MuseumBeetleBattleParams.byml,0x43bb2003/mEscapeLastAngleXStepDeg,f32,4.394531,2.1972654,0.5,speed x1/2
+Param/Insect/MuseumBeetleBattleParams.byml,0x43bb2003/mKnockOverSpeed,f32,0.1,0.05,0.5,speed x1/2
+Param/Insect/MuseumBeetleBattleParams.byml,0x43bb2003/mInitialChargeMaxSec,f32,3,6,2,update count x2
+Param/Insect/MuseumBeetleBattleParams.byml,0x43bb2003/mInitialChargeMinSec,f32,1,2,2,update count x2
+Param/Insect/MuseumBeetleBattleParams.byml,0x43bb2003/mEscapeSpeedFly,f32,0.625,0.3125,0.5,speed x1/2
+Param/Insect/MuseumBeetleBattleParams.byml,0x43bb2003/mGrappleMaxSec,f32,60,120,2,update count x2
+Param/Insect/MuseumBeetleBattleParams.byml,0x43bb2003/mAfterGrappleMinSec,f32,3,6,2,update count x2
+Param/Insect/MuseumBeetleBattleParams.byml,0x43bb2003/mAfterGrappleMaxSec,f32,3,6,2,update count x2
+Param/Insect/MuseumBeetleParams.byml,0x248f269f/mStopFramesMin,f32,90,180,2,update count x2
+Param/Insect/MuseumBeetleParams.byml,0x248f269f/mStopFramesMax,f32,180,360,2,update count x2
+Param/Insect/MuseumBeetleParams.byml,0x248f269f/mMoveFramesMax,f32,150,300,2,update count x2
+Param/Insect/MuseumBeetleParams.byml,0x248f269f/mMoveFramesMin,f32,30,60,2,update count x2
+Param/Insect/MuseumBeetleParams.byml,0x43bb2003/mStopFramesMin,f32,90,180,2,update count x2
+Param/Insect/MuseumBeetleParams.byml,0x43bb2003/mStopFramesMax,f32,180,360,2,update count x2
+Param/Insect/MuseumBeetleParams.byml,0x43bb2003/mMoveFramesMax,f32,150,300,2,update count x2
+Param/Insect/MuseumBeetleParams.byml,0x43bb2003/mMoveFramesMin,f32,30,60,2,update count x2
+Param/Insect/MuseumFlyInCageParams.byml,0x35ab039e/mCycleSec,f32,0.5,1,2,update count x2
+Param/Insect/MuseumFlyInCageParams.byml,0x35ab039e/mGyrateAngleYStepDeg,f32,15,7.5,0.5,speed x1/2
+Param/Insect/MuseumFlyInCageParams.byml,0x35ab039e/mSpeed,f32,0.5,0.25,0.5,speed x1/2
+Param/Insect/MuseumFlyInCageParams.byml,0xb8b250e4[0]/mCycleSec,f32,0.5,1,2,update count x2
+Param/Insect/MuseumFlyInCageParams.byml,0xb8b250e4[0]/mGyrateAngleYStepDeg,f32,15,7.5,0.5,speed x1/2
+Param/Insect/MuseumFlyInCageParams.byml,0xb8b250e4[0]/mSpeed,f32,0.5,0.25,0.5,speed x1/2
+Param/Insect/MuseumFlyInCageParams.byml,0xb8b250e4[1]/mCycleSec,f32,0.5,1,2,update count x2
+Param/Insect/MuseumFlyInCageParams.byml,0xb8b250e4[1]/mGyrateAngleYStepDeg,f32,15,7.5,0.5,speed x1/2
+Param/Insect/MuseumFlyInCageParams.byml,0xb8b250e4[1]/mSpeed,f32,0.1,0.05,0.5,speed x1/2
+Param/Insect/MuseumFlyStraightParams.byml,0x248f269f/mHoveringTimeMax,f32,2,4,2,update count x2
+Param/Insect/MuseumFlyStraightParams.byml,0x248f269f/mUpSpeedMax,f32,0.078125,0.0390625,0.5,speed x1/2
+Param/Insect/MuseumFlyStraightParams.byml,0x248f269f/mDownSpeed,f32,-0.390625,-0.1953125,0.5,speed x1/2
+Param/Insect/MuseumFlyStraightParams.byml,0x35ab039e/mMoveFrame,s32,45,90,2,update count x2
+Param/Insect/MuseumFlyStraightParams.byml,0x43bb2003/mHoveringTimeMax,f32,2,4,2,update count x2
+Param/Insect/MuseumFlyStraightParams.byml,0x43bb2003/mUpSpeedMax,f32,0.078125,0.0390625,0.5,speed x1/2
+Param/Insect/MuseumFlyStraightParams.byml,0x43bb2003/mChaseSpeed,f32,0.039063,0.0195315,0.5,speed x1/2
+Param/Insect/MuseumFlyStraightParams.byml,0x43bb2003/mDownSpeed,f32,-0.390625,-0.1953125,0.5,speed x1/2
+Param/Insect/MuseumFlyStraightParams.byml,0xb8b250e4[0]/mMoveFrame,s32,45,90,2,update count x2
+Param/Insect/MuseumFlyStraightWithRestParams.byml,0x248f269f/mApproachCycleSec,f32,20,40,2,update count x2
+Param/Insect/MuseumFlyStraightWithRestParams.byml,0x248f269f/mRestTimeSec,f32,3,6,2,update count x2
+Param/Insect/MuseumFlyStraightWithRestParams.byml,0x248f269f/mHoveringTimeMax,f32,8,16,2,update count x2
+Param/Insect/MuseumFlyStraightWithRestParams.byml,0x248f269f/mUpSpeedMax,f32,0.078125,0.0390625,0.5,speed x1/2
+Param/Insect/MuseumFlyStraightWithRestParams.byml,0x248f269f/mChaseSpeed,f32,0.039063,0.0195315,0.5,speed x1/2
+Param/Insect/MuseumFlyStraightWithRestParams.byml,0x248f269f/mApproachSpeedMax,f32,0.390625,0.1953125,0.5,speed x1/2
+Param/Insect/MuseumFlyStraightWithRestParams.byml,0x248f269f/mApproachSpeedMin,f32,0.039063,0.0195315,0.5,speed x1/2
+Param/Insect/MuseumFlyStraightWithRestParams.byml,0x248f269f/mDownSpeed,f32,-0.390625,-0.1953125,0.5,speed x1/2
+Param/Insect/MuseumFlyStraightWithRestParams.byml,0x35ab039e/mMoveFrame,s32,45,90,2,update count x2
+Param/Insect/MuseumFlyStraightWithRestParams.byml,0x43bb2003/mApproachCycleSec,f32,20,40,2,update count x2
+Param/Insect/MuseumFlyStraightWithRestParams.byml,0x43bb2003/mRestTimeSec,f32,3,6,2,update count x2
+Param/Insect/MuseumFlyStraightWithRestParams.byml,0x43bb2003/mHoveringTimeMax,f32,2,4,2,update count x2
+Param/Insect/MuseumFlyStraightWithRestParams.byml,0x43bb2003/mUpSpeedMax,f32,0.078125,0.0390625,0.5,speed x1/2
+Param/Insect/MuseumFlyStraightWithRestParams.byml,0x43bb2003/mChaseSpeed,f32,0.039063,0.0195315,0.5,speed x1/2
+Param/Insect/MuseumFlyStraightWithRestParams.byml,0x43bb2003/mApproachSpeedMax,f32,0.390625,0.1953125,0.5,speed x1/2
+Param/Insect/MuseumFlyStraightWithRestParams.byml,0x43bb2003/mApproachSpeedMin,f32,0.039063,0.0195315,0.5,speed x1/2
+Param/Insect/MuseumFlyStraightWithRestParams.byml,0x43bb2003/mDownSpeed,f32,-0.390625,-0.1953125,0.5,speed x1/2
+Param/Insect/MuseumFlyStraightWithRestParams.byml,0xb8b250e4[0]/mMoveFrame,s32,45,90,2,update count x2
+Param/Insect/MuseumFlyStraightWithRestParams.byml,0xb8b250e4[1]/mMoveFrame,s32,45,90,2,update count x2
+Param/Insect/MuseumFlyStraightWithRestParams.byml,0xb8b250e4[2]/mMoveFrame,s32,45,90,2,update count x2
+Param/Insect/MuseumFlyStraightWithRestParams.byml,0xb8b250e4[3]/mMoveFrame,s32,45,90,2,update count x2
+Param/Insect/MuseumFlyTottering.byml,0x248f269f/mSpeedUpDown,f32,0.03125,0.015625,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0x248f269f/mSpeedChaseMove,f32,0.007813,0.00195325,0.25,acceleration/gravity x1/4
+Param/Insect/MuseumFlyTottering.byml,0x35ab039e/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0x35ab039e/mSpeed,f32,0.25,0.125,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0x43bb2003/mSpeedUpDown,f32,0.03125,0.015625,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0x43bb2003/mSpeedChaseMove,f32,0.007813,0.00195325,0.25,acceleration/gravity x1/4
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[0]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[0]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[1]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[1]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[2]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[2]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[3]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[3]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[4]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[4]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[5]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[5]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[6]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[6]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[7]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[7]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[8]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[8]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[9]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[9]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[10]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[10]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[11]/mGyrateAngleYStepDeg,f32,1.5,0.75,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[11]/mSpeed,f32,0.2,0.1,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[12]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[12]/mSpeed,f32,0.3,0.15,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[13]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[13]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[14]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[14]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[15]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[15]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
+Param/Insect/MuseumFlyTotteringWithRestParams.byml,0x248f269f/mApproachCycleSec,f32,20,40,2,update count x2
+Param/Insect/MuseumFlyTotteringWithRestParams.byml,0x248f269f/mSpeedUpDown,f32,0.1,0.05,0.5,speed x1/2
+Param/Insect/MuseumFlyTotteringWithRestParams.byml,0x248f269f/mRestSec,f32,6,12,2,update count x2
+Param/Insect/MuseumFlyTotteringWithRestParams.byml,0x248f269f/mSpeedChaseMove,f32,0.007813,0.00195325,0.25,acceleration/gravity x1/4
+Param/Insect/MuseumFlyTotteringWithRestParams.byml,0x35ab039e/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
+Param/Insect/MuseumFlyTotteringWithRestParams.byml,0x35ab039e/mSpeedApproach,f32,0.117188,0.058594,0.5,speed x1/2
+Param/Insect/MuseumFlyTotteringWithRestParams.byml,0x35ab039e/mSpeed,f32,0.25,0.125,0.5,speed x1/2
+Param/Insect/MuseumFlyTotteringWithRestParams.byml,0x43bb2003/mApproachCycleSec,f32,20,40,2,update count x2
+Param/Insect/MuseumFlyTotteringWithRestParams.byml,0x43bb2003/mRestSec,f32,6,12,2,update count x2
+Param/Insect/MuseumFlyTotteringWithRestParams.byml,0x43bb2003/mSpeedChaseMove,f32,0.007813,0.00195325,0.25,acceleration/gravity x1/4
+Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[0]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
+Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[0]/mSpeedApproach,f32,0.117188,0.058594,0.5,speed x1/2
+Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[0]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
+Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[1]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
+Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[1]/mSpeedApproach,f32,0.117188,0.058594,0.5,speed x1/2
+Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[1]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
+Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[2]/mGyrateAngleYStepDeg,f32,1.5,0.75,0.5,speed x1/2
+Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[2]/mSpeedApproach,f32,0.1,0.05,0.5,speed x1/2
+Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[2]/mSpeed,f32,0.2,0.1,0.5,speed x1/2
+Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[3]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
+Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[3]/mSpeedApproach,f32,0.117188,0.058594,0.5,speed x1/2
+Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[3]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
+Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[4]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
+Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[4]/mSpeedApproach,f32,0.117188,0.058594,0.5,speed x1/2
+Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[4]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
+Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[5]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
+Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[5]/mSpeedApproach,f32,0.117188,0.058594,0.5,speed x1/2
+Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[5]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
+Param/Insect/MuseumLocustParams.byml,0x248f269f/mActStopSecMax,f32,1,2,2,update count x2
+Param/Insect/MuseumLocustParams.byml,0x248f269f/mActStopSecMin,f32,0.5,1,2,update count x2
+Param/Insect/MuseumLocustParams.byml,0x35ab039e/mRegistSpeed,f32,0.015625,0.00390625,0.25,acceleration/gravity x1/4
+Param/Insect/MuseumLocustParams.byml,0x35ab039e/mMoveFrame,f32,20,40,2,update count x2
+Param/Insect/MuseumLocustParams.byml,0x43bb2003/mActStopSecMax,f32,10,20,2,update count x2
+Param/Insect/MuseumLocustParams.byml,0x43bb2003/mActStopSecMin,f32,5,10,2,update count x2
+Param/Insect/MuseumLocustParams.byml,0xb8b250e4[0]/mRegistSpeed,f32,0.015625,0.00390625,0.25,acceleration/gravity x1/4
+Param/Insect/MuseumLocustParams.byml,0xb8b250e4[0]/mMoveFrame,f32,12,24,2,update count x2
+Param/Insect/MuseumLocustParams.byml,0xb8b250e4[1]/mRegistSpeed,f32,0.015625,0.00390625,0.25,acceleration/gravity x1/4
+Param/Insect/MuseumLocustParams.byml,0xb8b250e4[1]/mMoveFrame,f32,12,24,2,update count x2
+Param/Insect/MuseumLocustParams.byml,0xb8b250e4[2]/mRegistSpeed,f32,0.015625,0.00390625,0.25,acceleration/gravity x1/4
+Param/Insect/MuseumLocustParams.byml,0xb8b250e4[2]/mMoveFrame,f32,12,24,2,update count x2
+Param/Insect/MuseumLocustParams.byml,0xb8b250e4[3]/mRegistSpeed,f32,0.015625,0.00390625,0.25,acceleration/gravity x1/4
+Param/Insect/MuseumLocustParams.byml,0xb8b250e4[3]/mMoveFrame,f32,10,20,2,update count x2
+Param/Insect/MuseumLocustParams.byml,0xb8b250e4[4]/mRegistSpeed,f32,0.015625,0.00390625,0.25,acceleration/gravity x1/4
+Param/Insect/MuseumLocustParams.byml,0xb8b250e4[4]/mMoveFrame,f32,10,20,2,update count x2
+Param/Insect/MuseumLocustParams.byml,0xb8b250e4[5]/mRegistSpeed,f32,0.015625,0.00390625,0.25,acceleration/gravity x1/4
+Param/Insect/MuseumLocustParams.byml,0xb8b250e4[5]/mMoveFrame,f32,10,20,2,update count x2
+Param/Insect/MuseumLocustParams.byml,0xb8b250e4[6]/mRegistSpeed,f32,0.015625,0.00390625,0.25,acceleration/gravity x1/4
+Param/Insect/MuseumLocustParams.byml,0xb8b250e4[6]/mMoveFrame,f32,10,20,2,update count x2
+Param/Insect/MuseumMovePointToPointParams.byml,0x35ab039e/mGyrateAngleYStepDeg,f32,15,7.5,0.5,speed x1/2
+Param/Insect/MuseumMovePointToPointParams.byml,0x35ab039e/mJumpFrame,f32,20,40,2,update count x2
+Param/Insect/MuseumMovePointToPointParams.byml,0x35ab039e/mRegistSpeed,f32,0.015625,0.00390625,0.25,acceleration/gravity x1/4
+Param/Insect/MuseumMovePointToPointParams.byml,0x35ab039e/mStopSecMax,f32,0.1,0.2,2,update count x2
+Param/Insect/MuseumMovePointToPointParams.byml,0xb8b250e4[0]/mGyrateAngleYStepDeg,f32,30,15,0.5,speed x1/2
+Param/Insect/MuseumMovePointToPointParams.byml,0xb8b250e4[0]/mJumpFrame,f32,20,40,2,update count x2
+Param/Insect/MuseumMovePointToPointParams.byml,0xb8b250e4[0]/mRegistSpeed,f32,0.02,0.005,0.25,acceleration/gravity x1/4
+Param/Insect/MuseumMovePointToPointParams.byml,0xb8b250e4[0]/mStopSecMax,f32,1,2,2,update count x2
+Param/Insect/MuseumMovePointToPointParams.byml,0xb8b250e4[0]/mStopSecMin,f32,0.4,0.8,2,update count x2
+Param/Insect/MuseumSkateOnTheWaterParams.byml,0x35ab039e/mSpeedChaseStep,f32,0.007813,0.00195325,0.25,acceleration/gravity x1/4
+Param/Insect/MuseumSkateOnTheWaterParams.byml,0x35ab039e/mGyrateChaseAngleYMaxDeg,f32,4.394531,2.1972654,0.5,speed x1/2
+Param/Insect/MuseumSkateOnTheWaterParams.byml,0xb8b250e4[0]/mSpeedChaseStep,f32,0.007813,0.00195325,0.25,acceleration/gravity x1/4
+Param/Insect/MuseumSkateOnTheWaterParams.byml,0xb8b250e4[0]/mStopSecMax,f32,3,6,2,update count x2
+Param/Insect/MuseumSkateOnTheWaterParams.byml,0xb8b250e4[0]/mGyrateChaseAngleYMaxDeg,f32,4.394531,2.1972654,0.5,speed x1/2
+Param/Insect/MuseumSkateOnTheWaterParams.byml,0xb8b250e4[1]/mSpeedChaseStep,f32,0.007813,0.00195325,0.25,acceleration/gravity x1/4
+Param/Insect/MuseumSkateOnTheWaterParams.byml,0xb8b250e4[1]/mStopSecMax,f32,3,6,2,update count x2
+Param/Insect/MuseumSkateOnTheWaterParams.byml,0xb8b250e4[1]/mGyrateChaseAngleYMaxDeg,f32,4.394531,2.1972654,0.5,speed x1/2
+Param/Insect/MuseumSkateOnTheWaterParams.byml,0xb8b250e4[2]/mBorderSpeed,f32,0.3,0.15,0.5,speed x1/2
+Param/Insect/MuseumSkateOnTheWaterParams.byml,0xb8b250e4[2]/mSpeedChaseStep,f32,0.007813,0.00195325,0.25,acceleration/gravity x1/4
+Param/Insect/MuseumSkateOnTheWaterParams.byml,0xb8b250e4[2]/mStopSecMax,f32,1,2,2,update count x2
+Param/Insect/MuseumSkateOnTheWaterParams.byml,0xb8b250e4[2]/mGyrateChaseAngleYMaxDeg,f32,360,180,0.5,speed x1/2
+Param/Insect/MuseumWaitWithThreatenParams.byml,0xb8b250e4[0]/mThreatenSec,f32,1.5,3,2,update count x2
+Param/Insect/MuseumWaitWithThreatenParams.byml,0xb8b250e4[1]/mThreatenSec,f32,1.5,3,2,update count x2
+Param/Insect/MuseumWaitWithThreatenParams.byml,0xb8b250e4[2]/mThreatenSec,f32,1,2,2,update count x2
+Param/Insect/MuseumWaitWithThreatenParams.byml,0xb8b250e4[3]/mThreatenSec,f32,1,2,2,update count x2
+Param/Insect/MuseumWormParams.byml,0x35ab039e/mMaxWaitTime,f32,1,2,2,update count x2
+Param/Insect/MuseumWormParams.byml,0x35ab039e/mMaxMoveTime,f32,15,30,2,update count x2
+Param/Insect/MuseumWormParams.byml,0x35ab039e/mMinMoveTime,f32,5,10,2,update count x2
+Param/Insect/MuseumWormParams.byml,0x35ab039e/mSpeed,f32,0.09375,0.046875,0.5,speed x1/2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[0]/mMaxWaitTime,f32,3,6,2,update count x2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[0]/mMaxMoveTime,f32,30,60,2,update count x2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[0]/mMinMoveTime,f32,30,60,2,update count x2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[0]/mSpeed,f32,0.1,0.05,0.5,speed x1/2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[1]/mMaxWaitTime,f32,5,10,2,update count x2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[1]/mMinWaitTime,f32,1,2,2,update count x2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[1]/mMaxMoveTime,f32,1,2,2,update count x2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[1]/mMinMoveTime,f32,0.5,1,2,update count x2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[1]/mSpeed,f32,0.1,0.05,0.5,speed x1/2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[2]/mMaxWaitTime,f32,1,2,2,update count x2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[2]/mMaxMoveTime,f32,4,8,2,update count x2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[2]/mMinMoveTime,f32,4,8,2,update count x2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[2]/mSpeed,f32,0.09375,0.046875,0.5,speed x1/2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[3]/mMaxWaitTime,f32,2,4,2,update count x2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[3]/mMaxMoveTime,f32,15,30,2,update count x2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[3]/mMinMoveTime,f32,5,10,2,update count x2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[3]/mSpeed,f32,0.02,0.01,0.5,speed x1/2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[4]/mMaxWaitTime,f32,1,2,2,update count x2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[4]/mMaxMoveTime,f32,15,30,2,update count x2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[4]/mMinMoveTime,f32,5,10,2,update count x2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[4]/mSpeed,f32,0.09375,0.046875,0.5,speed x1/2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[5]/mMaxWaitTime,f32,5,10,2,update count x2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[5]/mMinWaitTime,f32,1,2,2,update count x2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[5]/mMaxMoveTime,f32,2,4,2,update count x2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[5]/mMinMoveTime,f32,0.5,1,2,update count x2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[5]/mSpeed,f32,0.1,0.05,0.5,speed x1/2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[6]/mMaxWaitTime,f32,3,6,2,update count x2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[6]/mMinWaitTime,f32,1,2,2,update count x2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[6]/mMaxMoveTime,f32,2,4,2,update count x2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[6]/mMinMoveTime,f32,0.5,1,2,update count x2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[6]/mSpeed,f32,0.1,0.05,0.5,speed x1/2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[7]/mMaxWaitTime,f32,1,2,2,update count x2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[7]/mMinWaitTime,f32,1,2,2,update count x2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[7]/mMaxMoveTime,f32,1,2,2,update count x2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[7]/mMinMoveTime,f32,0.5,1,2,update count x2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[7]/mSpeed,f32,0.3,0.15,0.5,speed x1/2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[8]/mMaxWaitTime,f32,1,2,2,update count x2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[8]/mMinWaitTime,f32,1,2,2,update count x2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[8]/mMaxMoveTime,f32,3,6,2,update count x2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[8]/mMinMoveTime,f32,1.5,3,2,update count x2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[8]/mSpeed,f32,0.08,0.04,0.5,speed x1/2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[9]/mMaxWaitTime,f32,1,2,2,update count x2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[9]/mMaxMoveTime,f32,15,30,2,update count x2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[9]/mMinMoveTime,f32,5,10,2,update count x2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[9]/mSpeed,f32,0.09375,0.046875,0.5,speed x1/2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[10]/mMaxWaitTime,f32,1,2,2,update count x2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[10]/mMaxMoveTime,f32,15,30,2,update count x2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[10]/mMinMoveTime,f32,5,10,2,update count x2
+Param/Insect/MuseumWormParams.byml,0xb8b250e4[10]/mSpeed,f32,0.09375,0.046875,0.5,speed x1/2
+Param/Npc/NpcActivityParam.byml,mFacePanelReactionIntervalTime,s32,60,120,2,update count x2
+Param/Npc/NpcActivityParam.byml,mMinimumFtrFrameInHousing,s32,300,600,2,update count x2
+Param/Npc/NpcActivityParam.byml,mMinimumSitFrameInHousing,s32,900,1800,2,update count x2
+Param/Npc/NpcActivityParam.byml,mUpdateFrame,s32,15,30,2,update count x2
+Param/Npc/NpcActivityParam.byml,mConversationEndFrameMax,s32,30,60,2,update count x2
+Param/Npc/NpcActivityParam.byml,mConversationEndReactDelayFrame,s32,12,24,2,update count x2
+Param/Npc/NpcActivityParam.byml,mSpeakerMegaphoneNoticeFrame,s32,30,60,2,update count x2
+Param/Npc/NpcActivityParam.byml,mConversationReactionFrameMax,s32,30,60,2,update count x2
+Param/Npc/NpcActivityParam.byml,mGroupPlayFireworkIntervalMax,s32,90,180,2,update count x2
+Param/Npc/NpcActivityParam.byml,mGroupPlayFireworkIntervalMin,s32,30,60,2,update count x2
+Param/Npc/NpcActivityParam.byml,mPersonalSpaceReactionTime,s32,90,180,2,update count x2
+Param/Npc/NpcActivityParam.byml,mTkkLiveStartClapDelayFrame,s32,1,2,2,update count x2
+Param/Npc/NpcActivityParam.byml,mFtrSwitchResponseFrameMin,s32,5,10,2,update count x2
+Param/Npc/NpcActivityParam.byml,mFtrSwitchResponseFrameMax,s32,15,30,2,update count x2
+Param/Npc/NpcActivityParam.byml,mTkkLiveEndClapDelayFrame,s32,1,2,2,update count x2
+Param/Npc/NpcActivityParam.byml,mConversationTalkFrameMax,s32,120,240,2,update count x2
+Param/Npc/NpcActivityParam.byml,mConversationTalkFrameMin,s32,60,120,2,update count x2
+Param/Npc/NpcActivityParam.byml,mChristmasBasicTimerMax,s32,240,480,2,update count x2
+Param/Npc/NpcActivityParam.byml,mChristmasBasicTimerMin,s32,120,240,2,update count x2
+Param/Npc/NpcActivityParam.byml,mSpeakerMegaphoneMiddleReactionDelay,s32,10,20,2,update count x2
+Param/Npc/NpcActivityParam.byml,mChristmasSmilingTimerMax,s32,600,1200,2,update count x2
+Param/Npc/NpcActivityParam.byml,mChristmasSmilingTimerMin,s32,240,480,2,update count x2
+Param/Npc/NpcActivityParam.byml,mTkkLiveLightDownDelayFrame,s32,1,2,2,update count x2
+Param/Npc/NpcActivityParam.byml,mGroupPlayFireworkWaitFrameMin,s32,150,300,2,update count x2
+Param/Npc/NpcActivityParam.byml,mGroupPlayFireworkWaitFrameMax,s32,240,480,2,update count x2
+Param/Npc/NpcActivityParam.byml,mChristmasAbsentMindednessTimeMin,s32,180,360,2,update count x2
+Param/Npc/NpcActivityParam.byml,mChristmasAbsentMindednessTimeMax,s32,320,640,2,update count x2
+Param/Npc/NpcActivityParam.byml,mWanderFrameInHousing,s32,600,1200,2,update count x2
+Param/Npc/NpcActivityParam.byml,mWateringWaitFrameMax,s32,300,600,2,update count x2
+Param/Npc/NpcActivityParam.byml,mWateringWaitFrameMin,s32,90,180,2,update count x2
+Param/Npc/NpcActivityParam.byml,mMinimumReadFrameInHousing,s32,1200,2400,2,update count x2
+Param/Npc/NpcActivityParam.byml,mReactionDelayFrameMin,s32,5,10,2,update count x2
+Param/Npc/NpcActivityParam.byml,mReactionDelayFrameMax,s32,15,30,2,update count x2
+Param/Npc/NpcActivityParam.byml,mTkkLiveEndClapKeepFrame,s32,5,10,2,update count x2
+Param/Npc/NpcActivityParam.byml,mSitBenchFrame,s32,900,1800,2,update count x2
+Param/Npc/NpcActivityParam.byml,mChristmasExcitedTimeMax,s32,180,360,2,update count x2
+Param/Npc/NpcActivityParam.byml,mChristmasExcitedTimeMin,s32,160,320,2,update count x2
+Param/Npc/NpcActivityParam.byml,mTkkLiveLightUpDelayFrame,s32,1,2,2,update count x2
