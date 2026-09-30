@@ -39,7 +39,7 @@ I used multiple expensive Claude Code subscriptions to fan out agents operating 
 - At these clocks the stock fan runs at or near full speed, which is loud. NX-FanControl (Ultrahand/Tesla overlay) lets you set a quieter fan curve. It is untested with this mod, and a quieter curve means higher temperatures (about 59 °C SoC at these clocks with a moderate curve).
 - Newer Switch models (2019 V2, Lite, OLED) are untested.
 
-**PC:** Ryujinx (tested on Ryubing Canary 1.3.351) with the 3.0.3 update installed, on a machine that holds a steady 60. VSync mode: Switch (the default); do not use an unlimited or turbo frame rate. Other emulators are untested.
+**PC:** Ryujinx (tested on Ryubing Canary 1.3.351) or Citron (tested on stable 2026.04.18) with the 3.0.3 update installed, on a machine that holds a steady 60. VSync mode: Switch (the default); do not use an unlimited or turbo frame rate. Other emulators are untested.
 
 ## Other mods
 
@@ -66,6 +66,8 @@ Download the zip for your platform from [Releases](https://github.com/tmouh/acnh
 Removing only one of them runs the game at double speed or half speed. Deleting both is the only way to play without the mod.
 
 **Ryujinx:** right-click the game, **Open Mods Directory**, copy the `ACNH 60 FPS + SpeedFix` folder from the Ryujinx zip (inside `mods/contents/01006F8002326000/`) into it, then right-click the game, **Manage Mods**, and make sure it is enabled. On Linux or Steam Deck, use the folder that Open Mods Directory opens.
+
+**Citron:** right-click the game, **Open Mod Data Location**, and copy the same `ACNH 60 FPS + SpeedFix` folder from the Ryujinx zip (inside `mods/contents/01006F8002326000/`) into it. Make sure it is ticked under the game's **Properties** > **Add-Ons**.
 
 ## Known differences
 
