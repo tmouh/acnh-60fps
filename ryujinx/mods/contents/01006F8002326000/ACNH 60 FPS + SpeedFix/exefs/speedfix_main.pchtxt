@@ -3,14 +3,19 @@
 // Rules: speeds per update x1/2, accelerations x1/4, update counts x2, per-update rate r -> 1 - sqrt(1 - r)
 @flag print_values
 @flag offset_shift 0x100
-@enabled
+
 // Model animation default step (models without their own rate): frames per update 1.0 -> 0.5
+@enabled
 0374F700 08102C1E
+
 // River surface ripples (1469c10): spawn check on update counts that are multiples of 10 -> 20
+@enabled
 01469C48 8B999952
 01469C4C 8B99A172
 01469C5C 29098913
+
 // River foam spawner 1469050: called every update -> on even update counts only (stub in padding)
+@enabled
 01468A5C C80240F9
 01468A60 085141B9
 01468A64 68040014
@@ -21,48 +26,74 @@
 014692BC 2EF7FF17
 01466F74 37080094
 01466F78 BC060014
+
 // Door approach (NPC Act::cStructureIn, player DoorIn, GoInFittingRoom): minimum step per update 0.2 -> 0.1
+@enabled
 01D4FA74 A8999952
 01D4FA78 88B9A772
 022BE34C A8999952
 022BE350 88B9A772
 022D3DC0 A8999952
 022D3DC4 88B9A772
+
 // Wind sway of items hanging on trees (fruit, money-tree bags): phase per update 6 -> 3 degrees x wind
+@enabled
 010CABD8 0A10211E
+
 // Autosave icon (SaveIcon): display timer 60 -> 120 updates
+@enabled
 02E0BBB8 080F8052
+
 // Point light flicker (mCycleA / mCycleB): phase per update pi x cycle -> pi/2 x cycle
+@enabled
 014EB6EC 28F9A772
+
 // Fishing bite window (fish State::cHit): countdown step -1.0 -> -0.5
+@enabled
 012B0E84 01103C1E
+
 // Dialogue text speed: letters per update 1.2 -> 0.6 (hold B 2.4 -> 1.2; CJK 2/3 -> 1/3, 2.0 -> 1.0)
+@enabled
 01AFCC20 49D5A772
 01AFCC38 29E3A772
 01AFCC44 49D5A772
 01AFCC54 01102E1E
 01AFCC6C 28F3A772
 01AFCC74 02102E1E
+
 // Dialogue text speed, per-conversation reset: 1.2 -> 0.6, hold B 2.4 -> 1.2, CJK 2/3 -> 1/3, 2.0 -> 1.0
+@enabled
 01AFDC88 29E3A772
 01AFDC94 49D5A772
 01AFDCA8 29F3A772
 01AFDCB4 01102E1E
+
 // Dialogue pause tags (timed in 1/60 s): countdown per update 2 -> 1
+@enabled
 01AFDFB4 2A050051
+
 // Hop over holes and streams (JumpValley 230eab0): duration counted in updates, doubled (frames + frames)
+@enabled
 0230ECF0 1401080B
 0230ECF4 1F2003D5
+
 // Pole vault (LongStickJump 239c7a0): jump duration counted in updates, doubled (fcvtzu #1 = frames x 2)
+@enabled
 0239C9F8 08FC191E
+
 // Warp pipe jump in (23ea320) and pop out (23ee2d0): duration doubled (fcvtzu #1), fallback 18 -> 36 updates
+@enabled
 023EA668 08FC191E
 023EA678 94048052
 023EEE8C 08FC191E
 023EEE9C 95048052
+
 // Sea entry and exit (EnterInWater, JumpOutWater; mover 23693c8): duration doubled (fcvtzu #1 = frames x 2)
+@enabled
 023695DC 09FC191E
+
 // Villager stand waits and HHP villager waits (wait, wait-action, chair/bed seconds): seconds x 30 -> x 60
+@enabled
 01D8AEE4 0BFC181E
 01D8B884 0BFC181E
 01E0E2F0 17FC181E
@@ -74,22 +105,32 @@
 01EB38D4 08FC181E
 01EB83EC 18FC181E
 01EC4180 08FC181E
+
 // Fishing float cast (1640998): vy x1/2, gravity x1/4, chase 0.11 -> 0.0566, max/min step 10/0.4 -> 5/0.2
+@enabled
 01640988 09F8A752
 01640BA4 89A9B772
 01640B34 29EC9A52
 01640B38 E9ACA772
 01640B60 0390221E
 01640B78 89C9A772
+
 // Fish shadow Wait state (12b407c): action counter step 1.0 -> 0.5 per update (durations = seconds x 30)
+@enabled
 012B40A0 01102C1E
+
 // Fish shadow DriftRiver / DriftSea timers (+0x42c): counter step 1.0 -> 0.5 per update
+@enabled
 012AE484 08102C1E
 012AEC84 09102C1E
+
 // Particle effects (nn::vfx emitter set update 23de30): frame rate per update x1/2 (in 2 alignment nops)
+@enabled
 0023DE68 01102C1E
 0023DE6C 0809211E
+
 // Villager timers in shops, museum, tailor, HHP hotel and Pascal (rand x 30 + base frames): x 60, bases x2
+@enabled
 01DCB0E4 89078052
 01DCB0D0 0A2C8152
 01DCB5CC 89078052
@@ -154,31 +195,43 @@
 01E26DEC 0B0F8052
 01E76984 89078052
 01E76964 0A4B8052
+
 // Tree shake step-in (TreeSwingReady 23e0718): grab motion starts after 7 -> 14 updates
+@enabled
 023E0750 1F390071
+
 // Walk / run / dash animation choice (thresholds 0.7 / 1.25 / 1.8): speed per update passed in x2
+@enabled
 02316A00 0029281E
 02316D08 00401D91
 02316D0C 0829281E
 02319B68 00401D91
 02319B6C 0829281E
+
 // UI time step (every layout animation and UI control): frames per update 1.0 -> 0.5
+@enabled
 03A1EC74 08E0A752
+
 // Environment clock and plant wind sway (153b670): frames / 30 -> / 60 for seconds and the 3 wind phases
+@enabled
 0153E260 00E43F5F
 0153EBDC 00E43F5F
 0153E640 0829281E
 0153E678 1F2003D5
+
 // HHP villager wait actions (min + rand x (max - min)): max seconds x 30 -> x 60,
 // chair/bed +900 -> +1800 frames
+@enabled
 01E0E324 29FC181E
 01E0EBE0 28FC181E
 01E9BB7C 28FC181E
 01EB8418 28FC181E
 01EA0B24 08211C11
 01EA12DC 29211C11
+
 // Dialogue window: first letter after 3 -> 7 updates, pause tags 10/7 and 10/8 countdown 2 -> 1 per update,
 // choice list post-selection wait 14 -> 28 (no-wait value 15 -> 29), quest jingle holds 20 -> 40 updates
+@enabled
 01AFA0B0 1F190071
 01AFA53C 6C050051
 01AFB0C0 1F710071
@@ -186,21 +239,29 @@
 01AFA2E0 09058052
 01AFA388 09058052
 01B01E58 08058052
+
 // Animalese voice scheduler: timeline advance per update 1600 -> 800 samples, syllable length unchanged
+@enabled
 028BB9F8 DF820CF1
 028BC424 0AC88052
 028BC428 08F97FD3
+
 // Time steps 1/30 -> 1/60 (cloth, helper bones, environment integrator 14b947c);
 // water waves: interval / 60 -> / 120
+@enabled
 00604828 0991A772
 006202DC 0991A772
 014B9D5C 0891A772
 014C954C 085EA852
+
 // Fish timers: hooked fish fight counter (+0x43c) step 1.0 -> 0.5, aquarium fish countdown -1.0 -> -0.5
+@enabled
 012ADBD0 08102C1E
 012BEB18 0B103C1E
 012BF254 02103C1E
+
 // Villager frame timers x2 (stand waits, NpcFollower countdown +0x1bc, activity waits, seasonal events)
+@enabled
 01D8B994 0BFC181E
 01D8C030 0BFC181E
 01D8C334 0BFC181E
@@ -225,8 +286,10 @@
 01E56698 08411A11
 01E5694C 89078052
 01E569F4 08411A11
+
 // Player timers: furniture push/pull/rotate ready 21 -> 42, hold delay 10 -> 20, tool pull-out 20 -> 40,
 // axe step-in 11 -> 22, slingshot drop 120 -> 240 updates, put-away shrink wait frames - 3 -> frames - 6
+@enabled
 022E42C4 1FA90071
 022E5A74 1FA90071
 022E62AC 1FA90071
@@ -236,8 +299,10 @@
 023CA010 1FC10371
 022DFCB8 0110331E
 0238DB90 0110331E
+
 // Field/indoor cameras: lockout 10 -> 20, auto-behind 30/6 -> 60/12, height chase 0.25 -> 0.1328125, steps x1/2
 // Camera app first-person yaw: speed x1/2, accel cap x1/4, chase 0.5 -> 0.296875, decay 0.6 -> sqrt(0.6)
+@enabled
 007AFEE4 88028052
 007AFD64 88028052
 007AFD34 8A078052
@@ -254,8 +319,10 @@
 007BB830 02102C1E
 007BB850 087F8952
 007BB854 C8E8A772
+
 // Falling field items: arc launch (10cf5d8) 10 -> 20 updates (with bounce 15 -> 30), launch speeds x1/2,
 // gravity x1/4 (default 0.2 -> 0.05, unrolled sum 55 -> 210), vanish state 10 -> 20 updates, scale step x1/2
+@enabled
 010CF86C 88028052
 010CF7D8 C9038052
 010CF874 49018052
@@ -283,48 +350,76 @@
 010E9D2C 6D80FF17
 010CB2CC 8A028052
 010CA1E4 88A9A772
+
 // Animation-sequence effect and sound triggers: frame passed to the trigger compare x1/2 (stub in padding)
+@enabled
 03740670 69FFFF17
 03740414 20C19F1A
 03740418 007C0113
 0374041C C0035FD6
+
 // Rock hits: item window countdown (field-object record +0x6a) 270 -> 540 updates
+@enabled
 010E3084 89438052
+
 // Number roll (SimpleNumCounter 3353b14): step per update = distance / 15 -> / 30
+@enabled
 03353B5C 01D0271E
+
 // Bell / mile / Poki / ticket popups (*TimerWait): hold after the number roll 20 -> 40 updates
+@enabled
 02B107C4 08058052
 02B10BF4 08058052
 02B11230 08058052
 02B118AC 08058052
+
 // Fish shadow swim mover (12b90c8): chase 0.05 -> 0.0253, heading 0.2 -> 0.1056, step cap 0.3 -> 0.15
+@enabled
 012B910C 28C3A772
 012B914C E9D18652
 012B9150 09BBA772
 012B91B4 68A28D52
 012B91B8 E899A772
+
 // Fish shadow water-flow drift (Wait, DriftRiver, DriftSea): position += flow x 0.2 -> x 0.1 per update
+@enabled
 012B47EC 88B9A772
 012AE520 88B9A772
 012AED24 88B9A772
+
 // Fish shadow drift swim (12b9488): step 0.08 -> 0.04 units per update
+@enabled
 012B9554 68A4A772
+
 // Fish shadow SpeedDown timeout (+0x3bc): 90 -> 180 updates
+@enabled
 012B569C 8A66A8D2
+
 // Fish shadow approach to the float (Pick, state 6): chase 0.15 -> 0.078, cap 0.35 -> 0.175 per update
+@enabled
 012B1B04 28CB9A52
 012B1B08 E8B3A772
 012B1B40 68C6A772
+
 // Hooked fish wobble (Captured, state 8): phase 20 -> 10 degrees per update
+@enabled
 012ADBD4 0190241E
+
 // Fishing float during the fight (Fight 164179c): blend toward the fish 0.04 -> 0.02 per update
+@enabled
 016418D4 6894A772
+
 // Catch pull-out (RodCatch 23b79c4): start delay 4 -> 8 updates, fish scale blend 0.05 -> 0.025 per update
+@enabled
 023B7DCC 1F230071
 023B8130 8899A772
+
 // Catch pull-out: fish arc and scale ramp length (rodata 4002e40) 12 -> 24 updates
+@enabled
 04002E40 18000000
+
 // Catch pull-out tables (4b48308, 8 x 5): vy x1/2, gravity x1/4, chase 1 - sqrt(1 - r), floor/cap x1/2
+@enabled
 04B48308 0000A03F
 04B4830C 0AD7233D
 04B48310 7631523D
@@ -365,7 +460,9 @@
 04B4839C 8F36D83D
 04B483A0 0000803E
 04B483A4 0000403F
+
 // Fishing float Catch tables (4076d3c, 6 x 5): vy x1/2, gravity x1/4, chase 1 - sqrt(1 - r), floor/cap x1/2
+@enabled
 04076D3C 3333B33F
 04076D40 EC51383D
 04076D44 3FAA3C3D
@@ -396,10 +493,14 @@
 04076DA8 8F36D83D
 04076DAC CDCCCC3D
 04076DB0 0000803F
+
 // Fishing float Catch launch (16422b4): distance term of the upward speed x0.2 -> x0.1
+@enabled
 01642720 88B9A772
+
 // House free look: yaw / pitch target speed x1/2, acceleration caps x1/4, decay 0.8 -> sqrt(0.8),
 // velocity chase 0.5 -> 0.296875, pitch chase 0.25 -> 0.1328125 (nearest fmov to 1 - sqrt(1 - r))
+@enabled
 007B2860 1F2003D5
 007B2864 01702A1E
 007B286C 02102C1E
@@ -412,8 +513,10 @@
 007B28FC 88ECA772
 007B293C 0130281E
 007B2948 0130281E
+
 // Camera app first-person pitch: target 0.015 -> 0.0075, accel cap 2 -> 0.5, decay 0.55 -> sqrt(0.55),
 // velocity chase 0.5 -> 0.296875, pitch chase 0.25 -> 0.1328125
+@enabled
 007BB7C4 A97EA772
 007BB810 A87EA772
 007BB8EC 01702A1E
@@ -421,9 +524,13 @@
 007BB908 88599B52
 007BB90C A8E7A772
 007BB974 0130281E
+
 // Fishing float bob while waiting (Drift state): phase 0.2 -> 0.1 radians per update
+@enabled
 01640F44 89B9A772
+
 // Crafting and cooking item pops: burst length 100 -> 200 updates, pop times rand(0..99) -> rand(0..199)
+@enabled
 0112383C 0919C0D2
 01123D9C 0819C0D2
 011241D0 0A19C0D2
@@ -431,7 +538,9 @@
 01123DF8 0D198052
 01123E70 0D198052
 01124228 0F198052
+
 // Warp pipe entry turn: step per update max 30 -> 15, min 0.5 -> 0.25 degrees, snap window +-0.5 -> +-0.25
+@enabled
 023EAD4C 145B9052
 023EAD50 B405A072
 023EAD70 2CB68052
@@ -442,30 +551,42 @@
 023EADA0 4D55A172
 023EADA4 0BAA8A52
 023EADA8 ABAABE72
+
 // Furniture leaf shaken from a tree (item state 16): flight 50 -> 100 updates, flutter phase per update x1/2
+@enabled
 010CB390 880C8052
 010CA254 6994A972
+
 // Villager wait duration (setter +0x308, brain +0xae5c): n x 30 -> n x 60 frames (shift and subtract)
+@enabled
 01DDB554 28651A53
 01DDB558 0109094B
+
 // Villager queued short waits (goal type 1, duration +0xec): 30 -> 60 updates
+@enabled
 01D62598 88078052
 01D68034 89078052
 01DB2418 89078052
 01DFCAF8 89078052
 01E3CFEC 88078052
+
 // Slingshot shot (bullet State::cShooting): decay 0.9 -> sqrt(0.9), min speed 1 -> 0.5, lifetime 32 -> 64,
 // launch speed 6 -> 6r/(1+r) = 2.921 with r = sqrt(0.9)
+@enabled
 023C96E0 E009001C
 023C981C A1F13A40
 0164F7CC 289D9B52
 0164F7D0 48EEA772
 0164F7DC 04102C1E
 0164F880 1FFD0071
+
 // Automatic tool pull-out (ToolPullout): animation event interval in updates x2 (fcvtzu #1)
+@enabled
 02379F74 09FC191E
+
 // Aquarium fish: animation blend and speed steps per update x1/2, default wait range 10..60 -> 20..120,
 // wait 10 + rand(0..49) -> 20 + rand(0..99), stopping decay on even updates only (stubs in padding)
+@enabled
 012BD6E0 88A9A772
 012BD704 88A9B772
 012C9CDC A88EB772
@@ -490,7 +611,9 @@
 012B87CC 22440014
 012C9854 E8960036
 012C9858 C4040014
+
 // Aquarium fish paths: AntiStream height step x1/2, pitch gain 0.03 -> 0.0151, RoundsSwimming bob x1/2
+@enabled
 012BEA8C 6874A772
 012BEAF4 6874B772
 012CAD10 88A9A772
@@ -505,7 +628,9 @@
 012BEFBC E88EA772
 012BF024 48349452
 012BF028 E88EA772
+
 // Aquarium fish turning: pitch return 0.03 -> 0.0151, Round / KeepSwimming gain 0.1 -> 0.0513, roll cap x1/2
+@enabled
 012BE870 48349452
 012BE874 E88EA772
 012CABAC 4A349452
@@ -522,11 +647,15 @@
 012C3DB8 CC03A072
 012C3DF0 4BCE9E52
 012C3DF4 2BFCBF72
+
 // Museum water insects: pose gain per unit of speed, beetle 1.5 -> 3.0, skater 1.2 -> 2.4 (speed is x1/2)
+@enabled
 017972B0 0210211E
 017973A8 2903A872
+
 // Museum locusts and crawlers: turn speeds x1/2, crawler turn acceleration x1/4, fall speed cap x1/2,
 // locust jump launch speed + acceleration x 0.5 (semi-implicit Euler correction, stubs in padding)
+@enabled
 01794830 C856A972
 017999A0 C856A972
 01799F2C C856A972
@@ -542,16 +671,24 @@
 017981EC 1A040014
 01799254 621604BD
 01799258 DEEDFF17
+
 // Separate layout runtime (lytManager::calc, e.g. the ABD keypad): time step per update 1.0 -> 0.5
+@enabled
 031D1A80 00102C1E
+
 // Menu key repeat (common input context): initial hold 10 -> 20 updates, repeat interval 4 -> 8 updates
+@enabled
 02AEEEEC 880280D2
 02AEEEF8 0801C0F2
+
 // Item preview rotation (shared handler 32baa58: design editor, shops, catalogs, crafting): 10 -> 5 deg per update
+@enabled
 032BAB3C 0090321E
 032BAB60 0090221E
+
 // Camera app zoom / pan / height: steps and snaps x1/2, pan gain 0.4 -> 0.2254, zoom gain 0.25 -> 0.1328125,
 // D-pad roll: target x1/2, accel caps x1/4, rate 0.5 -> 0.296875, decay 0.5 -> 0.71875 (nearest fmov values)
+@enabled
 007B86D0 88A9A772
 007B8700 88A9A772
 007B8718 88A9B772
@@ -594,8 +731,10 @@
 007D2668 06102C1E
 007D2670 04103C1E
 007D280C 02F02C1E
+
 // Camera app bird's-eye indoor look: target speeds x1/2, accel caps x1/4, decay 0.8 -> sqrt(0.8),
 // velocity chase 0.5 -> 0.296875, pitch chase 0.25 -> 0.1328125
+@enabled
 007D290C 1F2003D5
 007D2924 C9259F52
 007D2928 89ECA772
@@ -610,12 +749,16 @@
 007D2AFC 00702A1E
 007D2B08 04102C1E
 007D2B10 02103C1E
+
 // Choice list opening (SelectMessageWindowTalkPage state 2): 4 extra updates before ready (counter from -5)
+@enabled
 02EAD704 89008012
 02EAD708 09B401B9
 02EAD70C C0035FD6
 02EAD734 0906F837
+
 // Pocket commands (cPocketMenu): popup-closed and first-dispatch holds 1 -> 2 updates, drop wait 5 -> 10
+@enabled
 0308C594 08D940F9
 0308C598 2BF0FF17
 03088644 09FD60D3
@@ -632,7 +775,9 @@
 0308E3AC 99F8FF17
 03075164 1F250071
 030751B4 1F290071
+
 // Warp pipe exit (JumpOut 23ee2d0), local player: first fade-in call at mPipeExitFadeInDelayFrame + 4 updates
+@enabled
 023EE76C 697A41B9
 023EE770 69010035
 023EE774 08110011
@@ -645,12 +790,18 @@
 023EE790 1F2003D5
 023EE794 1F2003D5
 023EE798 1F2003D5
+
 // Wasp swarm hover before the chase (InsectActionFieldBee Wait): 60 -> 120 updates
+@enabled
 01723468 080F8052
+
 // Wasp-nest shock turn (EmotionEffectAction): rate 0.25 -> 0.1338 (1 - sqrt(1 - r)), cap 20 -> 10 degrees
+@enabled
 022CB330 28C1A7D2
 022CB34C 0824A852
+
 // Pocket close (cPocketMenu state 4): held 5 more updates after the Out animation ends (stubs in padding)
+@enabled
 0308C49C 6EF7FF17
 0308A254 69B641B9
 0308A258 C32F0014
@@ -663,14 +814,18 @@
 03096944 68024839
 03096948 D6D6FF17
 0309694C DBD6FF17
+
 // Jump into the sea from a height (JumpInWater): vy chase floor 0.05 -> 0.0125, y chase floor 0.5 -> 0.25
+@enabled
 0236AA20 A8999952
 0236AA24 8889A772
 0236AA54 A8999952
 0236AA58 8889B772
 0236A910 09102A1E
 0236A9A4 03103A1E
+
 // Warp pipe entry (JumpIn 23ea320), local player: jump-in motion start at state update 0 -> 1
+@enabled
 023EA500 697A41B9
 023EA504 3F010071
 023EA508 0805881A
@@ -680,7 +835,9 @@
 023EA518 F49300B4
 023EA51C 1F2003D5
 023EA520 1F2003D5
+
 // Birds (BbsBirdActor 74916c): day state durations = animation frames x2 (fcvtzu #1)
+@enabled
 0074924C 08FC191E
 0074931C 08FC191E
 00749384 08FC191E
@@ -689,16 +846,26 @@
 007495F4 08FC191E
 007496C4 08FC191E
 00749794 08FC191E
+
 // Wasp-nest shock turn: snap window and minimum step 2 -> 1 degree per update
+@enabled
 022CB33C 08F0E7F2
+
 // Autosave interval (AutoSaveMgr): countdown 5400 -> 10800 updates, retry 300 -> 600
+@enabled
 025BDAB4 08468552
 025BDB4C 094B8052
+
 // Pick-up balloon: pickable-item search resumes after 5 -> 10 updates of Wait
+@enabled
 0226B2E0 1F290071
+
 // Title screen idle timeout (TitlePage cIdle): 1800 -> 3600 updates
+@enabled
 032EDEB0 08C28152
+
 // Released fish vanish (cRelease): visual scalar +0x2a0 step per update 1/15 -> 1/30, 0.05 -> 0.025
+@enabled
 00899984 08A1A772
 008999A0 8899A772
 04067FC0 CDCCCC3C
@@ -706,19 +873,29 @@
 04067FC8 CDCCCC3C
 04067FD0 CDCCCC3C
 04067FCC 8988083D
+
 // Cloud shadow and interior projector oscillators (aglprojsdw 39b6e60): phase per update x1/2 (2pi -> pi)
+@enabled
 039B6F64 2909A872
 039B6FA4 2909A872
+
 // Wind gust (sound/environment update 292dd60): relaxation gain toward the target 0.01 -> 0.005 per update
+@enabled
 0292E288 6874A772
+
 // Wind peak hold (read by plant sway and decor): decay 0.02 -> 0.01 per update
+@enabled
 0292E2E0 6884B772
+
 // Wind gust target resample (28eb478): new target when the counter reaches the period -> 2 x period
+@enabled
 028EB548 3B000014
 028EB634 2128211E
 028EB638 0020211E
 028EB63C C4FFFF17
+
 // Dialogue window close (Out state 6): 10 extra updates after the window reports closed (counter -11 to -1)
+@enabled
 01AFA900 C1EDFF17
 01AF6004 884D0235
 01AF6008 094C40B9
@@ -731,48 +908,72 @@
 01AF046C 4E430014
 01B011A4 094C00B9
 01B011A8 03E6FF17
+
 // Event flow WaitFrame (both node types): wait N + 1 -> 2N + 2 updates (N authored in 30 FPS frames)
+@enabled
 00BFFCB0 3F05086B
 00BFFCB8 6D000054
 00C4BE38 3F05086B
 00C4BE40 6D000054
+
 // Pitfall struggle (PitfallStruggle): escape limit 300 -> 600 (idle adds 1 per update)
+@enabled
 02332088 084B8052
+
 // Pitfall struggle: button press weight 6 -> 11.5 (truncated to 11, net gain over idle 5 -> 10)
+@enabled
 02330430 01F0241E
+
 // Reaction emotes with auto-end (dialogue, event-flow; helper 2438020): wait 31 -> 63 (32 -> 64 updates)
+@enabled
 024382A4 E8078052
+
 // Message window open (dialogue In state, unscheduled windows): countdown = layout frames x2 (fcvtzs #1)
+@enabled
 01AF9D08 08FC181E
+
 // Tool pull-out turn (ToolPullout): rate 0.28 -> 0.1478, snap 1 -> 0.5, cap 25 -> 12.5 degrees per update
+@enabled
 02379190 E9C2A7F2
 02379194 09E0E7F2
 023791B4 0829A852
 02379A24 E8C2A7F2
 02379A2C 08E0E7F2
 02379A48 0829A852
+
 // Scripted turns (DemoTurn 2291bdc): rate 0.28 -> 0.1478, snap 1 -> 0.5, cap 25 -> 12.5 degrees per update
+@enabled
 022BAFF8 EAC2A7F2
 022BB008 0AE0E7F2
 022BB00C 0829A852
+
 // Fishing float river drift (RodWaitHit 23b46a4): position += flow x 0.2 -> x 0.1 per update
+@enabled
 023B4D54 88B9A772
+
 // Top-of-screen banner ticker (TelopPage 32dccbc):
 // scroll speed per update 15 / 9 -> 7.5 / 4.5, ease divisor 10 -> 20
+@enabled
 032DDCAC 081EA852
 032DCE38 0050221E
 032DCEB8 0812A852
 032DB2CC 8902C0D2
+
 // Timer display colon (3364034): visible for 18 -> 36 updates after each digit change
+@enabled
 0336410C 1F910071
+
 // Timer HUD hold after 00:00 (MiniGameTimer +0x23c, all 5 seeds): 90 -> 180 updates
+@enabled
 030013E4 88168052
 02EB2054 89168052
 02E07F94 88168052
 02E080D8 88168052
 02E082B8 88168052
+
 // Menu cursor auto-repeat on 16 pages with their own hold/repeat (catalog, shops, map remove, post, date,
 // player title, NookPhone, My Designs, Critterpedia in both view modes): hold and repeat updates x2
+@enabled
 02B70B34 C90180D2
 02B70B38 C900C0F2
 02B8A594 C90180D2
@@ -806,8 +1007,10 @@
 03127E68 C900C0F2
 034066A4 C90180D2
 034066A8 C900C0F2
+
 // Message-to-message page change (Ready state 1af8800):
 // hold until 8 updates while the window is open (3 padding islands)
+@enabled
 01AF8834 8839FB34
 01AEEF64 691240F9
 01AEEF68 292940B9
@@ -818,8 +1021,10 @@
 01B01EF4 4009487A
 01B01EF8 8A4FFB54
 01B01EFC 54DFFF17
+
 // Chat balloons above players (ChatBalloonPage 2bb3680: results, call-outs, self-talk, chat, wand chant):
 // hold updates per balloon type x2 (table 4080228 and 4 inlined defaults of 150)
+@enabled
 04080228 58020000
 0408022C 2C010000
 04080230 78000000
@@ -830,35 +1035,49 @@
 02BB3C84 89258052
 02BB3E80 89258052
 02BB43A0 9B258052
+
 // Software keyboard and number keypad hold-repeat (guiKeyInputManager 31aec40): 10 / 4 -> 20 / 8 updates
+@enabled
 031AEC50 88028152
+
 // Custom design editor cursor auto-repeat (MyDesignEditCursor, d-pad and stick):
 // delay 4 -> 10, interval 1 -> 4
+@enabled
 02EE4C64 40018052
 02EE4C6C 80008052
 02EE4C74 40018052
 02EE4C7C 80008052
+
 // K.K. concert camera moves (cTkkLive 7bcb14): 30/s music-frame lengths stored x2 (stub at 7bc244)
+@enabled
 007BCC08 F603172A
 007BCC0C 8EFDFF17
 007BCD5C 3AFDFF17
 007BC244 D67A1F53
 007BC248 B60200B9
 007BC24C C5020014
+
 // K.K. concert end wait (event-flow TkkLive b23ea0): 60 -> 120 updates, 90 -> 180 on its special date
+@enabled
 00B23F94 8A168052
 00B23F98 0B0F8052
+
 // HUD hide/show holds (UI player record 3297f80): after an action or the pocket menu 15 -> 30 updates,
 // after walking 30 -> 60, meal-count guide 15 -> 30
+@enabled
 032984E8 C8038052
 032984B0 C8038052
 032982A0 89078052
 0329853C C9038052
+
 // NookPhone icon badge cycle on the HUD (SmartPhoneIcon 312dc08): badge switch every 200 -> 400 updates
+@enabled
 0312DD80 08328052
 0312DE64 08328052
+
 // K.K. concert camera orbit between the cuts (director 7d6440):
 // turn 0.2 -> 0.1 degrees per update, ease, sway, swing and drift steps halved
+@enabled
 007D6550 88B9A772
 007D6524 0890B772
 007D68C0 08294F11
@@ -867,21 +1086,31 @@
 007D694C 09610B11
 007D69C0 29754511
 007D69C4 299D2111
+
 // K.K. concert black pause before the lights (TkkLiveExit d8cc7c):
 // waits 11 updates instead of 2, restoring the 0.33 s pause
+@enabled
 00D8CCA0 DF260071
 00D8CD3C DF260071
+
 // K.K. first live closing applause (TkkFirstLiveEmoticcon, Frame 120): stored count x2 (stub at d89f44)
+@enabled
 00D88B10 0D050014
 00D89F44 08791F53
 00D89F48 68B600B9
 00D89F4C F2FAFF17
+
 // Turning around while moving (Move speed chase 23171c8): reversal gate 6 -> 12 updates
+@enabled
 02317868 1F310071
+
 // Running reversal skid gate (Move): 5 -> 10 updates
+@enabled
 02319F08 1F290071
+
 // Fishing float flying back to the rod (float Back state 1641e20): delay 4 -> 8 updates,
 // launch x1/2, gravity x1/4 (stub at 1642bf4), rate 0.08 -> 1 - sqrt(0.92), step limits x1/2
+@enabled
 01641D64 1150201E
 01641D70 0610201E
 01641D94 68FEA772
@@ -896,10 +1125,15 @@
 01642BF4 08B0B752
 01642BF8 0101271E
 01642BFC 13FDFF17
+
 // Software keyboard buttons' own hold-repeat, e.g. B to delete (ButtonEx ctor 3186a68):
 // 10 / 4 -> 20 / 8 updates
+@enabled
 03186AD8 8802A152
+
 // Movement animation choice by speed (15e4038): the per-update displacement fed to the animation sequences x2,
 // so the running skid and the stop poses switch clips at the same speeds as at 30 FPS
+@enabled
 015E41F8 0028201E
+
 @stop

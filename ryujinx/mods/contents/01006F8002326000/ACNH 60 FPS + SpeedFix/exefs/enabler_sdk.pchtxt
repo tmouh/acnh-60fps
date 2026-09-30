@@ -3,7 +3,9 @@
 // Use together with the SpeedFix code patch and parameter pack
 @flag print_values
 @flag offset_shift 0x100
-@enabled
+
 // Present interval: swap interval of each queued frame 2 -> 1 (surface setting ignored), 30 -> 60 FPS
+@enabled
 0019CFF0 2B008052
+
 @stop
