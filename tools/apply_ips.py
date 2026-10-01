@@ -23,9 +23,14 @@ def apply_ips(patch: bytes, data: bytes) -> bytes:
     buf = bytearray(data)
     i = 5
     while patch[i:i + 3] != b"EOF":
+        if i + 5 > len(patch):
+            raise SystemExit("the IPS file is truncated (no EOF marker); download it again")
         off = int.from_bytes(patch[i:i + 3], "big")
         size = int.from_bytes(patch[i + 3:i + 5], "big")
         i += 5
+        need = 3 if size == 0 else size
+        if i + need > len(patch):
+            raise SystemExit("the IPS file is truncated inside a record; download it again")
         if size == 0:  # RLE record: 2-byte count, 1-byte value
             count = int.from_bytes(patch[i:i + 2], "big")
             buf[off:off + count] = patch[i + 2:i + 3] * count

@@ -1,0 +1,7 @@
+# Keep text files byte-identical to the release zips on every system (no CRLF on Windows checkouts)
+*.pchtxt text eol=lf
+*.md text eol=lf
+*.py text eol=lf
+*.csv text eol=lf
+LICENSE text eol=lf
+*.ips binary

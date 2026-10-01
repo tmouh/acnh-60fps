@@ -1,12 +1,12 @@
-@nsobid-FF1D1C05670DB6021C85B624A710B963
-// Animal Crossing: New Horizons 3.0.3, SpeedFix (game speed corrections for 60 FPS)
+@nsobid-FCD2BB238ABE99E925B4E452DF1F41F1
+// Animal Crossing: New Horizons 3.0.2, SpeedFix (game speed corrections for 60 FPS)
 // Rules: speeds per update x1/2, accelerations x1/4, update counts x2, per-update rate r -> 1 - sqrt(1 - r)
 @flag print_values
 @flag offset_shift 0x100
 
 // Model animation default step (models without their own rate): frames per update 1.0 -> 0.5
 @enabled
-0374F700 08102C1E
+0374F6F0 08102C1E
 
 // River surface ripples (1469c10): spawn check on update counts that are multiples of 10 -> 20
 @enabled
@@ -42,7 +42,7 @@
 
 // Autosave icon (SaveIcon): display timer 60 -> 120 updates
 @enabled
-02E0BBB8 080F8052
+02E0BBA8 080F8052
 
 // Point light flicker (mCycleA / mCycleB): phase per update pi x cycle -> pi/2 x cycle
 @enabled
@@ -210,7 +210,7 @@
 
 // UI time step (every layout animation and UI control): frames per update 1.0 -> 0.5
 @enabled
-03A1EC74 08E0A752
+03A1EC64 08E0A752
 
 // Environment clock and plant wind sway (153b670): frames / 30 -> / 60 for seconds and the 3 wind phases
 @enabled
@@ -242,9 +242,9 @@
 
 // Animalese voice scheduler: timeline advance per update 1600 -> 800 samples, syllable length unchanged
 @enabled
-028BB9F8 DF820CF1
-028BC424 0AC88052
-028BC428 08F97FD3
+028BB9E8 DF820CF1
+028BC414 0AC88052
+028BC418 08F97FD3
 
 // Time steps 1/30 -> 1/60 (cloth, helper bones, environment integrator 14b947c);
 // water waves: interval / 60 -> / 120
@@ -353,25 +353,25 @@
 
 // Animation-sequence effect and sound triggers: frame passed to the trigger compare x1/2 (stub in padding)
 @enabled
-03740670 69FFFF17
-03740414 20C19F1A
-03740418 007C0113
-0374041C C0035FD6
+03740660 69FFFF17
+03740404 20C19F1A
+03740408 007C0113
+0374040C C0035FD6
 
 // Rock hits: item window countdown (field-object record +0x6a) 270 -> 540 updates
 @enabled
 010E3084 89438052
 
-// Number roll (SimpleNumCounter 3353b14): step per update = distance / 15 -> / 30
+// Number roll (SimpleNumCounter 3353b04): step per update = distance / 15 -> / 30
 @enabled
-03353B5C 01D0271E
+03353B4C 01D0271E
 
 // Bell / mile / Poki / ticket popups (*TimerWait): hold after the number roll 20 -> 40 updates
 @enabled
-02B107C4 08058052
-02B10BF4 08058052
-02B11230 08058052
-02B118AC 08058052
+02B107B4 08058052
+02B10BE4 08058052
+02B11220 08058052
+02B1189C 08058052
 
 // Fish shadow swim mover (12b90c8): chase 0.05 -> 0.0253, heading 0.2 -> 0.1056, step cap 0.3 -> 0.15
 @enabled
@@ -674,17 +674,17 @@
 
 // Separate layout runtime (lytManager::calc, e.g. the ABD keypad): time step per update 1.0 -> 0.5
 @enabled
-031D1A80 00102C1E
+031D1A70 00102C1E
 
 // Menu key repeat (common input context): initial hold 10 -> 20 updates, repeat interval 4 -> 8 updates
 @enabled
-02AEEEEC 880280D2
-02AEEEF8 0801C0F2
+02AEEEDC 880280D2
+02AEEEE8 0801C0F2
 
-// Item preview rotation (shared handler 32baa58: design editor, shops, catalogs, crafting): 10 -> 5 deg per update
+// Item preview rotation (shared handler 32baa48: design editor, shops, catalogs, crafting): 10 -> 5 deg per update
 @enabled
-032BAB3C 0090321E
-032BAB60 0090221E
+032BAB2C 0090321E
+032BAB50 0090221E
 
 // Camera app zoom / pan / height: steps and snaps x1/2, pan gain 0.4 -> 0.2254, zoom gain 0.25 -> 0.1328125,
 // D-pad roll: target x1/2, accel caps x1/4, rate 0.5 -> 0.296875, decay 0.5 -> 0.71875 (nearest fmov values)
@@ -752,29 +752,29 @@
 
 // Choice list opening (SelectMessageWindowTalkPage state 2): 4 extra updates before ready (counter from -5)
 @enabled
-02EAD704 89008012
-02EAD708 09B401B9
-02EAD70C C0035FD6
-02EAD734 0906F837
+02EAD6F4 89008012
+02EAD6F8 09B401B9
+02EAD6FC C0035FD6
+02EAD724 0906F837
 
 // Pocket commands (cPocketMenu): popup-closed and first-dispatch holds 1 -> 2 updates, drop wait 5 -> 10
 @enabled
-0308C594 08D940F9
-0308C598 2BF0FF17
-03088644 09FD60D3
-03088648 3F090071
-0308864C AE210014
-03090D04 8BC5FD54
-03090D08 1F050071
-03090D0C 24EEFF17
-0308C60C 2AF0FF17
-030886B4 09B441B9
-030886B8 09030234
-030886BC 3B170014
-0308E3A8 29D98452
-0308E3AC 99F8FF17
-03075164 1F250071
-030751B4 1F290071
+0308C584 08D940F9
+0308C588 2BF0FF17
+03088634 09FD60D3
+03088638 3F090071
+0308863C AE210014
+03090CF4 8BC5FD54
+03090CF8 1F050071
+03090CFC 24EEFF17
+0308C5FC 2AF0FF17
+030886A4 09B441B9
+030886A8 09030234
+030886AC 3B170014
+0308E398 29D98452
+0308E39C 99F8FF17
+03075154 1F250071
+030751A4 1F290071
 
 // Warp pipe exit (JumpOut 23ee2d0), local player: first fade-in call at mPipeExitFadeInDelayFrame + 4 updates
 @enabled
@@ -802,18 +802,18 @@
 
 // Pocket close (cPocketMenu state 4): held 5 more updates after the Out animation ends (stubs in padding)
 @enabled
-0308C49C 6EF7FF17
-0308A254 69B641B9
-0308A258 C32F0014
-03096164 093F8037
-03096168 293F7837
-0309616C 82000014
-03096374 69FF9F52
-03096378 69B601B9
-0309637C 4FD8FF17
-03096944 68024839
-03096948 D6D6FF17
-0309694C DBD6FF17
+0308C48C 6EF7FF17
+0308A244 69B641B9
+0308A248 C32F0014
+03096154 093F8037
+03096158 293F7837
+0309615C 82000014
+03096364 69FF9F52
+03096368 69B601B9
+0309636C 4FD8FF17
+03096934 68024839
+03096938 D6D6FF17
+0309693C DBD6FF17
 
 // Jump into the sea from a height (JumpInWater): vy chase floor 0.05 -> 0.0125, y chase floor 0.5 -> 0.25
 @enabled
@@ -862,7 +862,7 @@
 
 // Title screen idle timeout (TitlePage cIdle): 1800 -> 3600 updates
 @enabled
-032EDEB0 08C28152
+032EDEA0 08C28152
 
 // Released fish vanish (cRelease): visual scalar +0x2a0 step per update 1/15 -> 1/30, 0.05 -> 0.025
 @enabled
@@ -874,25 +874,25 @@
 04067FD0 CDCCCC3C
 04067FCC 8988083D
 
-// Cloud shadow and interior projector oscillators (aglprojsdw 39b6e60): phase per update x1/2 (2pi -> pi)
+// Cloud shadow and interior projector oscillators (aglprojsdw 39b6e50): phase per update x1/2 (2pi -> pi)
 @enabled
-039B6F64 2909A872
-039B6FA4 2909A872
+039B6F54 2909A872
+039B6F94 2909A872
 
-// Wind gust (sound/environment update 292dd60): relaxation gain toward the target 0.01 -> 0.005 per update
+// Wind gust (sound/environment update 292dd50): relaxation gain toward the target 0.01 -> 0.005 per update
 @enabled
-0292E288 6874A772
+0292E278 6874A772
 
 // Wind peak hold (read by plant sway and decor): decay 0.02 -> 0.01 per update
 @enabled
-0292E2E0 6884B772
+0292E2D0 6884B772
 
-// Wind gust target resample (28eb478): new target when the counter reaches the period -> 2 x period
+// Wind gust target resample (28eb468): new target when the counter reaches the period -> 2 x period
 @enabled
-028EB548 3B000014
-028EB634 2128211E
-028EB638 0020211E
-028EB63C C4FFFF17
+028EB538 3B000014
+028EB624 2128211E
+028EB628 0020211E
+028EB62C C4FFFF17
 
 // Dialogue window close (Out state 6): 10 extra updates after the window reports closed (counter -11 to -1)
 @enabled
@@ -951,62 +951,62 @@
 @enabled
 023B4D54 88B9A772
 
-// Top-of-screen banner ticker (TelopPage 32dccbc):
+// Top-of-screen banner ticker (TelopPage 32dccac):
 // scroll speed per update 15 / 9 -> 7.5 / 4.5, ease divisor 10 -> 20
 @enabled
-032DDCAC 081EA852
-032DCE38 0050221E
-032DCEB8 0812A852
-032DB2CC 8902C0D2
+032DDC9C 081EA852
+032DCE28 0050221E
+032DCEA8 0812A852
+032DB2BC 8902C0D2
 
-// Timer display colon (3364034): visible for 18 -> 36 updates after each digit change
+// Timer display colon (3364024): visible for 18 -> 36 updates after each digit change
 @enabled
-0336410C 1F910071
+033640FC 1F910071
 
 // Timer HUD hold after 00:00 (MiniGameTimer +0x23c, all 5 seeds): 90 -> 180 updates
 @enabled
-030013E4 88168052
-02EB2054 89168052
-02E07F94 88168052
-02E080D8 88168052
-02E082B8 88168052
+030013D4 88168052
+02EB2044 89168052
+02E07F84 88168052
+02E080C8 88168052
+02E082A8 88168052
 
 // Menu cursor auto-repeat on 16 pages with their own hold/repeat (catalog, shops, map remove, post, date,
 // player title, NookPhone, My Designs, Critterpedia in both view modes): hold and repeat updates x2
 @enabled
-02B70B34 C90180D2
-02B70B38 C900C0F2
-02B8A594 C90180D2
-02B8A598 C900C0F2
-02B9FE8C E9071EB2
-02C4E078 C90180D2
-02C4E07C C900C0F2
-02C8AD24 C90180D2
-02C8AD28 C900C0F2
-02CF113C C90180D2
-02CF1140 C900C0F2
-02E2C828 C90180D2
-02E2C82C C900C0F2
-02E49A2C C90180D2
-02E49A30 8900C0F2
-02E4AEBC 890280D2
-02E4AEC0 0901C0F2
-02E49970 890280D2
-02E49974 0901C0F2
-02E4AE98 C90180D2
-02E4AE9C 8900C0F2
-02E5C8BC E9071EB2
-02E916C8 090280D2
-02E916CC 0901C0F2
-02F91BB0 E9071EB2
-030A63B8 C90180D2
-030A63BC C900C0F2
-031059A4 C90180D2
-031059A8 C900C0F2
-03127E64 C90180D2
-03127E68 C900C0F2
-034066A4 C90180D2
-034066A8 C900C0F2
+02B70B24 C90180D2
+02B70B28 C900C0F2
+02B8A584 C90180D2
+02B8A588 C900C0F2
+02B9FE7C E9071EB2
+02C4E068 C90180D2
+02C4E06C C900C0F2
+02C8AD14 C90180D2
+02C8AD18 C900C0F2
+02CF112C C90180D2
+02CF1130 C900C0F2
+02E2C818 C90180D2
+02E2C81C C900C0F2
+02E49A1C C90180D2
+02E49A20 8900C0F2
+02E4AEAC 890280D2
+02E4AEB0 0901C0F2
+02E49960 890280D2
+02E49964 0901C0F2
+02E4AE88 C90180D2
+02E4AE8C 8900C0F2
+02E5C8AC E9071EB2
+02E916B8 090280D2
+02E916BC 0901C0F2
+02F91BA0 E9071EB2
+030A63A8 C90180D2
+030A63AC C900C0F2
+03105994 C90180D2
+03105998 C900C0F2
+03127E54 C90180D2
+03127E58 C900C0F2
+03406694 C90180D2
+03406698 C900C0F2
 
 // Message-to-message page change (Ready state 1af8800):
 // hold until 8 updates while the window is open (3 padding islands)
@@ -1022,7 +1022,7 @@
 01B01EF8 8A4FFB54
 01B01EFC 54DFFF17
 
-// Chat balloons above players (ChatBalloonPage 2bb3680: results, call-outs, self-talk, chat, wand chant):
+// Chat balloons above players (ChatBalloonPage 2bb3670: results, call-outs, self-talk, chat, wand chant):
 // hold updates per balloon type x2 (table 4080228 and 4 inlined defaults of 150)
 @enabled
 04080228 58020000
@@ -1031,22 +1031,22 @@
 04080234 2C010000
 04080238 2C010000
 0408023C 96000000
-02BB1AA8 88258052
-02BB3C84 89258052
-02BB3E80 89258052
-02BB43A0 9B258052
+02BB1A98 88258052
+02BB3C74 89258052
+02BB3E70 89258052
+02BB4390 9B258052
 
-// Software keyboard and number keypad hold-repeat (guiKeyInputManager 31aec40): 10 / 4 -> 20 / 8 updates
+// Software keyboard and number keypad hold-repeat (guiKeyInputManager 31aec30): 10 / 4 -> 20 / 8 updates
 @enabled
-031AEC50 88028152
+031AEC40 88028152
 
 // Custom design editor cursor auto-repeat (MyDesignEditCursor, d-pad and stick):
 // delay 4 -> 10, interval 1 -> 4
 @enabled
+02EE4C54 40018052
+02EE4C5C 80008052
 02EE4C64 40018052
 02EE4C6C 80008052
-02EE4C74 40018052
-02EE4C7C 80008052
 
 // K.K. concert camera moves (cTkkLive 7bcb14): 30/s music-frame lengths stored x2 (stub at 7bc244)
 @enabled
@@ -1062,18 +1062,18 @@
 00B23F94 8A168052
 00B23F98 0B0F8052
 
-// HUD hide/show holds (UI player record 3297f80): after an action or the pocket menu 15 -> 30 updates,
+// HUD hide/show holds (UI player record 3297f70): after an action or the pocket menu 15 -> 30 updates,
 // after walking 30 -> 60, meal-count guide 15 -> 30
 @enabled
-032984E8 C8038052
-032984B0 C8038052
-032982A0 89078052
-0329853C C9038052
+032984D8 C8038052
+032984A0 C8038052
+03298290 89078052
+0329852C C9038052
 
-// NookPhone icon badge cycle on the HUD (SmartPhoneIcon 312dc08): badge switch every 200 -> 400 updates
+// NookPhone icon badge cycle on the HUD (SmartPhoneIcon 312dbf8): badge switch every 200 -> 400 updates
 @enabled
-0312DD80 08328052
-0312DE64 08328052
+0312DD70 08328052
+0312DE54 08328052
 
 // K.K. concert camera orbit between the cuts (director 7d6440):
 // turn 0.2 -> 0.1 degrees per update, ease, sway, swing and drift steps halved
@@ -1126,10 +1126,10 @@
 01642BF8 0101271E
 01642BFC 13FDFF17
 
-// Software keyboard buttons' own hold-repeat, e.g. B to delete (ButtonEx ctor 3186a68):
+// Software keyboard buttons' own hold-repeat, e.g. B to delete (ButtonEx ctor 3186a58):
 // 10 / 4 -> 20 / 8 updates
 @enabled
-03186AD8 8802A152
+03186AC8 8802A152
 
 // Movement animation choice by speed (15e4038): the per-update displacement fed to the animation sequences x2,
 // so the running skid and the stop poses switch clips at the same speeds as at 30 FPS
@@ -1154,8 +1154,9 @@
 010CB42C 09028052
 010CAF64 0A00A152
 
-// Tool bounce (ToolReflect, update 2374a8c, only caller 2294170): the local player leaves for Wait 2 updates after
-// the recoil ends (state frame [x19+0x1c04] = 1 mod 4): 30 FPS hit pace, same rock items. Remote players unchanged
+// Tool bounce (ToolReflect, update 2374a8c, called only from the state's update 2294170): the local player leaves for Wait
+// 2 updates after the recoil animation ends (state frame [x19+0x1c04] = 1 mod 4), so the hit-to-hit time matches 30 FPS
+// and a rock gives the same number of items without holes. Remote players unchanged
 @enabled
 0237530C 07000014
 02375310 68065CB9
