@@ -17,7 +17,7 @@ There is no single global speed setting to turn down. The fix is to rescale ever
 - Full list: [parameters.md](parameters.md) and [parameters.csv](parameters.csv).
 
 **3. SpeedFix code patches** (`speedfix_main.pchtxt` for 3.0.3; `speedfix_main_302.pchtxt`, `speedfix_main_301.pchtxt` and `speedfix_main_300.pchtxt` for 3.0.2, 3.0.1 and 3.0.0: the same changes at each version's addresses)
-- About 770 code and data patches (4-byte words) for places where the speed is fixed in code rather than in the parameter file, such as:
+- 770 code and data patches (4-byte words) for places where the speed is fixed in code rather than in the parameter file, such as:
   - literal frame rates (30 per second, 1/30 s)
   - fixed update counts
   - per-update physics
