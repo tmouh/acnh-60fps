@@ -27,7 +27,7 @@ I used multiple expensive Claude Code subscriptions to fan out agents operating 
 
 ## Requirements
 
-**Game:** versions **3.0.0, 3.0.1, 3.0.2 and 3.0.3** (title ID `01006F8002326000`). The title screen shows the version in its top right corner (for example Ver. 3.0.3). The mod has one SpeedFix code patch per version, each made for that version's main build (3.0.3 `FF1D1C05670DB6021C85B624A710B963`, 3.0.2 `FCD2BB238ABE99E925B4E452DF1F41F1`, 3.0.1 `8F2CB7A9774959C89189C994FE4CC988`, 3.0.0 `5D913CF71EB24CB22C5105B1FA3EFD97`), and the game loads only the one for its version. 3.0.3 was tested on a Switch and on Ryujinx, Citron and Eden; 3.0.0, 3.0.1 and 3.0.2 were tested on Eden only. On older versions (2.0.x and earlier) the mod does not work: none of its code patches load, only its parameter file, so the game can run too slow or freeze.
+**Game:** versions 3.0.0 to 3.0.3. Older versions don't work, the game can run too slow or freeze.
 
 **The game must hold 60 FPS.** Game speed follows the frame rate: at 45 FPS everything runs at three-quarter speed.
 
