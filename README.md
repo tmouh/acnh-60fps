@@ -29,28 +29,25 @@ I used multiple expensive Claude Code subscriptions to fan out agents operating 
 
 **Game:** versions 3.0.0 to 3.0.3. Older versions don't work, the game can run too slow or freeze.
 
-**The game must hold 60 FPS.** Game speed follows the frame rate: at 45 FPS everything runs at three-quarter speed.
+**The game must hold 60 FPS.** Game speed follows the frame rate: at 45 FPS it runs about 25% slower.
 
 **Switch:**
 
 - Atmosphere custom firmware.
-- sys-clk with a profile for this game, running while you play (a profile does nothing while sys-clk is turned off). Tested on a 2017 Switch (V1, Atmosphere 1.11.2, firmware 22.5.0), handheld on a 15 V USB-C PD charger with the battery full: **CPU 1785 MHz, GPU 844 MHz, memory 1600 MHz** held 60 FPS.
-  - Not GPU 921: with CPU 1785 it drew more power than the charger supplies, so the battery slowly drained while plugged in. 844 holds 60 with power in balance. Below a full battery, expect slow or no charging while playing.
-  - GPU above 768 MHz needs the dock or a full-power charger (Nintendo's adapter or a 15 V USB-C PD charger). On a low-power USB charger sys-clk caps the GPU at 768 and the battery may drain while playing (untested).
-  - On battery the GPU is capped at 460 MHz, which does not hold 60. This applies as soon as you unplug the charger. Remove the mod before playing on battery.
-- Docked: at 1080p the game does not hold 60, even at sys-clk's maximum clocks (about 45 FPS on a 2017 Switch, so the game plays about 25% slower). Forcing handheld mode while docked, the TV gets 720p and the game holds 60 (ReverseNX-RT overlay, which needs SaltyNX).
-- An FPS counter for the first session helps (Status Monitor overlay, which needs SaltyNX). **Do not use FPSLocker with this mod.**
-- At these clocks the stock fan runs at or near full speed, which is loud. NX-FanControl (Ultrahand/Tesla overlay) lets you set a quieter fan curve. It is untested with this mod, and a quieter curve means higher temperatures (about 59 °C SoC at these clocks with the fan at 90-100 %).
+- sys-clk running with a profile for this game. **CPU 1785 MHz, GPU 844 MHz, memory 1600 MHz** held 60 FPS on a 2017 Switch (V1, Atmosphere 1.11.2, firmware 22.5.0), handheld on a 15 V USB-C PD charger.
+  - GPU above 768 MHz needs the dock or a full-power charger (Nintendo's adapter or a 15 V USB-C PD charger). A low-power USB charger caps the GPU at 768 and the battery may drain (untested).
+  - On battery the GPU is capped at 460 MHz, which can't hold 60. Remove the mod before playing on battery.
+- Docked at 1080p the game runs at about 45 FPS, even at maximum clocks. Forcing handheld mode (ReverseNX-RT overlay, needs SaltyNX) gives the TV 720p at 60.
+- An FPS counter (Status Monitor overlay, needs SaltyNX) helps for the first session. **Do not use FPSLocker with this mod.**
+- At these clocks the stock fan runs near full speed, which is loud. NX-FanControl can set a quieter curve, but it is untested with this mod and means higher temperatures (about 59 °C SoC at full fan).
 
-**PC:** Ryujinx (tested on Ryubing Canary 1.3.351), Citron (tested on stable 2026.04.18 and nightly 40212aa3e) or Eden (tested on v0.2.1) with update 3.0.0, 3.0.1, 3.0.2 or 3.0.3 installed, on a PC that holds a steady 60 FPS. Make sure yours does before you play with the mod: the game runs slower whenever it drops below 60 (at 45 FPS, about 25% slower). If it can't hold 60, play without the mod. Keep the emulator at normal speed:
+**PC:** Ryujinx (tested on Ryubing Canary 1.3.351), Citron (stable 2026.04.18 and nightly 40212aa3e) or Eden (v0.2.1) with update 3.0.0 to 3.0.3, on a PC that holds a steady 60 FPS. Check that yours does first; if it can't hold 60, play without the mod. Keep the emulator at normal speed:
 
-- Ryujinx: VSync mode Switch (the default); do not use an unlimited or turbo frame rate.
-- Citron: Limit Speed Percent at 100 % (the default; **Emulation** > **Configure** > **System**). Ctrl+U, or Home+Y on a controller, turns the frame-rate limit off and the game runs too fast; the status bar then shows "(Unlocked)". It is back on the next time you start the game.
-- Eden: the speed limit is 100 % by default. Eden also has a Turbo speed mode (200 % by default) that makes any game run 2x, so keep it off.
+- Ryujinx: VSync mode Switch (the default), not unlimited or turbo.
+- Citron: Limit Speed Percent at 100 % (the default; **Emulation** > **Configure** > **System**). Ctrl+U or Home+Y turns the limit off (status bar shows "(Unlocked)"), which makes the game run too fast; it resets when you restart the game.
+- Eden: speed limit 100 % (the default), and keep Turbo mode off (it runs any game 2x).
 
-Planned: a 120 FPS version for PC emulators. It will take some time.
-
-Other emulators are untested.
+Planned: a 45 FPS version, then a 120 FPS version for PC emulators. Other emulators are untested.
 
 ## Other mods
 
