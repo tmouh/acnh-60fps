@@ -121,3 +121,12 @@ The game should play at the pace of the normal game. If it does not:
 - Game languages other than English and Japanese.
 
 The patch sources are in this repo. `pack/StaticParam.pack.ips` applies to the game's own `romfs/Pack/StaticParam.pack`; the ready-made file is in the GameBanana zips. How the patches work and how to build the files yourself: [docs/how-it-works.md](https://github.com/tmouh/acnh-60fps/blob/main/docs/how-it-works.md).
+
+## License
+
+ACNH 60 FPS + SpeedFix © 2026 tmouh, licensed under [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/) (full text in [LICENSE](LICENSE)).
+
+- **Credit:** if you share this mod, or anything made from it, name "ACNH 60 FPS + SpeedFix by tmouh" and link https://gamebanana.com/mods/722295. If you changed it, say so.
+- **No commercial use.**
+
+`StaticParam.pack` in the GameBanana zips is modified game data and remains Nintendo's; the license covers the patches, tools and documentation.
