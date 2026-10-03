@@ -73,7 +73,7 @@ Try the 60 FPS version first, whether you play on Switch or an emulator. If your
 
 **Emulators:** Ryujinx (VSync mode Switch, the default), Citron (Limit Speed Percent 100 %, the default), Eden (speed limit 100 %, the default) or Astris (Apple silicon Mac, VSync on). Your computer needs to hold a steady 45 FPS. Tested on Ryubing Canary 1.3.351, Citron stable 2026.04.18 and Eden v0.2.1. Astris 1.0.29 was tested by hand on one M2 Mac with game version 3.0.3; the 45 and 60 FPS versions passed. This is a compatibility check, not a performance guarantee for other Macs. Keep the emulator at normal speed, as for the 60 FPS version.
 
-**Install:** the same steps as the 60 FPS version, with the two 45 FPS zips: `acnh-45fps-speedfix-switch-v1-2-0.zip` (Switch) and `acnh-45fps-speedfix-emulator-v1-2-0.zip` (emulators).
+**Install:** the same steps as the 60 FPS version, with the two 45 FPS zips: `45fps-switch-speedfix-v1-2-0-acnh.zip` (Switch) and `45fps-emulator-speedfix-v1-2-0-acnh.zip` (emulators).
 
 - **Switch:** copy the `atmosphere` folder from the 45 FPS Switch zip to the root of your SD card. To remove it, delete these two together:
   - `atmosphere/exefs_patches/ACNH_45FPS_SpeedFix`
