@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Apply a classic IPS patch to a file.
 
-Made for pack/StaticParam.pack.ips: it turns the game's own romfs/Pack/StaticParam.pack (from your
-3.0.3 dump) into the modified one shipped in the release zips.
+Made for pack/StaticParam.pack.ips (60 FPS) and pack45/StaticParam45.pack.ips (45 FPS): it turns the
+game's own romfs/Pack/StaticParam.pack (from your 3.0.3 dump) into the modified one shipped in the
+release zips.
 
   python apply_ips.py <patch.ips> <original file> <output file> [--force]
 
@@ -14,7 +15,10 @@ import hashlib
 import sys
 
 CLEAN_303 = "4a3d6530d6430b6b967467f16784f91700a3cd8baad5f5b28fe3c6cfe4983298"  # StaticParam.pack, ACNH 3.0.3
-PATCHED = "fe631469358c217bad2c8f38d1f473adfe75b50c259b7eb659f3b30bcf476afc"    # expected result
+PATCHED = {
+    "fe631469358c217bad2c8f38d1f473adfe75b50c259b7eb659f3b30bcf476afc",  # 60 FPS result
+    "d61748cf5edf3bdcd8e131bab9e3e08c0f1abbd51cd02dd87d3fb25e0cf6d2ed",  # 45 FPS result
+}
 
 
 def apply_ips(patch: bytes, data: bytes) -> bytes:
@@ -52,7 +56,7 @@ def main(argv):
         raise SystemExit(f"{src} is not the unmodified 3.0.3 StaticParam.pack (SHA-256 mismatch). "
                          "Dump it again from game version 3.0.3, or use --force.")
     out = apply_ips(open(patch_path, "rb").read(), data)
-    if not force and hashlib.sha256(out).hexdigest() != PATCHED:
+    if not force and hashlib.sha256(out).hexdigest() not in PATCHED:
         raise SystemExit("the result does not match the expected file; nothing was written")
     open(dst, "wb").write(out)
     print(f"wrote {dst} ({len(out):,} bytes)")

@@ -1,6 +1,6 @@
 # Measured against the unmodified game
 
-The normal game (30 FPS) and this mod (60 FPS) ran side by side on a PC (Ryujinx), from the same save and with the same button presses. Each time runs from the moment the game starts an action to the moment it ends it, read from the game's own state about every 8 ms (rows marked "on screen" were timed from recorded frames of the screen). Every row was measured on this release or on the test builds leading up to it.
+The normal game (30 FPS) and this mod (60 FPS) ran side by side in Ryujinx, from the same save and with the same button presses. Each time runs from the moment the game starts an action to the moment it ends it, read from the game's own state about every 8 ms (rows marked "on screen" were timed from recorded frames of the screen). Every row was measured on this release or on the test builds leading up to it.
 
 | Action | Normal game (30 FPS) | This mod (60 FPS) | Difference |
 |---|---|---|---|
@@ -41,4 +41,4 @@ The normal game (30 FPS) and this mod (60 FPS) ran side by side on a PC (Ryujinx
 - ¹ Timed from the screen, accurate to about ±0.05 s. An earlier test build closed the pockets about 0.08 s slower; the latest measurement shows no clear difference.
 - ² Across tests the whole trip ran 0.07 to 0.11 s shorter. About 0.06 s of that comes after the press is registered; the rest depends on when the press lands between frames.
 - ³ The game asks for the clock and minimap at the same moment in both (0.5 s after an action, 1.0 s after walking); the difference is in how they fade back in. After other actions (axe, vault, shaking a tree) it is 0.05–0.13 s.
-- Measured on PC. The Switch runs the same files, but these timings hold only while the game keeps a steady 60 FPS.
+- Measured in an emulator. The Switch runs the same files, but these timings hold only while the game keeps a steady 60 FPS.

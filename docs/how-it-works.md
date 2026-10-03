@@ -40,7 +40,7 @@ Every rescaled value follows one of these rules, chosen so the result per second
 
 ## How it was checked
 
-The unmodified game and the modded game ran side by side on PC, from the same save, with the same scripted button presses. Each action was timed from the game's own state, read from memory about every 8 ms; the few rows marked "on screen" in measured.md were timed from recorded frames of the screen. Results: [measured.md](measured.md).
+The unmodified game and the modded game ran side by side in emulators, from the same save, with the same scripted button presses. Each action was timed from the game's own state, read from memory about every 8 ms; the few rows marked "on screen" in measured.md were timed from recorded frames of the screen. Results: [measured.md](measured.md).
 
 ## Limits
 
@@ -48,7 +48,69 @@ The unmodified game and the modded game ran side by side on PC, from the same sa
 - A few actions remain a fraction of a second off (listed in measured.md).
 - The patches only fit versions 3.0.0 to 3.0.3. Each SpeedFix file starts with the main build it fits (3.0.3 `FF1D1C05670DB6021C85B624A710B963`, 3.0.2 `FCD2BB238ABE99E925B4E452DF1F41F1`, 3.0.1 `8F2CB7A9774959C89189C994FE4CC988`, 3.0.0 `5D913CF71EB24CB22C5105B1FA3EFD97`), and emulators and Atmosphere load only the matching one.
 
+## The 45 FPS version
+
+The 45 FPS version uses the same approach with a factor of 1.5 instead of 2: every per-update amount is rescaled so that 45 updates a second do what 30 did.
+
+### The rules at 45
+
+| What the value is | Rule at 60 | Rule at 45 |
+|---|---|---|
+| Speed (distance or angle per update) | x 1/2 | x 2/3 |
+| Acceleration, gravity | x 1/4 | x 4/9 |
+| Count of updates (timers, durations) | x 2 | x 1.5 |
+| Smoothing rate r | 1 - sqrt(1 - r) | 1 - (1 - r)^(2/3) |
+| Per-update decay k | sqrt(k) | k^(2/3) |
+| Literal 30 frames per second, 1/30 s | 60, 1/60 | 45, 1/45 |
+
+A count of updates times 1.5 is not always a whole number (7 updates become 10.5). The game counts whole updates, so these are rounded:
+
+- A wait that answers a button press (cursor repeats, menu and button waits) rounds down, to the faster side.
+- Everything else (animations, walking, the world and physics) rounds to the nearest whole update, and a half rounds up.
+
+Each rounded value is off by at most half an update at 45 FPS (0.011 s).
+
+### The three parts at 45
+
+**1. 45 FPS cadence** (the first section of each 45 FPS patch file, `speedfix45_main.pchtxt` and its 3.0.0 to 3.0.2 versions)
+- 45 frames a second can't be shown evenly on a 60 Hz screen, so the patch shows them in a steady 1, 1, 2 rhythm: each frame stays on screen for one, one, then two refreshes. Three frames take four refreshes: 45 frames per second.
+- It sits in the game's main module, not in the SDK module. In the game's present routine, a call before each frame is queued sets the frame's present interval (1, 1, then 2) through the game's own graphics call `nvnWindowSetPresentInterval`.
+- 26 code words: two hooks (the present routine exists in two identical copies) and a short routine in unused space.
+- It carries none of the 60 FPS version's SDK change, so it only touches this game's own code. That is also why the two versions must not be installed together: the 60 FPS SDK change would force every frame to one refresh.
+- On emulators it works at normal speed settings (Ryujinx VSync mode Switch, Citron and Eden at speed limit 100 %; Astris VSync on). Astris 1.0.29 passed a hand test on one M2 Mac with game version 3.0.3; this was not a timed measurement.
+
+**2. Parameter file** (`romfs/Pack/StaticParam.pack`)
+- The same 1,323 values as the 60 FPS version, rescaled with the 45 rules, plus 2 villager timers in a file the 60 FPS version leaves unchanged. Same file size, same structure.
+- The tool that builds it takes the factor as an input: with a factor of 2 it rebuilds the 60 FPS version's file byte for byte.
+
+**3. SpeedFix code patches** (the rest of `speedfix45_main.pchtxt` for 3.0.3 and `speedfix45_main_302.pchtxt`, `_301`, `_300` for the older versions; on Switch, one `.ips` per game version)
+- 1,417 code and data words, plus the 60 FPS version's 3 camera changes, which carry over unchanged.
+- Most words are the 60 FPS version's patches with the 45 rules applied. One tool generates them from the factor: with a factor of 2 it reproduces the 60 FPS version's 580 generated words bit for bit.
+- Where an instruction can't hold the 45 value (some float constants and fixed-point frame-count conversions), the value moves to a new constant or a short routine in unused space.
+
+### What was converted by hand
+
+Some of the 60 FPS version's code changes are built around exactly 2, so a factor of 1.5 doesn't fit them: "only on every second update" checks, a frame count added to itself, one-update hand-offs. These were rewritten by hand, one system at a time, and each was checked by a separate review before it went in:
+
+- dialogue windows and menus;
+- player actions (pockets, tools, warp pipes);
+- villagers, events, K.K. Slider concerts and the house cameras;
+- river ripples and foam, aquarium fish, wind;
+- projectiles, jumps and creatures (insects, fish).
+
+Later test rounds against the normal game found a few more places, which were fixed the same way (villager timers, sitting down on a seat, the save-and-end messages).
+
+### How the 45 FPS version was checked
+
+The same way as the 60 FPS version: the normal game and the 45 FPS version ran side by side in emulators, from the same save, with the same scripted button presses, and each action was timed from the game's own state. Before release, most actions were measured again on the release files; the others come from test builds whose patches for that action are the same. Results: [measured-45.md](measured-45.md). On a real Switch the frame rate and the game speed were checked by hand (an FPS overlay and the Timer item's banner).
+
+### Limits at 45
+
+- Game speed follows the frame rate: below 45 FPS the game slows down in step.
+- The patches only fit versions 3.0.0 to 3.0.3, like the 60 FPS version.
+
 ## Building the files yourself
 
 - **Switch patches:** `python tools/pchtxt_to_ips.py <file.pchtxt> <out folder>` turns each patch text into the `.ips` Atmosphere loads.
 - **Parameter file:** `python tools/apply_ips.py pack/StaticParam.pack.ips <your StaticParam.pack> <output>` builds the modified file from your own dump of 3.0.0, 3.0.1, 3.0.2 or 3.0.3 (the file is the same in all four). It refuses any other file.
+- **45 FPS version:** the same two commands: `pchtxt_to_ips.py` on each 45 FPS patch file (one per game version; the 45 FPS cadence is inside them), and `apply_ips.py` with the 45 FPS version's parameter-file patch (`pack45/StaticParam45.pack.ips`).
