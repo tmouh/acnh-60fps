@@ -1,6 +1,6 @@
 # StaticParam.pack: changed values
 
-The mod replaces `romfs/Pack/StaticParam.pack`. Compared with the game's own 3.0.3 file (SHA-256 `4a3d6530d6430b6b…`), **1,323 values in 100 files** are changed, each in place: same file size, same structure, 1,779 bytes differ (mod file SHA-256 `fe631469358c217b…`). The full list is in `parameters.csv`.
+The mod replaces `romfs/Pack/StaticParam.pack`. Compared with the game's own 3.0.3 file (SHA-256 `4a3d6530d6430b6b…`), **1,345 values in 104 files** are changed, each in place: same file size, same structure, 1,807 bytes differ (mod file SHA-256 `b1e690bc18f60a1b…`). The full list is in `parameters.csv`.
 
 Why: the game advances its logic once per frame. At 60 FPS it runs twice as many updates per second, so the values it applies once per update are rescaled to give the same real-time result as the 30 FPS game. Each value's rule below is read from its numbers alone (new against original).
 
@@ -8,14 +8,14 @@ Why: the game advances its logic once per frame. At 60 FPS it runs twice as many
 
 | rule | values | what it keeps the same in real time |
 |---|---:|---|
-| speed x1/2 | 525 | speeds: distance or angle moved per second (applied twice as often, so halved). Includes turn, scroll and spawn rates |
+| speed x1/2 | 528 | speeds: distance or angle moved per second (applied twice as often, so halved). Includes turn, scroll and spawn rates |
 | acceleration/gravity x1/4 | 106 | acceleration and gravity: speed-up and falling arcs (a change to a per-update speed, applied twice as often: 1/2 x 1/2) |
-| update count x2 | 664 | timers and durations counted in updates. Includes some values whose names end in `Sec` or `Time` |
+| update count x2 | 683 | timers and durations counted in updates. Includes some values whose names end in `Sec` or `Time` |
 | smoothing r -> 1-sqrt(1-r) | 22 | easing toward a target: two new steps close the same share of the gap as one original step, since (1 - new)^2 = 1 - r |
 | other: per-update decay k -> sqrt(k) | 3 | per-update decay: two new steps equal one original step, since new^2 = k |
 | other: start frame 0 -> 1 (timing alignment) | 2 | warp pipe entry: fall and shrink start frames, one update later so they line up with the 30 FPS timing |
 | other: x2 + 2 (timing alignment) | 1 | warp pipe entry: fade-out start, doubled plus two updates so the fade lines up with the 30 FPS timing |
-| **total** | **1,323** | |
+| **total** | **1,345** | |
 
 3 values (mRotateSpeed, mSwimWaitTurnChaseDegreeY, each 4 → 2) fit both x1/2 and k → sqrt(k); they are turn speeds and are listed as speed x1/2.
 
@@ -23,14 +23,16 @@ Why: the game advances its logic once per frame. At 60 FPS it runs twice as many
 
 | folder | files | values | x1/2 | x1/4 | x2 | smoothing | sqrt(k) | pipe timing |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| `Param/Actor` | 9 | 145 | 57 | 23 | 37 | 22 | 3 | 3 |
+| `Param/Actor` | 10 | 150 | 60 | 23 | 39 | 22 | 3 | 3 |
 | `Param/Camera` | 37 | 190 |  |  | 190 |  |  |  |
 | `Param/Fg` | 1 | 6 | 4 | 1 | 1 |  |  |  |
 | `Param/Fish` | 9 | 161 | 117 |  | 44 |  |  |  |
 | `Param/Gfx` | 4 | 20 | 15 |  | 5 |  |  |  |
 | `Param/Insect` | 39 | 763 | 332 | 82 | 349 |  |  |  |
-| `Param/Npc` | 1 | 38 |  |  | 38 |  |  |  |
-| **total** | **100** | **1,323** | **525** | **106** | **664** | **22** | **3** | **3** |
+| `Param/Npc` | 2 | 44 |  |  | 44 |  |  |  |
+| `Param/Others` | 1 | 6 |  |  | 6 |  |  |  |
+| `Param/RadioGymnastics` | 1 | 5 |  |  | 5 |  |  |  |
+| **total** | **104** | **1,345** | **528** | **106** | **683** | **22** | **3** | **3** |
 
 ## By file
 
@@ -43,6 +45,7 @@ Why: the game advances its logic once per frame. At 60 FPS it runs twice as many
 | `Param/Actor/FtrActor.byml` | 5 | x1/2 (2), x1/4 (1), x2 (2) | `mLeafGravity` 0.1 → 0.025; `mDemiseScaleDownFrame` 7 → 14; `mLocalWindAddCalcMaxDecrement` 0.05 → 0.025 |
 | `Param/Actor/ItemPreviewSwapActor.byml` | 2 | x1/2 (2) | `mCatalogRotateSpeed` 1 → 0.5; `mMyDesignRotateSpeed` 1.4 → 0.7 |
 | `Param/Actor/ObjectBalloonActor.byml` | 1 | x1/2 (1) | `mDefaultSpeed` 0.085 → 0.0425 |
+| `Param/Actor/ObjectKKFesShip.byml` | 5 | x1/2 (3), x2 (2) | `mWave2CycleSpd` 2.5 → 1.25; `mNpcFoundDelay` 240 → 480; `mFrame` 950 → 1900 |
 | `Param/Actor/PlayerActor.byml` | 113 | x1/2 (39), x1/4 (20), x2 (29), smoothing (22), pipe timing (3) | `mRunSpeedMax` 1.25 → 0.625; `mDefaultGravity` -0.25 → -0.0625; `mBreathTimer` 220 → 440 |
 | `Param/Actor/StructureHouseDoorDecoActor.byml` | 1 | x2 (1) | `mDemiseScaleDownFrame` 7 → 14 |
 | `Param/Camera/AirPlane_DemoInterporateParams.byml` | 1 | x2 (1) | `mFrame` 60 → 120 |
@@ -136,6 +139,9 @@ Why: the game advances its logic once per frame. At 60 FPS it runs twice as many
 | `Param/Insect/MuseumWaitWithThreatenParams.byml` | 4 | x2 (4) | `mThreatenSec` 1.5 → 3 |
 | `Param/Insect/MuseumWormParams.byml` | 53 | x1/2 (12), x2 (41) | `mMaxWaitTime` 1 → 2; `mSpeed` 0.09375 → 0.046875; `mMaxMoveTime` 15 → 30 |
 | `Param/Npc/NpcActivityParam.byml` | 38 | x2 (38) | `mFacePanelReactionIntervalTime` 60 → 120; `mMinimumFtrFrameInHousing` 300 → 600; `mMinimumSitFrameInHousing` 900 → 1800 |
+| `Param/Npc/NpcWherearenParam_RVer_20000.byml` | 6 | x2 (6) | `mWaitActionSeconds` 30 → 60; `mHouseOrderEndDemoFascinated` 150 → 300; `mWaitActionMaxSeconds` 45 → 90 |
+| `Param/Others/CommonCurves.byml` | 6 | x2 (6) | `mFrame` 70 → 140 |
+| `Param/RadioGymnastics/RadioGymnasticsParam/RadioGymnasticsData.byml` | 5 | x2 (5) | `mFirstLookFrameMin` 10 → 20; `mFirstLookFrameMax` 30 → 60; `mStartEmotionSmileOffsetFrameMax` 15 → 30 |
 
 ## Columns of `parameters.csv`
 
@@ -155,6 +161,6 @@ Each key in these files is the CRC32 of `<name>.<type>` (for example `mRunSpeedM
 
 ## Check
 
-- 1,779 bytes differ between the two files; all 1,779 lie inside the 1,323 listed values (bytes outside a listed value: 0).
-- Writing the 1,323 new values into the game's own file reproduces the mod's file exactly: yes.
+- 1,807 bytes differ between the two files; all 1,807 lie inside the 1,345 listed values (bytes outside a listed value: 0).
+- Writing the 1,345 new values into the game's own file reproduces the mod's file exactly: yes.
 - The file structure (keys, types, positions) is identical in both files; only values change.

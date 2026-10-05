@@ -1,6 +1,6 @@
 # Measured against the unmodified game
 
-The normal game (30 FPS) and this mod (60 FPS) ran side by side in Ryujinx, from the same save and with the same button presses. Each time runs from the moment the game starts an action to the moment it ends it, read from the game's own state about every 8 ms (rows marked "on screen" were timed from recorded frames of the screen). Every row was measured on this release or on the test builds leading up to it.
+The normal game (30 FPS) and this mod (60 FPS) ran side by side in Ryujinx, from the same save and with the same button presses. Each time runs from the moment the game starts an action to the moment it ends it, read from the game's own state about every 8 ms (rows marked "on screen" were timed from recorded frames of the screen). Rows were measured on the 60 FPS version's release files or on the test builds leading up to them.
 
 | Action | Normal game (30 FPS) | This mod (60 FPS) | Difference |
 |---|---|---|---|

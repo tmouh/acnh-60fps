@@ -1,6 +1,6 @@
 # 45 FPS version: measured against the unmodified game
 
-The normal game (30 FPS) and the 45 FPS version ran side by side in Ryujinx, from the same save and with the same button presses. Each time runs from the moment the game starts an action to the moment it ends it, read from the game's own state about every 8 ms (rows marked "on screen" were timed from recorded frames of the screen). Most rows were measured on this release's patches; the others on test builds whose patches for that action are the same as in this release.
+The normal game (30 FPS) and the 45 FPS version ran side by side in Ryujinx, from the same save and with the same button presses. Each time runs from the moment the game starts an action to the moment it ends it, read from the game's own state about every 8 ms (rows marked "on screen" were timed from recorded frames of the screen). Rows were measured on the 45 FPS version's release files or on the test builds leading up to them.
 
 | Action | Normal game (30 FPS) | 45 FPS version | Difference |
 |---|---|---|---|
@@ -38,7 +38,7 @@ The normal game (30 FPS) and the 45 FPS version ran side by side in Ryujinx, fro
 - Values are averages of 1 to 10 tries per game; where only a range was recorded, the range is shown.
 - ¹ Faster on purpose: the 45 FPS version can only repeat every 0.089 s or every 0.111 s here, and the faster one keeps the editor as quick as the rest of the controls.
 - ² Waits that answer a button press round to the faster side when 45 FPS can't hit the normal time exactly.
-- Citron (stable 2026.04.18) and Eden (v0.2.1) with this release's emulator files on game 3.0.3: the game ran at 45.0 FPS, and the moving arrow on the title screen kept the normal game's pace (0.998 of it). With the exact release emulator download on game versions 3.0.0, 3.0.1 and 3.0.2, Ryujinx, Citron and Eden also ran at about 45.0 FPS with the title-screen arrow at 0.998 of the normal pace. These checks cover loading, frame rate and intro pace; they do not repeat every action in the table on each emulator and version.
+- Citron (stable 2026.04.18) and Eden (v0.2.1) with the 45 FPS version's emulator files on game 3.0.3: the game ran at 45.0 FPS, and the moving arrow on the title screen kept the normal game's pace (0.998 of it). With the 45 FPS version's emulator download on game versions 3.0.0, 3.0.1 and 3.0.2, Ryujinx, Citron and Eden also ran at about 45.0 FPS with the title-screen arrow at 0.998 of the normal pace. These checks cover loading, frame rate and intro pace; they do not repeat every action in the table on each emulator and version.
 - Astris 1.0.29 on one M2 Mac, game version 3.0.3: the 45 and 60 FPS emulator downloads passed a hand test. The reported pace was normal; no timed measurements were taken on Astris. This does not establish performance on other Macs.
 - On a real Switch (2017 model, handheld on the charger, an earlier test build), the Timer item's "Timer started!" banner stayed on screen 7 s by a phone stopwatch, the same as the normal game.
 - Measured in an emulator. The Switch runs the same files, but these timings hold only while the game keeps a steady 45 FPS.

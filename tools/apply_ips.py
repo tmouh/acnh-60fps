@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Apply a classic IPS patch to a file.
 
-Made for pack/StaticParam.pack.ips (60 FPS) and pack45/StaticParam45.pack.ips (45 FPS): it turns the
+Made for pack/StaticParam.pack.ips (60 FPS), pack45/StaticParam45.pack.ips (45 FPS),
+and pack120/StaticParam120.pack.ips (120 FPS): it turns the
 game's own romfs/Pack/StaticParam.pack (from your 3.0.3 dump) into the modified one shipped in the
 release zips.
 
@@ -16,8 +17,9 @@ import sys
 
 CLEAN_303 = "4a3d6530d6430b6b967467f16784f91700a3cd8baad5f5b28fe3c6cfe4983298"  # StaticParam.pack, ACNH 3.0.3
 PATCHED = {
-    "fe631469358c217bad2c8f38d1f473adfe75b50c259b7eb659f3b30bcf476afc",  # 60 FPS result
-    "d61748cf5edf3bdcd8e131bab9e3e08c0f1abbd51cd02dd87d3fb25e0cf6d2ed",  # 45 FPS result
+    "b1e690bc18f60a1b6794526c7bd8228d3138f50c897fe23d0b631264be31e9a8",  # 60 FPS result
+    "7c2538181c3ea6e0b2e4374e566995d9cb7e1d3d4fa98ff0d792b057d455bac9",  # 45 FPS result
+    "ed9f8c4554560c9611a2b1ddbee3586a4e9d11cff75faaa3dc01a5433df08b36",  # 120 FPS result
 }
 
 
