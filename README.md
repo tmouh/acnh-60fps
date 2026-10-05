@@ -58,11 +58,15 @@ I used multiple expensive Claude Code subscriptions to fan out agents operating 
 
 **Emulators:** Ryujinx (Ryubing Canary 1.3.351), Citron (stable 2026.04.18 and nightly 40212aa3e) or Eden (v0.2.1) with update 3.0.0 to 3.0.3, on a computer that holds a steady 60 FPS. Try the 60 FPS version first; if your setup can't hold 60, try the 45 FPS version. If it can't hold 45 either, play without the mod. Astris (Apple silicon Mac) is also supported. For 45 and 60 FPS, keep the emulator at normal speed:
 
-- **Windows: set the emulator to High priority every time you start it** (Task Manager > Details > right-click the emulator > Set priority > High). Windows doesn't remember the change; at Normal priority the game can drop frames even on a fast PC.
+- **Windows: set the emulator to High priority every time you start it** (Task Manager > Details > right-click the emulator > Set priority > High). Windows doesn't remember the change; at Normal priority the game can drop frames even on a fast PC. Or use a [High priority shortcut](#high-priority-shortcut).
 - Ryujinx: VSync mode Switch (the default), not unlimited or turbo.
 - Citron: Limit Speed Percent at 100 % (the default; **Emulation** > **Configure** > **System**). Ctrl+U or Home+Y turns the limit off (status bar shows "(Unlocked)"), which makes the game run too fast; it resets when you restart the game.
 - Eden: speed limit 100 % (the default), and keep Turbo mode off (it runs any game 2x).
 - Astris: VSync on.
+
+#### High priority shortcut
+
+To start the emulator at High priority every time: right-click its desktop shortcut, choose **Properties**, and in **Target** put `cmd.exe /c start "" /high` in front of the existing path, keeping its quotes. Example: `cmd.exe /c start "" /high "C:\Emulators\Ryujinx.exe"`. Optional: set **Run** to Minimized to keep the command window out of the way, and use **Change Icon** to get the emulator's icon back.
 
 ## 45 FPS version
 
