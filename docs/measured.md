@@ -42,3 +42,27 @@ The normal game (30 FPS) and this mod (60 FPS) ran side by side in Ryujinx, from
 - ² Across tests the whole trip ran 0.07 to 0.11 s shorter. About 0.06 s of that comes after the press is registered; the rest depends on when the press lands between frames.
 - ³ The game asks for the clock and minimap at the same moment in both (0.5 s after an action, 1.0 s after walking); the difference is in how they fade back in. After other actions (axe, vault, shaking a tree) it is 0.05–0.13 s.
 - Measured in an emulator. The Switch runs the same files, but these timings hold only while the game keeps a steady 60 FPS.
+
+## Setup readings and notes
+
+The README and the GameBanana page give only what you need to set up. These details used to be on the README and are kept here.
+
+**Switch (one 2017 Switch, V1)**
+
+- The 60 FPS clock reading (CPU 1785 MHz, GPU 844 MHz, memory 1600 MHz, held 60 FPS) was taken on Atmosphere 1.11.2, firmware 22.5.0, handheld on a 15 V USB-C PD charger.
+- GPU above 768 MHz needs the dock or a full-power charger.
+- On battery the GPU is capped at 460 MHz, which can't hold 60.
+- At full fan the SoC is at about 59 °C; a quieter NX-FanControl curve means higher temperatures.
+- The 45 FPS version at the Switch's own clocks (sys-clk off, handheld on the charger): the game ran at 40 to 45 FPS and dipped.
+- The 45 FPS version in the Status Monitor overlay: the PFPS line shows 45, sometimes 44 or 46 for a moment. The FPS line next to it jumps between about 43 and 47 even when the game holds 45, because it averages the frame times.
+
+**Game speed below the version's frame rate**
+
+Game speed follows the frame rate. With the 60 FPS version at 45 FPS, the game runs about 25% slower; with the 45 FPS version at 43 FPS, about 4% slower.
+
+**Emulators**
+
+- Emulator versions: Ryujinx (Ryubing Canary 1.3.351), Citron (stable 2026.04.18 and nightly 40212aa3e), Eden (v0.2.1).
+- Ryujinx: VSync mode Switch, not unlimited or turbo. For the 120 FPS version, Custom Refresh Rate % at 120 % instead of 200 % runs the game slow.
+- Ryujinx on Linux or Steam Deck: use the folder that Open Mods Directory opens.
+- Citron: when Ctrl+U or Home+Y turns the frame-rate limit off, the status bar shows "(Unlocked)"; the limit resets when you restart the game.
