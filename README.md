@@ -114,7 +114,7 @@ Reference clock readings from one 2017 Switch, not recommendations for every Swi
 | Version | How you play | CPU | GPU | Memory | Result |
 |---|---|---|---|---|---|
 | 60 FPS | Handheld on the charger | 1785 MHz | 844 MHz | 1600 MHz | held 60 FPS |
-| 45 FPS | Handheld on the charger | 1428 MHz | 768 MHz | 1331 MHz | held 45 FPS, also in Happy Home Paradise |
+| 45 FPS | Handheld on the charger | 1428 MHz | 768 MHz | 1331 MHz | held 45 FPS |
 | 45 FPS | Docked at 1080p | 1428 MHz | 844 or 921 MHz | 1600 MHz | both held 43 FPS or more in the busiest spots, with the battery charging |
 
 In the docked test, 844 ran the GPU near its limit and charged faster; 921 gave the GPU headroom and charged more slowly.
