@@ -55,10 +55,6 @@ I used multiple expensive Claude Code subscriptions to fan out agents operating 
 
 ## Emulator setup
 
-- **60 FPS:** for a computer that holds a steady 60. Try this version first.
-- **45 FPS:** if your computer can't hold 60. It needs to hold a steady 45; if it can't hold 45 either, play without the mod.
-- **120 FPS:** only for a computer that holds a steady 120 (emulators only).
-
 The emulator files are `60fps-emulator-speedfix-v1-3-1-acnh.zip`, `45fps-emulator-speedfix-v1-3-1-acnh.zip` and `120fps-emulator-speedfix-v1-3-1-acnh.zip`. Copy your version's folder whole: it must directly contain both `exefs` and `romfs`. With only one of them the game runs at the wrong speed. The pack and Bcsv files must all come from the version you play.
 
 ### Windows
