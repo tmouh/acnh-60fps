@@ -4,14 +4,16 @@ Animal Crossing: New Horizons 60 FPS patch with **normal game speed** for versio
 
 Downloads: [GameBanana](https://gamebanana.com/mods/722295). Sources: GitHub.
 
+**v1.3.1:** fish behave like in the normal game again at 45, 60 and 120 FPS: they swim away when you run up to them, calm down at the normal pace and dart away at the normal speed.
+
 ## What's new in v1.3.0
 
 Adds 120 FPS for emulators, plus villager behaviour and timing fixes at 45, 60 and 120 FPS. The goal is the same: smoother animation, normal game pace, and maintaining the snappy menu navigation and camera response inherent to FPS increases.
 
 Install one frame-rate version at a time. Choose your download:
 
-- Emulators: `60fps-emulator-speedfix-v1-3-0-acnh.zip`, `45fps-emulator-speedfix-v1-3-0-acnh.zip` or `120fps-emulator-speedfix-v1-3-0-acnh.zip`.
-- Switch: `60fps-switch-speedfix-v1-3-0-acnh.zip` or `45fps-switch-speedfix-v1-3-0-acnh.zip`.
+- Emulators: `60fps-emulator-speedfix-v1-3-1-acnh.zip`, `45fps-emulator-speedfix-v1-3-1-acnh.zip` or `120fps-emulator-speedfix-v1-3-1-acnh.zip`.
+- Switch: `60fps-switch-speedfix-v1-3-1-acnh.zip` or `45fps-switch-speedfix-v1-3-1-acnh.zip`.
 
 Back up your save first. In an emulator, copy the selected `ACNH 45 FPS + SpeedFix`, `ACNH 60 FPS + SpeedFix` or `ACNH 120 FPS + SpeedFix` folder from `mods/contents/01006F8002326000/` into the game's mods folder, and enable only that version. On Switch, remove the previous frame-rate patch folder from `atmosphere/exefs_patches/`, then copy the new zip's `atmosphere` folder to the SD card root, replacing the old mod files.
 
@@ -94,7 +96,7 @@ Try the 60 FPS version first, whether you play on Switch or an emulator. If your
 
 **Emulators:** Ryujinx (VSync mode Switch, the default), Citron (Limit Speed Percent 100 %, the default), Eden (speed limit 100 %, the default) or Astris (Apple silicon Mac, VSync on). Your computer needs to hold a steady 45 FPS. Keep the emulator at normal speed, as for the 60 FPS version.
 
-**Install:** the same steps as the 60 FPS version, with the two 45 FPS zips: `45fps-switch-speedfix-v1-3-0-acnh.zip` (Switch) and `45fps-emulator-speedfix-v1-3-0-acnh.zip` (emulators).
+**Install:** the same steps as the 60 FPS version, with the two 45 FPS zips: `45fps-switch-speedfix-v1-3-1-acnh.zip` (Switch) and `45fps-emulator-speedfix-v1-3-1-acnh.zip` (emulators).
 
 - **Switch:** copy the `atmosphere` folder from the 45 FPS Switch zip to the root of your SD card. To remove it, delete these together:
   - `atmosphere/exefs_patches/ACNH_45FPS_SpeedFix`
