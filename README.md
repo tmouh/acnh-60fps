@@ -15,7 +15,11 @@ Install one frame-rate version at a time. Choose your download:
 
 Back up your save first. In an emulator, copy the selected `ACNH 45 FPS + SpeedFix`, `ACNH 60 FPS + SpeedFix` or `ACNH 120 FPS + SpeedFix` folder from `mods/contents/01006F8002326000/` into the game's mods folder, and enable only that version. On Switch, remove the previous frame-rate patch folder from `atmosphere/exefs_patches/`, then copy the new zip's `atmosphere` folder to the SD card root, replacing the old mod files.
 
-**120 FPS needs a PC that holds a steady 120.** Below that, the game slows down; use 60 if your PC cannot hold 120. Ryujinx: **Options > Settings > System**; scroll down to Hacks and tick **Enable Custom Refresh Rate (Experimental)**, then scroll back up, set **VSync** to **Custom Refresh Rate** and drag **Custom Refresh Rate %** to **200 %** (not 120: the slider is a percentage, and 200 % is 120 FPS). Citron and Eden: **Emulation > Configure > System**, **Limit Speed Percent 200 %**. For 45 and 60 FPS, use Ryujinx VSync mode Switch or Citron/Eden speed limit 100 %.
+**120 FPS needs a PC that holds a steady 120.** Below that, the game slows down; use 60 if your PC cannot hold 120. 
+
+**IMPORTANT**
+**Ryujinx**: **Options > Settings > System**; scroll down to Hacks and tick **Enable Custom Refresh Rate (Experimental)**, then scroll back up, set **VSync** to **Custom Refresh Rate** and drag **Custom Refresh Rate %** to **200 %** (not 120: the slider is a percentage, and 200 % is 120 FPS). 
+**Citron and Eden**: **Emulation > Configure > System**, **Limit Speed Percent 200 %**. For 45 and 60 FPS, use Ryujinx VSync mode Switch or Citron/Eden speed limit 100 %.
 
 **AMD dual-die X3D CPUs:** in Task Manager > Details, right-click the emulator > Set affinity, and keep only the first half of the CPUs (the V-cache die).
 
