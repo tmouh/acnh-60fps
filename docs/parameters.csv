@@ -550,6 +550,7 @@ Param/Insect/FieldAttackerParams.byml,0xb8b250e4[1]/mVanishSec,f32,10,20,2,updat
 Param/Insect/FieldAutumnLeafParams.byml,0x35ab039e/mDumpAccel,f32,0.00625,0.0015625,0.25,acceleration/gravity x1/4
 Param/Insect/FieldAutumnLeafParams.byml,0x35ab039e/mDumpSpeed,f32,0.3125,0.15625,0.5,speed x1/2
 Param/Insect/FieldAutumnLeafParams.byml,0x35ab039e/mGravity,f32,-0.00625,-0.0015625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldAutumnLeafParams.byml,0x35ab039e/0xbbd5618d/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/FieldAutumnLeafParams.byml,0x35ab039e/0xbbd5618d/mSpeedUpDown,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/FieldAutumnLeafParams.byml,0x35ab039e/0xbbd5618d/mSpeedChaseMove,f32,0.011719,0.00292975,0.25,acceleration/gravity x1/4
 Param/Insect/FieldAutumnLeafParams.byml,0x35ab039e/0xbbd5618d/mSpeed,f32,0.15625,0.078125,0.5,speed x1/2
@@ -557,15 +558,18 @@ Param/Insect/FieldAutumnLeafParams.byml,0x35ab039e/mDownSpeedMax,f32,-0.46875,-0
 Param/Insect/FieldAutumnLeafParams.byml,0xb8b250e4[0]/mDumpAccel,f32,0.00625,0.0015625,0.25,acceleration/gravity x1/4
 Param/Insect/FieldAutumnLeafParams.byml,0xb8b250e4[0]/mDumpSpeed,f32,0.3125,0.15625,0.5,speed x1/2
 Param/Insect/FieldAutumnLeafParams.byml,0xb8b250e4[0]/mGravity,f32,-0.00625,-0.0015625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldAutumnLeafParams.byml,0xb8b250e4[0]/0xbbd5618d/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/FieldAutumnLeafParams.byml,0xb8b250e4[0]/0xbbd5618d/mSpeedUpDown,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/FieldAutumnLeafParams.byml,0xb8b250e4[0]/0xbbd5618d/mSpeedChaseMove,f32,0.011719,0.00292975,0.25,acceleration/gravity x1/4
 Param/Insect/FieldAutumnLeafParams.byml,0xb8b250e4[0]/0xbbd5618d/mSpeed,f32,0.15625,0.078125,0.5,speed x1/2
 Param/Insect/FieldAutumnLeafParams.byml,0xb8b250e4[0]/mDownSpeedMax,f32,-0.46875,-0.234375,0.5,speed x1/2
+Param/Insect/FieldBeeParams.byml,0x35ab039e/mAddDirAng,f32,9.997559,4.9987793,0.5,speed x1/2
 Param/Insect/FieldBeeParams.byml,0x35ab039e/mAroundFrame,s32,60,120,2,update count x2
 Param/Insect/FieldBeeParams.byml,0x35ab039e/mSpeedUpDown,f32,0.15625,0.078125,0.5,speed x1/2
 Param/Insect/FieldBeeParams.byml,0x35ab039e/mMaxSpeed,f32,1.875,0.9375,0.5,speed x1/2
 Param/Insect/FieldBeeParams.byml,0x35ab039e/mAttackFrame,s32,60,120,2,update count x2
 Param/Insect/FieldBeeParams.byml,0x35ab039e/mAccel,f32,0.3125,0.078125,0.25,acceleration/gravity x1/4
+Param/Insect/FieldBeeParams.byml,0xb8b250e4[0]/mAddDirAng,f32,9.997559,4.9987793,0.5,speed x1/2
 Param/Insect/FieldBeeParams.byml,0xb8b250e4[0]/mAroundFrame,s32,60,120,2,update count x2
 Param/Insect/FieldBeeParams.byml,0xb8b250e4[0]/mSpeedUpDown,f32,0.15625,0.078125,0.5,speed x1/2
 Param/Insect/FieldBeeParams.byml,0xb8b250e4[0]/mMaxSpeed,f32,1.8,0.9,0.5,speed x1/2
@@ -585,6 +589,7 @@ Param/Insect/FieldButterflyParams.byml,0x248f269f/mSpeedForwardStep,f32,0.007813
 Param/Insect/FieldButterflyParams.byml,0x248f269f/mSpeedUpDown,f32,0.03125,0.015625,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0x35ab039e/mSpeedForward,f32,0.25,0.125,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0x35ab039e/mSpeedApproach,f32,0.117188,0.058594,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0x35ab039e/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0x35ab039e/mRotateAngleYStep,u32,17891328,8945664,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0x43bb2003/mApproachCycle,f32,300,600,2,update count x2
 Param/Insect/FieldButterflyParams.byml,0x43bb2003/mRestTime,f32,90,180,2,update count x2
@@ -592,42 +597,55 @@ Param/Insect/FieldButterflyParams.byml,0x43bb2003/mSpeedForwardStep,f32,0.007813
 Param/Insect/FieldButterflyParams.byml,0x43bb2003/mSpeedUpDown,f32,0.03125,0.015625,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0xb8b250e4[0]/mSpeedForward,f32,0.1875,0.09375,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0xb8b250e4[0]/mSpeedApproach,f32,0.078125,0.0390625,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[0]/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0xb8b250e4[0]/mRotateAngleYStep,u32,17891328,8945664,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0xb8b250e4[1]/mSpeedForward,f32,0.1875,0.09375,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0xb8b250e4[1]/mSpeedApproach,f32,0.078125,0.0390625,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[1]/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0xb8b250e4[1]/mRotateAngleYStep,u32,17891328,8945664,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0xb8b250e4[2]/mSpeedForward,f32,0.25,0.125,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0xb8b250e4[2]/mSpeedApproach,f32,0.117188,0.058594,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[2]/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0xb8b250e4[2]/mRotateAngleYStep,u32,17891328,8945664,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0xb8b250e4[3]/mSpeedForward,f32,0.25,0.125,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0xb8b250e4[3]/mSpeedApproach,f32,0.117188,0.058594,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[3]/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0xb8b250e4[3]/mRotateAngleYStep,u32,17891328,8945664,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0xb8b250e4[4]/mSpeedForward,f32,0.25,0.125,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0xb8b250e4[4]/mSpeedApproach,f32,0.117188,0.058594,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[4]/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0xb8b250e4[4]/mRotateAngleYStep,u32,17891328,8945664,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0xb8b250e4[5]/mSpeedForward,f32,0.25,0.125,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0xb8b250e4[5]/mSpeedApproach,f32,0.117188,0.058594,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[5]/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0xb8b250e4[5]/mRotateAngleYStep,u32,17891328,8945664,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0xb8b250e4[6]/mSpeedForward,f32,0.75,0.375,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0xb8b250e4[6]/mSpeedApproach,f32,0.117188,0.058594,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[6]/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0xb8b250e4[6]/mRotateAngleYStep,u32,17891328,8945664,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0xb8b250e4[7]/mSpeedForward,f32,0.25,0.125,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0xb8b250e4[7]/mSpeedApproach,f32,0.117188,0.058594,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[7]/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0xb8b250e4[7]/mRotateAngleYStep,u32,17891328,8945664,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0xb8b250e4[8]/mSpeedForward,f32,0.375,0.1875,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0xb8b250e4[8]/mSpeedApproach,f32,0.117188,0.058594,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[8]/mBreathMax,f32,0.117188,0.058594,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0xb8b250e4[8]/mRotateAngleYStep,u32,8978432,4489216,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0xb8b250e4[9]/mSpeedForward,f32,0.25,0.125,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0xb8b250e4[9]/mSpeedApproach,f32,0.117188,0.058594,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[9]/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0xb8b250e4[9]/mRotateAngleYStep,u32,17891328,8945664,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0xb8b250e4[10]/mSpeedForward,f32,0.25,0.125,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0xb8b250e4[10]/mSpeedApproach,f32,0.117188,0.058594,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[10]/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0xb8b250e4[10]/mRotateAngleYStep,u32,17891328,8945664,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0xb8b250e4[11]/mSpeedForward,f32,0.25,0.125,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0xb8b250e4[11]/mSpeedApproach,f32,0.117188,0.058594,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[11]/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0xb8b250e4[11]/mRotateAngleYStep,u32,17891328,8945664,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0xb8b250e4[12]/mSpeedForward,f32,0.25,0.125,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0xb8b250e4[12]/mSpeedApproach,f32,0.117188,0.058594,0.5,speed x1/2
+Param/Insect/FieldButterflyParams.byml,0xb8b250e4[12]/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/FieldButterflyParams.byml,0xb8b250e4[12]/mRotateAngleYStep,u32,17891328,8945664,0.5,speed x1/2
 Param/Insect/FieldCastOffSkinParams.byml,0x35ab039e/mDumpAccel,f32,0.03125,0.0078125,0.25,acceleration/gravity x1/4
 Param/Insect/FieldCastOffSkinParams.byml,0x35ab039e/mDumpSpeed,f32,0.625,0.3125,0.5,speed x1/2
@@ -645,6 +663,7 @@ Param/Insect/FieldDragonflyParams.byml,0x248f269f/mUpSpeedMax,f32,0.078125,0.039
 Param/Insect/FieldDragonflyParams.byml,0x248f269f/mChaseSpeed,f32,0.039063,0.0195315,0.5,speed x1/2
 Param/Insect/FieldDragonflyParams.byml,0x248f269f/mDownSpeed,f32,-0.390625,-0.1953125,0.5,speed x1/2
 Param/Insect/FieldDragonflyParams.byml,0x35ab039e/mWaitingFrame,s32,30,60,2,update count x2
+Param/Insect/FieldDragonflyParams.byml,0x35ab039e/mHoveringAngle,u32,268435456,134217728,0.5,speed x1/2
 Param/Insect/FieldDragonflyParams.byml,0x35ab039e/mRotateSpeed,f32,2,1,0.5,speed x1/2
 Param/Insect/FieldDragonflyParams.byml,0x35ab039e/mMoveFrame,f32,45,90,2,update count x2
 Param/Insect/FieldDragonflyParams.byml,0x43bb2003/mApproachCycle,f32,600,1200,2,update count x2
@@ -655,44 +674,62 @@ Param/Insect/FieldDragonflyParams.byml,0x43bb2003/mUpSpeedMax,f32,0.078125,0.039
 Param/Insect/FieldDragonflyParams.byml,0x43bb2003/mChaseSpeed,f32,0.039063,0.0195315,0.5,speed x1/2
 Param/Insect/FieldDragonflyParams.byml,0x43bb2003/mDownSpeed,f32,-0.390625,-0.1953125,0.5,speed x1/2
 Param/Insect/FieldDragonflyParams.byml,0xb8b250e4[0]/mWaitingFrame,s32,15,30,2,update count x2
+Param/Insect/FieldDragonflyParams.byml,0xb8b250e4[0]/mHoveringAngle,u32,268435456,134217728,0.5,speed x1/2
 Param/Insect/FieldDragonflyParams.byml,0xb8b250e4[0]/mRotateSpeed,f32,5,2.5,0.5,speed x1/2
 Param/Insect/FieldDragonflyParams.byml,0xb8b250e4[0]/mMoveFrame,f32,45,90,2,update count x2
 Param/Insect/FieldDragonflyParams.byml,0xb8b250e4[1]/mWaitingFrame,s32,5,10,2,update count x2
+Param/Insect/FieldDragonflyParams.byml,0xb8b250e4[1]/mHoveringAngle,u32,268435456,134217728,0.5,speed x1/2
 Param/Insect/FieldDragonflyParams.byml,0xb8b250e4[1]/mRotateSpeed,f32,4,2,0.5,speed x1/2
 Param/Insect/FieldDragonflyParams.byml,0xb8b250e4[1]/mMoveFrame,f32,30,60,2,update count x2
 Param/Insect/FieldDragonflyParams.byml,0xb8b250e4[2]/mWaitingFrame,s32,5,10,2,update count x2
+Param/Insect/FieldDragonflyParams.byml,0xb8b250e4[2]/mHoveringAngle,u32,234881024,117440512,0.5,speed x1/2
 Param/Insect/FieldDragonflyParams.byml,0xb8b250e4[2]/mRotateSpeed,f32,12,6,0.5,speed x1/2
 Param/Insect/FieldDragonflyParams.byml,0xb8b250e4[2]/mMoveFrame,f32,30,60,2,update count x2
 Param/Insect/FieldDragonflyParams.byml,0xb8b250e4[3]/mWaitingFrame,s32,20,40,2,update count x2
+Param/Insect/FieldDragonflyParams.byml,0xb8b250e4[3]/mHoveringAngle,u32,268435456,134217728,0.5,speed x1/2
 Param/Insect/FieldDragonflyParams.byml,0xb8b250e4[3]/mRotateSpeed,f32,4,2,0.5,speed x1/2
 Param/Insect/FieldDragonflyParams.byml,0xb8b250e4[3]/mMoveFrame,f32,45,90,2,update count x2
 Param/Insect/FieldDytiscidaeParams.byml,0x35ab039e/mNidusTimeMin,s32,150,300,2,update count x2
 Param/Insect/FieldDytiscidaeParams.byml,0x35ab039e/mNidusTimeMax,s32,300,600,2,update count x2
+Param/Insect/FieldDytiscidaeParams.byml,0x35ab039e/mSlowDown,f32,0.007813,0.00195325,0.25,acceleration/gravity x1/4
 Param/Insect/FieldDytiscidaeParams.byml,0x35ab039e/mBreathFrame,s32,10,20,2,update count x2
 Param/Insect/FieldDytiscidaeParams.byml,0x35ab039e/mDiveSpeed,f32,0.15,0.075,0.5,speed x1/2
 Param/Insect/FieldDytiscidaeParams.byml,0x35ab039e/mEscapeSpeed,f32,0.1,0.05,0.5,speed x1/2
 Param/Insect/FieldDytiscidaeParams.byml,0x35ab039e/mUpSpeed,f32,0.1,0.05,0.5,speed x1/2
+Param/Insect/FieldDytiscidaeParams.byml,0x35ab039e/mMaxAddAng,f32,4.394531,2.1972654,0.5,speed x1/2
 Param/Insect/FieldDytiscidaeParams.byml,0x35ab039e/mBreathWaitFrame,s32,15,30,2,update count x2
+Param/Insect/FieldDytiscidaeParams.byml,0xb8b250e4[0]/mSlowDown,f32,0.01,0.0025,0.25,acceleration/gravity x1/4
 Param/Insect/FieldDytiscidaeParams.byml,0xb8b250e4[0]/mBreathFrame,s32,45,90,2,update count x2
 Param/Insect/FieldDytiscidaeParams.byml,0xb8b250e4[0]/mDiveSpeed,f32,0.05,0.025,0.5,speed x1/2
 Param/Insect/FieldDytiscidaeParams.byml,0xb8b250e4[0]/mEscapeSpeed,f32,0.2,0.1,0.5,speed x1/2
 Param/Insect/FieldDytiscidaeParams.byml,0xb8b250e4[0]/mUpSpeed,f32,0.03,0.015,0.5,speed x1/2
+Param/Insect/FieldDytiscidaeParams.byml,0xb8b250e4[0]/mMaxAddAng,f32,4.394531,2.1972654,0.5,speed x1/2
 Param/Insect/FieldDytiscidaeParams.byml,0xb8b250e4[0]/mBreathWaitFrame,s32,10,20,2,update count x2
 Param/Insect/FieldDytiscidaeParams.byml,0xb8b250e4[1]/mNidusTimeMin,s32,300,600,2,update count x2
 Param/Insect/FieldDytiscidaeParams.byml,0xb8b250e4[1]/mNidusTimeMax,s32,600,1200,2,update count x2
+Param/Insect/FieldDytiscidaeParams.byml,0xb8b250e4[1]/mSlowDown,f32,0.007813,0.00195325,0.25,acceleration/gravity x1/4
 Param/Insect/FieldDytiscidaeParams.byml,0xb8b250e4[1]/mBreathFrame,s32,30,60,2,update count x2
 Param/Insect/FieldDytiscidaeParams.byml,0xb8b250e4[1]/mDiveSpeed,f32,0.05,0.025,0.5,speed x1/2
 Param/Insect/FieldDytiscidaeParams.byml,0xb8b250e4[1]/mEscapeSpeed,f32,0.1,0.05,0.5,speed x1/2
 Param/Insect/FieldDytiscidaeParams.byml,0xb8b250e4[1]/mUpSpeed,f32,0.03,0.015,0.5,speed x1/2
+Param/Insect/FieldDytiscidaeParams.byml,0xb8b250e4[1]/mMaxAddAng,f32,4.394531,2.1972654,0.5,speed x1/2
 Param/Insect/FieldDytiscidaeParams.byml,0xb8b250e4[1]/mBreathWaitFrame,s32,10,20,2,update count x2
+Param/Insect/FieldFeatherParams.byml,0x248f269f/0xbbd5618d/mAddDirAng,f32,2.999268,1.499634,0.5,speed x1/2
+Param/Insect/FieldFeatherParams.byml,0x248f269f/0xbbd5618d/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/FieldFeatherParams.byml,0x248f269f/0xbbd5618d/mSpeedUpDown,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/FieldFeatherParams.byml,0x248f269f/0xbbd5618d/mSpeedChaseMove,f32,0.007813,0.00195325,0.25,acceleration/gravity x1/4
 Param/Insect/FieldFeatherParams.byml,0x248f269f/0xbbd5618d/mSpeed,f32,0.125,0.0625,0.5,speed x1/2
+Param/Insect/FieldFeatherParams.byml,0x43bb2003/0xbbd5618d/mAddDirAng,f32,2.999268,1.499634,0.5,speed x1/2
+Param/Insect/FieldFeatherParams.byml,0x43bb2003/0xbbd5618d/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/FieldFeatherParams.byml,0x43bb2003/0xbbd5618d/mSpeedUpDown,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/FieldFeatherParams.byml,0x43bb2003/0xbbd5618d/mSpeedChaseMove,f32,0.011719,0.00292975,0.25,acceleration/gravity x1/4
 Param/Insect/FieldFeatherParams.byml,0x43bb2003/0xbbd5618d/mSpeed,f32,0.15625,0.078125,0.5,speed x1/2
+Param/Insect/FieldFireflyParams.byml,0x35ab039e/mAddDirDeg,f32,0.999756,0.499878,0.5,speed x1/2
+Param/Insect/FieldFireflyParams.byml,0x35ab039e/mBreathMax,f32,0.0625,0.03125,0.5,speed x1/2
 Param/Insect/FieldFireflyParams.byml,0x35ab039e/mMoveSpeed,f32,0.117188,0.058594,0.5,speed x1/2
 Param/Insect/FieldFireflyParams.byml,0x35ab039e/mSpeedY,f32,0.0625,0.03125,0.5,speed x1/2
+Param/Insect/FieldFireflyParams.byml,0xb8b250e4[0]/mAddDirDeg,f32,0.999756,0.499878,0.5,speed x1/2
+Param/Insect/FieldFireflyParams.byml,0xb8b250e4[0]/mBreathMax,f32,0.0625,0.03125,0.5,speed x1/2
 Param/Insect/FieldFireflyParams.byml,0xb8b250e4[0]/mMoveSpeed,f32,0.117188,0.058594,0.5,speed x1/2
 Param/Insect/FieldFireflyParams.byml,0xb8b250e4[0]/mSpeedY,f32,0.0625,0.03125,0.5,speed x1/2
 Param/Insect/FieldFlowerParams.byml,0x248f269f/mMoveSecMax,f32,3,6,2,update count x2
@@ -724,7 +761,9 @@ Param/Insect/FieldFlowerParams.byml,0xb8b250e4[4]/mSpeed,f32,0.15,0.075,0.5,spee
 Param/Insect/FieldFlowerParams.byml,0xb8b250e4[5]/mStopWaitRotateAngleYStep,f32,5,2.5,0.5,speed x1/2
 Param/Insect/FieldFlowerParams.byml,0xb8b250e4[5]/mRotateAngleYStep,f32,2,1,0.5,speed x1/2
 Param/Insect/FieldFlowerParams.byml,0xb8b250e4[5]/mSpeed,f32,0.08,0.04,0.5,speed x1/2
+Param/Insect/FieldGerriadeParams.byml,0x35ab039e/mSlowDown,f32,0.007813,0.00195325,0.25,acceleration/gravity x1/4
 Param/Insect/FieldGerriadeParams.byml,0x35ab039e/mBorderSpeed,f32,0.5,0.25,0.5,speed x1/2
+Param/Insect/FieldGerriadeParams.byml,0xb8b250e4[0]/mSlowDown,f32,0.007813,0.00195325,0.25,acceleration/gravity x1/4
 Param/Insect/FieldGerriadeParams.byml,0xb8b250e4[0]/mBorderSpeed,f32,0.3,0.15,0.5,speed x1/2
 Param/Insect/FieldHermitCrabParams.byml,0x35ab039e/mMoveSpeed,f32,0.3125,0.15625,0.5,speed x1/2
 Param/Insect/FieldHermitCrabParams.byml,0x35ab039e/mVanishTime,f32,10,20,2,update count x2
@@ -738,13 +777,17 @@ Param/Insect/FieldHermitCrabParams.byml,0xb8b250e4[0]/mSwingCycle,s32,8,16,2,upd
 Param/Insect/FieldHermitCrabParams.byml,0xb8b250e4[0]/mMoveFrame,s32,20,40,2,update count x2
 Param/Insect/FieldHoneyBeeParams.byml,0x35ab039e/mApproachCycle,f32,10,20,2,update count x2
 Param/Insect/FieldHoneyBeeParams.byml,0x35ab039e/mRestTime,f32,3,6,2,update count x2
+Param/Insect/FieldHoneyBeeParams.byml,0x35ab039e/mAddDirAng,f32,2.999268,1.499634,0.5,speed x1/2
 Param/Insect/FieldHoneyBeeParams.byml,0x35ab039e/mSpeedApproach,f32,0.078125,0.0390625,0.5,speed x1/2
+Param/Insect/FieldHoneyBeeParams.byml,0x35ab039e/mBreathMax,f32,0.03125,0.015625,0.5,speed x1/2
 Param/Insect/FieldHoneyBeeParams.byml,0x35ab039e/mSpeedUpDown,f32,0.0625,0.03125,0.5,speed x1/2
 Param/Insect/FieldHoneyBeeParams.byml,0x35ab039e/mSpeedChaseMove,f32,0.0125,0.003125,0.25,acceleration/gravity x1/4
 Param/Insect/FieldHoneyBeeParams.byml,0x35ab039e/mSpeed,f32,0.25,0.125,0.5,speed x1/2
 Param/Insect/FieldHoneyBeeParams.byml,0xb8b250e4[0]/mApproachCycle,f32,10,20,2,update count x2
 Param/Insect/FieldHoneyBeeParams.byml,0xb8b250e4[0]/mRestTime,f32,3,6,2,update count x2
+Param/Insect/FieldHoneyBeeParams.byml,0xb8b250e4[0]/mAddDirAng,f32,2.999268,1.499634,0.5,speed x1/2
 Param/Insect/FieldHoneyBeeParams.byml,0xb8b250e4[0]/mSpeedApproach,f32,0.1,0.05,0.5,speed x1/2
+Param/Insect/FieldHoneyBeeParams.byml,0xb8b250e4[0]/mBreathMax,f32,0.03125,0.015625,0.5,speed x1/2
 Param/Insect/FieldHoneyBeeParams.byml,0xb8b250e4[0]/mSpeedUpDown,f32,0.0625,0.03125,0.5,speed x1/2
 Param/Insect/FieldHoneyBeeParams.byml,0xb8b250e4[0]/mSpeedChaseMove,f32,0.0125,0.003125,0.25,acceleration/gravity x1/4
 Param/Insect/FieldHoneyBeeParams.byml,0xb8b250e4[0]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
@@ -917,27 +960,36 @@ Param/Insect/FieldLocustParams.byml,0xb8b250e4[5]/mMoveFrames,f32,15,30,2,update
 Param/Insect/FieldLocustParams.byml,0xb8b250e4[5]/mRegistSpeed,f32,-0.015625,-0.00390625,0.25,acceleration/gravity x1/4
 Param/Insect/FieldLocustParams.byml,0xb8b250e4[5]/mStopFramesMin,f32,300,600,2,update count x2
 Param/Insect/FieldLocustParams.byml,0xb8b250e4[5]/mStopFramesMax,f32,600,1200,2,update count x2
+Param/Insect/FieldMosquitoParams.byml,0x35ab039e/mAddDirAng,f32,1.999512,0.999756,0.5,speed x1/2
+Param/Insect/FieldMosquitoParams.byml,0x35ab039e/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/FieldMosquitoParams.byml,0x35ab039e/mSpeedUpDown,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/FieldMosquitoParams.byml,0x35ab039e/mSpeedChaseMove,f32,0.019531,0.00488275,0.25,acceleration/gravity x1/4
 Param/Insect/FieldMosquitoParams.byml,0x35ab039e/mSpeed,f32,0.15625,0.078125,0.5,speed x1/2
+Param/Insect/FieldMosquitoParams.byml,0xb8b250e4[0]/mAddDirAng,f32,1.999512,0.999756,0.5,speed x1/2
+Param/Insect/FieldMosquitoParams.byml,0xb8b250e4[0]/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/FieldMosquitoParams.byml,0xb8b250e4[0]/mSpeedUpDown,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/FieldMosquitoParams.byml,0xb8b250e4[0]/mSpeedChaseMove,f32,0.019531,0.00488275,0.25,acceleration/gravity x1/4
 Param/Insect/FieldMosquitoParams.byml,0xb8b250e4[0]/mSpeed,f32,0.15625,0.078125,0.5,speed x1/2
 Param/Insect/FieldMuscidaeParams.byml,0x35ab039e/mApproachCycle,f32,1,2,2,update count x2
 Param/Insect/FieldMuscidaeParams.byml,0x35ab039e/mRestTime,f32,8,16,2,update count x2
+Param/Insect/FieldMuscidaeParams.byml,0x35ab039e/mAddDirAng,f32,14.996338,7.498169,0.5,speed x1/2
 Param/Insect/FieldMuscidaeParams.byml,0x35ab039e/mSpeedApproach,f32,0.9375,0.46875,0.5,speed x1/2
+Param/Insect/FieldMuscidaeParams.byml,0x35ab039e/mBreathMax,f32,0.15625,0.078125,0.5,speed x1/2
 Param/Insect/FieldMuscidaeParams.byml,0x35ab039e/mSpeedUpDown,f32,0.15625,0.078125,0.5,speed x1/2
 Param/Insect/FieldMuscidaeParams.byml,0x35ab039e/mSpeedChaseMove,f32,0.15625,0.0390625,0.25,acceleration/gravity x1/4
 Param/Insect/FieldMuscidaeParams.byml,0x35ab039e/mSpeed,f32,0.9375,0.46875,0.5,speed x1/2
 Param/Insect/FieldMuscidaeParams.byml,0xb8b250e4[0]/mApproachCycle,f32,1,2,2,update count x2
 Param/Insect/FieldMuscidaeParams.byml,0xb8b250e4[0]/mRestTime,f32,8,16,2,update count x2
+Param/Insect/FieldMuscidaeParams.byml,0xb8b250e4[0]/mAddDirAng,f32,14.996338,7.498169,0.5,speed x1/2
 Param/Insect/FieldMuscidaeParams.byml,0xb8b250e4[0]/mSpeedApproach,f32,0.9375,0.46875,0.5,speed x1/2
+Param/Insect/FieldMuscidaeParams.byml,0xb8b250e4[0]/mBreathMax,f32,0.25,0.125,0.5,speed x1/2
 Param/Insect/FieldMuscidaeParams.byml,0xb8b250e4[0]/mSpeedUpDown,f32,0.25,0.125,0.5,speed x1/2
 Param/Insect/FieldMuscidaeParams.byml,0xb8b250e4[0]/mSpeedChaseMove,f32,0.15625,0.0390625,0.25,acceleration/gravity x1/4
 Param/Insect/FieldMuscidaeParams.byml,0xb8b250e4[0]/mSpeed,f32,0.9375,0.46875,0.5,speed x1/2
 Param/Insect/FieldPetalParams.byml,0x35ab039e/mDumpAccel,f32,0.00625,0.0015625,0.25,acceleration/gravity x1/4
 Param/Insect/FieldPetalParams.byml,0x35ab039e/mDumpSpeed,f32,0.3125,0.15625,0.5,speed x1/2
 Param/Insect/FieldPetalParams.byml,0x35ab039e/mGravity,f32,-0.00625,-0.0015625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldPetalParams.byml,0x35ab039e/0xbbd5618d/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/FieldPetalParams.byml,0x35ab039e/0xbbd5618d/mSpeedUpDown,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/FieldPetalParams.byml,0x35ab039e/0xbbd5618d/mSpeedChaseMove,f32,0.011719,0.00292975,0.25,acceleration/gravity x1/4
 Param/Insect/FieldPetalParams.byml,0x35ab039e/0xbbd5618d/mSpeed,f32,0.15625,0.078125,0.5,speed x1/2
@@ -945,6 +997,7 @@ Param/Insect/FieldPetalParams.byml,0x35ab039e/mDownSpeedMax,f32,-0.46875,-0.2343
 Param/Insect/FieldPetalParams.byml,0xb8b250e4[0]/mDumpAccel,f32,0.00625,0.0015625,0.25,acceleration/gravity x1/4
 Param/Insect/FieldPetalParams.byml,0xb8b250e4[0]/mDumpSpeed,f32,0.3125,0.15625,0.5,speed x1/2
 Param/Insect/FieldPetalParams.byml,0xb8b250e4[0]/mGravity,f32,-0.00625,-0.0015625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldPetalParams.byml,0xb8b250e4[0]/0xbbd5618d/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/FieldPetalParams.byml,0xb8b250e4[0]/0xbbd5618d/mSpeedUpDown,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/FieldPetalParams.byml,0xb8b250e4[0]/0xbbd5618d/mSpeedChaseMove,f32,0.011719,0.00292975,0.25,acceleration/gravity x1/4
 Param/Insect/FieldPetalParams.byml,0xb8b250e4[0]/0xbbd5618d/mSpeed,f32,0.15625,0.078125,0.5,speed x1/2
@@ -982,6 +1035,7 @@ Param/Insect/FieldPopStoneParams.byml,0xb8b250e4[1]/mSpeed,f32,0.125,0.0625,0.5,
 Param/Insect/FieldSnowCrystalParams.byml,0x35ab039e/mDumpAccel,f32,0.00625,0.0015625,0.25,acceleration/gravity x1/4
 Param/Insect/FieldSnowCrystalParams.byml,0x35ab039e/mDumpSpeed,f32,0.3125,0.15625,0.5,speed x1/2
 Param/Insect/FieldSnowCrystalParams.byml,0x35ab039e/mGravity,f32,-0.00625,-0.0015625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldSnowCrystalParams.byml,0x35ab039e/0xbbd5618d/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/FieldSnowCrystalParams.byml,0x35ab039e/0xbbd5618d/mSpeedUpDown,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/FieldSnowCrystalParams.byml,0x35ab039e/0xbbd5618d/mSpeedChaseMove,f32,0.011719,0.00292975,0.25,acceleration/gravity x1/4
 Param/Insect/FieldSnowCrystalParams.byml,0x35ab039e/0xbbd5618d/mSpeed,f32,0.15625,0.078125,0.5,speed x1/2
@@ -989,6 +1043,7 @@ Param/Insect/FieldSnowCrystalParams.byml,0x35ab039e/mDownSpeedMax,f32,-0.46875,-
 Param/Insect/FieldSnowCrystalParams.byml,0xb8b250e4[0]/mDumpAccel,f32,0.00625,0.0015625,0.25,acceleration/gravity x1/4
 Param/Insect/FieldSnowCrystalParams.byml,0xb8b250e4[0]/mDumpSpeed,f32,0.3125,0.15625,0.5,speed x1/2
 Param/Insect/FieldSnowCrystalParams.byml,0xb8b250e4[0]/mGravity,f32,-0.00625,-0.0015625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldSnowCrystalParams.byml,0xb8b250e4[0]/0xbbd5618d/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/FieldSnowCrystalParams.byml,0xb8b250e4[0]/0xbbd5618d/mSpeedUpDown,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/FieldSnowCrystalParams.byml,0xb8b250e4[0]/0xbbd5618d/mSpeedChaseMove,f32,0.011719,0.00292975,0.25,acceleration/gravity x1/4
 Param/Insect/FieldSnowCrystalParams.byml,0xb8b250e4[0]/0xbbd5618d/mSpeed,f32,0.15625,0.078125,0.5,speed x1/2
@@ -996,6 +1051,7 @@ Param/Insect/FieldSnowCrystalParams.byml,0xb8b250e4[0]/mDownSpeedMax,f32,-0.4687
 Param/Insect/FieldSnowCrystalParams.byml,0xb8b250e4[1]/mDumpAccel,f32,0.00625,0.0015625,0.25,acceleration/gravity x1/4
 Param/Insect/FieldSnowCrystalParams.byml,0xb8b250e4[1]/mDumpSpeed,f32,0.3125,0.15625,0.5,speed x1/2
 Param/Insect/FieldSnowCrystalParams.byml,0xb8b250e4[1]/mGravity,f32,-0.00625,-0.0015625,0.25,acceleration/gravity x1/4
+Param/Insect/FieldSnowCrystalParams.byml,0xb8b250e4[1]/0xbbd5618d/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/FieldSnowCrystalParams.byml,0xb8b250e4[1]/0xbbd5618d/mSpeedUpDown,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/FieldSnowCrystalParams.byml,0xb8b250e4[1]/0xbbd5618d/mSpeedChaseMove,f32,0.011719,0.00292975,0.25,acceleration/gravity x1/4
 Param/Insect/FieldSnowCrystalParams.byml,0xb8b250e4[1]/0xbbd5618d/mSpeed,f32,0.15625,0.078125,0.5,speed x1/2
@@ -1057,8 +1113,10 @@ Param/Insect/FieldTigerBeetleParams.byml,0xb8b250e4[1]/mMoveSecMin,f32,2,4,2,upd
 Param/Insect/FieldTigerBeetleParams.byml,0xb8b250e4[1]/mWaitSecMin,f32,1,2,2,update count x2
 Param/Insect/FieldTigerBeetleParams.byml,0xb8b250e4[1]/mWaitSecMax,f32,2,4,2,update count x2
 Param/Insect/FieldTigerBeetleParams.byml,0xb8b250e4[1]/mAccel,f32,0.01,0.0025,0.25,acceleration/gravity x1/4
+Param/Insect/FieldWispParams.byml,0x35ab039e/mBreathMax,f32,0.0625,0.03125,0.5,speed x1/2
 Param/Insect/FieldWispParams.byml,0x35ab039e/mMoveSpeed,f32,0.117188,0.058594,0.5,speed x1/2
 Param/Insect/FieldWispParams.byml,0x35ab039e/mSpeedY,f32,0.0625,0.03125,0.5,speed x1/2
+Param/Insect/FieldWispParams.byml,0xb8b250e4[0]/mBreathMax,f32,0.0625,0.03125,0.5,speed x1/2
 Param/Insect/FieldWispParams.byml,0xb8b250e4[0]/mMoveSpeed,f32,0.117188,0.058594,0.5,speed x1/2
 Param/Insect/FieldWispParams.byml,0xb8b250e4[0]/mSpeedY,f32,0.0625,0.03125,0.5,speed x1/2
 Param/Insect/MuseumBeetleBattleParams.byml,0x248f269f/mEscapeLastAngleXStepDeg,f32,10,5,0.5,speed x1/2
@@ -1088,12 +1146,15 @@ Param/Insect/MuseumBeetleParams.byml,0x43bb2003/mMoveFramesMax,f32,150,300,2,upd
 Param/Insect/MuseumBeetleParams.byml,0x43bb2003/mMoveFramesMin,f32,30,60,2,update count x2
 Param/Insect/MuseumFlyInCageParams.byml,0x35ab039e/mCycleSec,f32,0.5,1,2,update count x2
 Param/Insect/MuseumFlyInCageParams.byml,0x35ab039e/mGyrateAngleYStepDeg,f32,15,7.5,0.5,speed x1/2
+Param/Insect/MuseumFlyInCageParams.byml,0x35ab039e/mBreadthMax,f32,0.1,0.05,0.5,speed x1/2
 Param/Insect/MuseumFlyInCageParams.byml,0x35ab039e/mSpeed,f32,0.5,0.25,0.5,speed x1/2
 Param/Insect/MuseumFlyInCageParams.byml,0xb8b250e4[0]/mCycleSec,f32,0.5,1,2,update count x2
 Param/Insect/MuseumFlyInCageParams.byml,0xb8b250e4[0]/mGyrateAngleYStepDeg,f32,15,7.5,0.5,speed x1/2
+Param/Insect/MuseumFlyInCageParams.byml,0xb8b250e4[0]/mBreadthMax,f32,0.4,0.2,0.5,speed x1/2
 Param/Insect/MuseumFlyInCageParams.byml,0xb8b250e4[0]/mSpeed,f32,0.5,0.25,0.5,speed x1/2
 Param/Insect/MuseumFlyInCageParams.byml,0xb8b250e4[1]/mCycleSec,f32,0.5,1,2,update count x2
 Param/Insect/MuseumFlyInCageParams.byml,0xb8b250e4[1]/mGyrateAngleYStepDeg,f32,15,7.5,0.5,speed x1/2
+Param/Insect/MuseumFlyInCageParams.byml,0xb8b250e4[1]/mBreadthMax,f32,0.1,0.05,0.5,speed x1/2
 Param/Insect/MuseumFlyInCageParams.byml,0xb8b250e4[1]/mSpeed,f32,0.1,0.05,0.5,speed x1/2
 Param/Insect/MuseumFlyStraightParams.byml,0x248f269f/mHoveringTimeMax,f32,2,4,2,update count x2
 Param/Insect/MuseumFlyStraightParams.byml,0x248f269f/mUpSpeedMax,f32,0.078125,0.0390625,0.5,speed x1/2
@@ -1128,40 +1189,57 @@ Param/Insect/MuseumFlyStraightWithRestParams.byml,0xb8b250e4[3]/mMoveFrame,s32,4
 Param/Insect/MuseumFlyTottering.byml,0x248f269f/mSpeedUpDown,f32,0.03125,0.015625,0.5,speed x1/2
 Param/Insect/MuseumFlyTottering.byml,0x248f269f/mSpeedChaseMove,f32,0.007813,0.00195325,0.25,acceleration/gravity x1/4
 Param/Insect/MuseumFlyTottering.byml,0x35ab039e/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0x35ab039e/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/MuseumFlyTottering.byml,0x35ab039e/mSpeed,f32,0.25,0.125,0.5,speed x1/2
 Param/Insect/MuseumFlyTottering.byml,0x43bb2003/mSpeedUpDown,f32,0.03125,0.015625,0.5,speed x1/2
 Param/Insect/MuseumFlyTottering.byml,0x43bb2003/mSpeedChaseMove,f32,0.007813,0.00195325,0.25,acceleration/gravity x1/4
 Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[0]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[0]/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[0]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
 Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[1]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[1]/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[1]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
 Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[2]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[2]/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[2]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
 Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[3]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[3]/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[3]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
 Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[4]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[4]/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[4]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
 Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[5]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[5]/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[5]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
 Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[6]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[6]/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[6]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
 Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[7]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[7]/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[7]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
 Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[8]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[8]/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[8]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
 Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[9]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[9]/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[9]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
 Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[10]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[10]/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[10]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
 Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[11]/mGyrateAngleYStepDeg,f32,1.5,0.75,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[11]/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[11]/mSpeed,f32,0.2,0.1,0.5,speed x1/2
 Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[12]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[12]/mBreathMax,f32,0.05,0.025,0.5,speed x1/2
 Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[12]/mSpeed,f32,0.3,0.15,0.5,speed x1/2
 Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[13]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[13]/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[13]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
 Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[14]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[14]/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[14]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
 Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[15]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
+Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[15]/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/MuseumFlyTottering.byml,0xb8b250e4[15]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
 Param/Insect/MuseumFlyTotteringWithRestParams.byml,0x248f269f/mApproachCycleSec,f32,20,40,2,update count x2
 Param/Insect/MuseumFlyTotteringWithRestParams.byml,0x248f269f/mSpeedUpDown,f32,0.1,0.05,0.5,speed x1/2
@@ -1175,21 +1253,27 @@ Param/Insect/MuseumFlyTotteringWithRestParams.byml,0x43bb2003/mRestSec,f32,6,12,
 Param/Insect/MuseumFlyTotteringWithRestParams.byml,0x43bb2003/mSpeedChaseMove,f32,0.007813,0.00195325,0.25,acceleration/gravity x1/4
 Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[0]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
 Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[0]/mSpeedApproach,f32,0.117188,0.058594,0.5,speed x1/2
+Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[0]/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[0]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
 Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[1]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
 Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[1]/mSpeedApproach,f32,0.117188,0.058594,0.5,speed x1/2
+Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[1]/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[1]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
 Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[2]/mGyrateAngleYStepDeg,f32,1.5,0.75,0.5,speed x1/2
 Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[2]/mSpeedApproach,f32,0.1,0.05,0.5,speed x1/2
+Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[2]/mBreathMax,f32,0.1,0.05,0.5,speed x1/2
 Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[2]/mSpeed,f32,0.2,0.1,0.5,speed x1/2
 Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[3]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
 Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[3]/mSpeedApproach,f32,0.117188,0.058594,0.5,speed x1/2
+Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[3]/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[3]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
 Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[4]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
 Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[4]/mSpeedApproach,f32,0.117188,0.058594,0.5,speed x1/2
+Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[4]/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[4]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
 Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[5]/mGyrateAngleYStepDeg,f32,1.499634,0.749817,0.5,speed x1/2
 Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[5]/mSpeedApproach,f32,0.117188,0.058594,0.5,speed x1/2
+Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[5]/mBreathMax,f32,0.078125,0.0390625,0.5,speed x1/2
 Param/Insect/MuseumFlyTotteringWithRestParams.byml,0xb8b250e4[5]/mSpeed,f32,0.25,0.125,0.5,speed x1/2
 Param/Insect/MuseumLocustParams.byml,0x248f269f/mActStopSecMax,f32,1,2,2,update count x2
 Param/Insect/MuseumLocustParams.byml,0x248f269f/mActStopSecMin,f32,0.5,1,2,update count x2

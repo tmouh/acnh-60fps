@@ -1,6 +1,6 @@
 # StaticParam.pack: changed values
 
-The mod replaces `romfs/Pack/StaticParam.pack`. Compared with the game's own 3.0.3 file (SHA-256 `4a3d6530d6430b6b…`), **1,345 values in 104 files** are changed, each in place: same file size, same structure, 1,807 bytes differ (mod file SHA-256 `b1e690bc18f60a1b…`). The full list is in `parameters.csv`.
+The mod replaces `romfs/Pack/StaticParam.pack`. Compared with the game's own 3.0.3 file (SHA-256 `4a3d6530d6430b6b…`), **1,429 values in 104 files** are changed, each in place: same file size, same structure, 1,905 bytes differ (mod file SHA-256 `370486e5beb84c25…`). The full list is in `parameters.csv`.
 
 Why: the game advances its logic once per frame. At 60 FPS it runs twice as many updates per second, so the values it applies once per update are rescaled to give the same real-time result as the 30 FPS game. Each value's rule below is read from its numbers alone (new against original).
 
@@ -8,14 +8,14 @@ Why: the game advances its logic once per frame. At 60 FPS it runs twice as many
 
 | rule | values | what it keeps the same in real time |
 |---|---:|---|
-| speed x1/2 | 528 | speeds: distance or angle moved per second (applied twice as often, so halved). Includes turn, scroll and spawn rates |
-| acceleration/gravity x1/4 | 106 | acceleration and gravity: speed-up and falling arcs (a change to a per-update speed, applied twice as often: 1/2 x 1/2) |
+| speed x1/2 | 607 | speeds: distance or angle moved per second (applied twice as often, so halved). Includes turn, scroll and spawn rates |
+| acceleration/gravity x1/4 | 111 | acceleration and gravity: speed-up and falling arcs (a change to a per-update speed, applied twice as often: 1/2 x 1/2) |
 | update count x2 | 683 | timers and durations counted in updates. Includes some values whose names end in `Sec` or `Time` |
 | smoothing r -> 1-sqrt(1-r) | 22 | easing toward a target: two new steps close the same share of the gap as one original step, since (1 - new)^2 = 1 - r |
 | other: per-update decay k -> sqrt(k) | 3 | per-update decay: two new steps equal one original step, since new^2 = k |
 | other: start frame 0 -> 1 (timing alignment) | 2 | warp pipe entry: fall and shrink start frames, one update later so they line up with the 30 FPS timing |
 | other: x2 + 2 (timing alignment) | 1 | warp pipe entry: fade-out start, doubled plus two updates so the fade lines up with the 30 FPS timing |
-| **total** | **1,345** | |
+| **total** | **1,429** | |
 
 3 values (mRotateSpeed, mSwimWaitTurnChaseDegreeY, each 4 → 2) fit both x1/2 and k → sqrt(k); they are turn speeds and are listed as speed x1/2.
 
@@ -28,11 +28,11 @@ Why: the game advances its logic once per frame. At 60 FPS it runs twice as many
 | `Param/Fg` | 1 | 6 | 4 | 1 | 1 |  |  |  |
 | `Param/Fish` | 9 | 161 | 117 |  | 44 |  |  |  |
 | `Param/Gfx` | 4 | 20 | 15 |  | 5 |  |  |  |
-| `Param/Insect` | 39 | 763 | 332 | 82 | 349 |  |  |  |
+| `Param/Insect` | 39 | 847 | 411 | 87 | 349 |  |  |  |
 | `Param/Npc` | 2 | 44 |  |  | 44 |  |  |  |
 | `Param/Others` | 1 | 6 |  |  | 6 |  |  |  |
 | `Param/RadioGymnastics` | 1 | 5 |  |  | 5 |  |  |  |
-| **total** | **104** | **1,345** | **528** | **106** | **683** | **22** | **3** | **3** |
+| **total** | **104** | **1,429** | **607** | **111** | **683** | **22** | **3** | **3** |
 
 ## By file
 
@@ -100,39 +100,39 @@ Why: the game advances its logic once per frame. At 60 FPS it runs twice as many
 | `Param/Gfx/ShootingStarParam.byml` | 3 | x1/2 (2), x2 (1) | `mLife` 90 → 180; `mSpeed[0]` -2 → -1 |
 | `Param/Gfx/WaveSimulation.byml` | 10 | x1/2 (9), x2 (1) | `mPropagationFrame` 30 → 60; `mRainUnitRate` 0.004 → 0.002; `mSeaChoppyScrollRate2Min` -0.1 → -0.05 |
 | `Param/Insect/FieldAttackerParams.byml` | 21 | x1/2 (10), x2 (11) | `mMoveMinSec` 2 → 4; `mPursueSpeed` 1.5 → 0.75; `mMoveMaxSec` 4 → 8 |
-| `Param/Insect/FieldAutumnLeafParams.byml` | 14 | x1/2 (8), x1/4 (6) | `mDumpAccel` 0.00625 → 0.0015625; `mDumpSpeed` 0.3125 → 0.15625; `mGravity` -0.00625 → -0.0015625 |
-| `Param/Insect/FieldBeeParams.byml` | 10 | x1/2 (4), x1/4 (2), x2 (4) | `mAroundFrame` 60 → 120; `mSpeedUpDown` 0.15625 → 0.078125; `mAccel` 0.3125 → 0.078125 |
+| `Param/Insect/FieldAutumnLeafParams.byml` | 16 | x1/2 (10), x1/4 (6) | `mDumpAccel` 0.00625 → 0.0015625; `mDumpSpeed` 0.3125 → 0.15625; `mGravity` -0.00625 → -0.0015625 |
+| `Param/Insect/FieldBeeParams.byml` | 12 | x1/2 (6), x1/4 (2), x2 (4) | `mAddDirAng` 9.997559 → 4.9987793; `mAroundFrame` 60 → 120; `mAccel` 0.3125 → 0.078125 |
 | `Param/Insect/FieldBeetleParams.byml` | 8 | x2 (8) | `mStopFramesMin` 90 → 180; `mStopFramesMax` 180 → 360; `mMoveFramesMax` 150 → 300 |
-| `Param/Insect/FieldButterflyParams.byml` | 50 | x1/2 (44), x1/4 (2), x2 (4) | `mApproachCycle` 300 → 600; `mSpeedForwardStep` 0.007813 → 0.00195325; `mSpeedUpDown` 0.03125 → 0.015625 |
+| `Param/Insect/FieldButterflyParams.byml` | 64 | x1/2 (58), x1/4 (2), x2 (4) | `mApproachCycle` 300 → 600; `mSpeedForwardStep` 0.007813 → 0.00195325; `mSpeedUpDown` 0.03125 → 0.015625 |
 | `Param/Insect/FieldCastOffSkinParams.byml` | 8 | x1/2 (4), x1/4 (4) | `mDumpAccel` 0.03125 → 0.0078125; `mDumpSpeed` 0.625 → 0.3125; `mGravity` -0.0625 → -0.015625 |
-| `Param/Insect/FieldDragonflyParams.byml` | 29 | x1/2 (15), x2 (14) | `mApproachCycle` 600 → 1200; `mAppSpeedMax` 1.09375 → 0.546875; `mRestTime` 90 → 180 |
-| `Param/Insect/FieldDytiscidaeParams.byml` | 19 | x1/2 (9), x2 (10) | `mNidusTimeMin` 150 → 300; `mDiveSpeed` 0.15 → 0.075; `mNidusTimeMax` 300 → 600 |
-| `Param/Insect/FieldFeatherParams.byml` | 6 | x1/2 (4), x1/4 (2) | `mSpeedUpDown` 0.078125 → 0.0390625; `mSpeedChaseMove` 0.007813 → 0.00195325; `mSpeed` 0.125 → 0.0625 |
-| `Param/Insect/FieldFireflyParams.byml` | 4 | x1/2 (4) | `mMoveSpeed` 0.117188 → 0.058594; `mSpeedY` 0.0625 → 0.03125 |
+| `Param/Insect/FieldDragonflyParams.byml` | 34 | x1/2 (20), x2 (14) | `mApproachCycle` 600 → 1200; `mAppSpeedMax` 1.09375 → 0.546875; `mRestTime` 90 → 180 |
+| `Param/Insect/FieldDytiscidaeParams.byml` | 25 | x1/2 (12), x1/4 (3), x2 (10) | `mNidusTimeMin` 150 → 300; `mSlowDown` 0.007813 → 0.00195325; `mDiveSpeed` 0.15 → 0.075 |
+| `Param/Insect/FieldFeatherParams.byml` | 10 | x1/2 (8), x1/4 (2) | `mAddDirAng` 2.999268 → 1.499634; `mSpeedChaseMove` 0.007813 → 0.00195325; `mBreathMax` 0.078125 → 0.0390625 |
+| `Param/Insect/FieldFireflyParams.byml` | 8 | x1/2 (8) | `mAddDirDeg` 0.999756 → 0.499878; `mBreathMax` 0.0625 → 0.03125; `mMoveSpeed` 0.117188 → 0.058594 |
 | `Param/Insect/FieldFlowerParams.byml` | 29 | x1/2 (21), x2 (8) | `mMoveSecMax` 3 → 6; `mStopWaitRotateAngleYStep` 5 → 2.5; `mMoveSecMin` 1 → 2 |
-| `Param/Insect/FieldGerriadeParams.byml` | 2 | x1/2 (2) | `mBorderSpeed` 0.5 → 0.25 |
+| `Param/Insect/FieldGerriadeParams.byml` | 4 | x1/2 (2), x1/4 (2) | `mSlowDown` 0.007813 → 0.00195325; `mBorderSpeed` 0.5 → 0.25 |
 | `Param/Insect/FieldHermitCrabParams.byml` | 10 | x1/2 (2), x1/4 (2), x2 (6) | `mMoveSpeed` 0.3125 → 0.15625; `mVanishTime` 10 → 20; `mRegistSpeed` -0.015625 → -0.00390625 |
-| `Param/Insect/FieldHoneyBeeParams.byml` | 12 | x1/2 (6), x1/4 (2), x2 (4) | `mApproachCycle` 10 → 20; `mSpeedApproach` 0.078125 → 0.0390625; `mSpeedChaseMove` 0.0125 → 0.003125 |
+| `Param/Insect/FieldHoneyBeeParams.byml` | 16 | x1/2 (10), x1/4 (2), x2 (4) | `mApproachCycle` 10 → 20; `mAddDirAng` 2.999268 → 1.499634; `mSpeedChaseMove` 0.0125 → 0.003125 |
 | `Param/Insect/FieldInsectParams.byml` | 135 | x1/2 (30), x1/4 (4), x2 (101) | `mEscapeSpeedFly` 0.625 → 0.3125; `mGravity` -0.15625 → -0.0390625; `m1stSec` 60 → 120 |
 | `Param/Insect/FieldLigiaParams.byml` | 2 | x1/2 (2) | `mEscapeSpeed` 1.875 → 0.9375 |
 | `Param/Insect/FieldLocustParams.byml` | 32 | x1/2 (2), x1/4 (7), x2 (23) | `mStartChilpTime` 1 → 2; `mRegistSpeed` -0.015625 → -0.00390625; `mMoveFrames` 20 → 40 |
-| `Param/Insect/FieldMosquitoParams.byml` | 6 | x1/2 (4), x1/4 (2) | `mSpeedUpDown` 0.078125 → 0.0390625; `mSpeedChaseMove` 0.019531 → 0.00488275; `mSpeed` 0.15625 → 0.078125 |
-| `Param/Insect/FieldMuscidaeParams.byml` | 12 | x1/2 (6), x1/4 (2), x2 (4) | `mApproachCycle` 1 → 2; `mSpeedApproach` 0.9375 → 0.46875; `mSpeedChaseMove` 0.15625 → 0.0390625 |
-| `Param/Insect/FieldPetalParams.byml` | 14 | x1/2 (8), x1/4 (6) | `mDumpAccel` 0.00625 → 0.0015625; `mDumpSpeed` 0.3125 → 0.15625; `mGravity` -0.00625 → -0.0015625 |
+| `Param/Insect/FieldMosquitoParams.byml` | 10 | x1/2 (8), x1/4 (2) | `mAddDirAng` 1.999512 → 0.999756; `mSpeedChaseMove` 0.019531 → 0.00488275; `mBreathMax` 0.078125 → 0.0390625 |
+| `Param/Insect/FieldMuscidaeParams.byml` | 16 | x1/2 (10), x1/4 (2), x2 (4) | `mApproachCycle` 1 → 2; `mAddDirAng` 14.996338 → 7.498169; `mSpeedChaseMove` 0.15625 → 0.0390625 |
+| `Param/Insect/FieldPetalParams.byml` | 16 | x1/2 (10), x1/4 (6) | `mDumpAccel` 0.00625 → 0.0015625; `mDumpSpeed` 0.3125 → 0.15625; `mGravity` -0.00625 → -0.0015625 |
 | `Param/Insect/FieldPhylliumParams.byml` | 16 | x1/2 (2), x1/4 (2), x2 (12) | `mEscapeMaxSec` 2 → 4; `mMoveSpeed` 0.15625 → 0.078125; `mRegistSpeed` -0.015625 → -0.00390625 |
 | `Param/Insect/FieldPopStoneParams.byml` | 14 | x1/2 (3), x1/4 (3), x2 (8) | `mEscapeRefreshCycle` 2 → 4; `mRegistSpeed` -0.015625 → -0.00390625; `mSpeed` 0.09375 → 0.046875 |
-| `Param/Insect/FieldSnowCrystalParams.byml` | 21 | x1/2 (12), x1/4 (9) | `mDumpAccel` 0.00625 → 0.0015625; `mDumpSpeed` 0.3125 → 0.15625; `mGravity` -0.00625 → -0.0015625 |
+| `Param/Insect/FieldSnowCrystalParams.byml` | 24 | x1/2 (15), x1/4 (9) | `mDumpAccel` 0.00625 → 0.0015625; `mDumpSpeed` 0.3125 → 0.15625; `mGravity` -0.00625 → -0.0015625 |
 | `Param/Insect/FieldStumpParams.byml` | 18 | x1/2 (10), x2 (8) | `mMoveSecMax` 10 → 20; `mRotSpeedDeg` 1.40625 → 0.703125; `mMoveSecMin` 5 → 10 |
 | `Param/Insect/FieldThreadParams.byml` | 18 | x1/2 (6), x1/4 (6), x2 (6) | `mDumpAccel` 0.05 → 0.0125; `mDumpSpeed` 1 → 0.5; `mStopSecMax` 4 → 8 |
 | `Param/Insect/FieldTigerBeetleParams.byml` | 21 | x1/2 (6), x1/4 (3), x2 (12) | `mEscapeSpeed` 0.9375 → 0.46875; `mMoveSecMax` 8 → 16; `mAccel` 0.03125 → 0.0078125 |
-| `Param/Insect/FieldWispParams.byml` | 4 | x1/2 (4) | `mMoveSpeed` 0.117188 → 0.058594; `mSpeedY` 0.0625 → 0.03125 |
+| `Param/Insect/FieldWispParams.byml` | 6 | x1/2 (6) | `mBreathMax` 0.0625 → 0.03125; `mMoveSpeed` 0.117188 → 0.058594; `mSpeedY` 0.0625 → 0.03125 |
 | `Param/Insect/MuseumBeetleBattleParams.byml` | 17 | x1/2 (6), x2 (11) | `mEscapeLastAngleXStepDeg` 10 → 5; `mInitialChargeMaxSec` 3 → 6; `mKnockOverSpeed` 0.4 → 0.2 |
 | `Param/Insect/MuseumBeetleParams.byml` | 8 | x2 (8) | `mStopFramesMin` 90 → 180; `mStopFramesMax` 180 → 360; `mMoveFramesMax` 150 → 300 |
-| `Param/Insect/MuseumFlyInCageParams.byml` | 9 | x1/2 (6), x2 (3) | `mCycleSec` 0.5 → 1; `mGyrateAngleYStepDeg` 15 → 7.5; `mSpeed` 0.5 → 0.25 |
+| `Param/Insect/MuseumFlyInCageParams.byml` | 12 | x1/2 (9), x2 (3) | `mCycleSec` 0.5 → 1; `mGyrateAngleYStepDeg` 15 → 7.5; `mBreadthMax` 0.1 → 0.05 |
 | `Param/Insect/MuseumFlyStraightParams.byml` | 9 | x1/2 (5), x2 (4) | `mHoveringTimeMax` 2 → 4; `mUpSpeedMax` 0.078125 → 0.0390625; `mDownSpeed` -0.390625 → -0.1953125 |
 | `Param/Insect/MuseumFlyStraightWithRestParams.byml` | 21 | x1/2 (10), x2 (11) | `mApproachCycleSec` 20 → 40; `mUpSpeedMax` 0.078125 → 0.0390625; `mRestTimeSec` 3 → 6 |
-| `Param/Insect/MuseumFlyTottering.byml` | 38 | x1/2 (36), x1/4 (2) | `mSpeedUpDown` 0.03125 → 0.015625; `mSpeedChaseMove` 0.007813 → 0.00195325; `mGyrateAngleYStepDeg` 1.499634 → 0.749817 |
-| `Param/Insect/MuseumFlyTotteringWithRestParams.byml` | 28 | x1/2 (22), x1/4 (2), x2 (4) | `mApproachCycleSec` 20 → 40; `mSpeedUpDown` 0.1 → 0.05; `mSpeedChaseMove` 0.007813 → 0.00195325 |
+| `Param/Insect/MuseumFlyTottering.byml` | 55 | x1/2 (53), x1/4 (2) | `mSpeedUpDown` 0.03125 → 0.015625; `mSpeedChaseMove` 0.007813 → 0.00195325; `mGyrateAngleYStepDeg` 1.499634 → 0.749817 |
+| `Param/Insect/MuseumFlyTotteringWithRestParams.byml` | 34 | x1/2 (28), x1/4 (2), x2 (4) | `mApproachCycleSec` 20 → 40; `mSpeedUpDown` 0.1 → 0.05; `mSpeedChaseMove` 0.007813 → 0.00195325 |
 | `Param/Insect/MuseumLocustParams.byml` | 20 | x1/4 (8), x2 (12) | `mActStopSecMax` 1 → 2; `mRegistSpeed` 0.015625 → 0.00390625; `mActStopSecMin` 0.5 → 1 |
 | `Param/Insect/MuseumMovePointToPointParams.byml` | 9 | x1/2 (2), x1/4 (2), x2 (5) | `mGyrateAngleYStepDeg` 15 → 7.5; `mJumpFrame` 20 → 40; `mRegistSpeed` 0.015625 → 0.00390625 |
 | `Param/Insect/MuseumSkateOnTheWaterParams.byml` | 12 | x1/2 (5), x1/4 (4), x2 (3) | `mSpeedChaseStep` 0.007813 → 0.00195325; `mGyrateChaseAngleYMaxDeg` 4.394531 → 2.1972654; `mStopSecMax` 3 → 6 |
@@ -161,6 +161,6 @@ Each key in these files is the CRC32 of `<name>.<type>` (for example `mRunSpeedM
 
 ## Check
 
-- 1,807 bytes differ between the two files; all 1,807 lie inside the 1,345 listed values (bytes outside a listed value: 0).
-- Writing the 1,345 new values into the game's own file reproduces the mod's file exactly: yes.
+- 1,905 bytes differ between the two files; all 1,905 lie inside the 1,429 listed values (bytes outside a listed value: 0).
+- Writing the 1,429 new values into the game's own file reproduces the mod's file exactly: yes.
 - The file structure (keys, types, positions) is identical in both files; only values change.

@@ -17,9 +17,9 @@ import sys
 
 CLEAN_303 = "4a3d6530d6430b6b967467f16784f91700a3cd8baad5f5b28fe3c6cfe4983298"  # StaticParam.pack, ACNH 3.0.3
 PATCHED = {
-    "b1e690bc18f60a1b6794526c7bd8228d3138f50c897fe23d0b631264be31e9a8",  # 60 FPS result
-    "7c2538181c3ea6e0b2e4374e566995d9cb7e1d3d4fa98ff0d792b057d455bac9",  # 45 FPS result
-    "ed9f8c4554560c9611a2b1ddbee3586a4e9d11cff75faaa3dc01a5433df08b36",  # 120 FPS result
+    "370486e5beb84c25c4d04f9b65bc95cb8fd1128ba1791f7bbc6b81225b232438",  # 60 FPS result
+    "50a02c5df50cf4c2c02ab205e558411430b090690558b2f7ee9544f75f50c838",  # 45 FPS result
+    "9e7abd8368ebdce0b14f2cb6727279c025d05d070cd258dda11f8027cefa308a",  # 120 FPS result
 }
 
 
