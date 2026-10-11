@@ -13,7 +13,7 @@ The internal game logic is timed by FPS, not seconds. Nintendo never intended fo
 - **60 FPS patch:** lets the game run at 60.
 - **SpeedFix:** puts the game back at normal speed. It manually halves the per-frame speeds and doubles the frame-counted timers in the game's parameter file, and patches the code that counts frames (text, animations, camera, effects, villagers, fishing and more).
 
-The result is a smoother picture at the pace of the normal game.
+The result is a smoother picture at the pace of the normal game. I've personally found normal 60 FPS patches to be unplayable. The goal is an unnoticeable speed difference.
 
 Built from scratch for this project: the 60 FPS patch, the SpeedFix code patch and the parameter changes were all made from the game's own files. No other mod's files are included.
 
