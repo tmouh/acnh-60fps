@@ -1,6 +1,6 @@
 # StaticParam.pack: changed values
 
-The mod replaces `romfs/Pack/StaticParam.pack`. Compared with the game's own 3.0.3 file (SHA-256 `4a3d6530d6430b6b…`), **1,429 values in 104 files** are changed, each in place: same file size, same structure, 1,905 bytes differ (mod file SHA-256 `370486e5beb84c25…`). The full list is in `parameters.csv`.
+The mod replaces `romfs/Pack/StaticParam.pack`. Compared with the game's own 3.0.3 file (SHA-256 `4a3d6530d6430b6b…`), **1,437 values in 106 files** are changed, each in place: same file size, same structure, 1,918 bytes differ (mod file SHA-256 `7ea1622e9367b063…`). The full list is in `parameters.csv`.
 
 Why: the game advances its logic once per frame. At 60 FPS it runs twice as many updates per second, so the values it applies once per update are rescaled to give the same real-time result as the 30 FPS game. Each value's rule below is read from its numbers alone (new against original).
 
@@ -8,14 +8,14 @@ Why: the game advances its logic once per frame. At 60 FPS it runs twice as many
 
 | rule | values | what it keeps the same in real time |
 |---|---:|---|
-| speed x1/2 | 607 | speeds: distance or angle moved per second (applied twice as often, so halved). Includes turn, scroll and spawn rates |
+| speed x1/2 | 612 | speeds: distance or angle moved per second (applied twice as often, so halved). Includes turn, scroll and spawn rates |
 | acceleration/gravity x1/4 | 111 | acceleration and gravity: speed-up and falling arcs (a change to a per-update speed, applied twice as often: 1/2 x 1/2) |
-| update count x2 | 683 | timers and durations counted in updates. Includes some values whose names end in `Sec` or `Time` |
+| update count x2 | 684 | timers and durations counted in updates. Includes some values whose names end in `Sec` or `Time` |
 | smoothing r -> 1-sqrt(1-r) | 22 | easing toward a target: two new steps close the same share of the gap as one original step, since (1 - new)^2 = 1 - r |
-| other: per-update decay k -> sqrt(k) | 3 | per-update decay: two new steps equal one original step, since new^2 = k |
+| other: per-update decay k -> sqrt(k) | 5 | per-update decay: two new steps equal one original step, since new^2 = k |
 | other: start frame 0 -> 1 (timing alignment) | 2 | warp pipe entry: fall and shrink start frames, one update later so they line up with the 30 FPS timing |
 | other: x2 + 2 (timing alignment) | 1 | warp pipe entry: fade-out start, doubled plus two updates so the fade lines up with the 30 FPS timing |
-| **total** | **1,429** | |
+| **total** | **1,437** | |
 
 3 values (mRotateSpeed, mSwimWaitTurnChaseDegreeY, each 4 → 2) fit both x1/2 and k → sqrt(k); they are turn speeds and are listed as speed x1/2.
 
@@ -23,16 +23,16 @@ Why: the game advances its logic once per frame. At 60 FPS it runs twice as many
 
 | folder | files | values | x1/2 | x1/4 | x2 | smoothing | sqrt(k) | pipe timing |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| `Param/Actor` | 10 | 150 | 60 | 23 | 39 | 22 | 3 | 3 |
+| `Param/Actor` | 11 | 155 | 62 | 23 | 40 | 22 | 5 | 3 |
 | `Param/Camera` | 37 | 190 |  |  | 190 |  |  |  |
 | `Param/Fg` | 1 | 6 | 4 | 1 | 1 |  |  |  |
 | `Param/Fish` | 9 | 161 | 117 |  | 44 |  |  |  |
-| `Param/Gfx` | 4 | 20 | 15 |  | 5 |  |  |  |
+| `Param/Gfx` | 5 | 23 | 18 |  | 5 |  |  |  |
 | `Param/Insect` | 39 | 847 | 411 | 87 | 349 |  |  |  |
 | `Param/Npc` | 2 | 44 |  |  | 44 |  |  |  |
 | `Param/Others` | 1 | 6 |  |  | 6 |  |  |  |
 | `Param/RadioGymnastics` | 1 | 5 |  |  | 5 |  |  |  |
-| **total** | **104** | **1,429** | **607** | **111** | **683** | **22** | **3** | **3** |
+| **total** | **106** | **1,437** | **612** | **111** | **684** | **22** | **5** | **3** |
 
 ## By file
 
@@ -40,6 +40,7 @@ Why: the game advances its logic once per frame. At 60 FPS it runs twice as many
 |---|---:|---|---|
 | `Param/Actor/ActorWaterFall.byml` | 1 | x2 (1) | `mCycle` 8 → 16 |
 | `Param/Actor/BbsBirdActor.byml` | 8 | x1/2 (4), x2 (1), sqrt(k) (3) | `mDayFlySpeed` 1.65 → 0.825; `mNightHoldFrame` 4 → 8; `mDayDownScale` 0.6 → 0.7745967 |
+| `Param/Actor/BbsBirdActorWherearen.byml` | 5 | x1/2 (2), x2 (1), sqrt(k) (2) | `mWherearenDayFlySpeed` 2 → 1; `mWherearenNightHoldFrame` 4 → 8; `mWherearenDayDownScale` 0.6 → 0.7745967 |
 | `Param/Actor/CreatureShowActorMgr.byml` | 10 | x1/2 (7), x1/4 (2), x2 (1) | `mShellfishAlphaOutFrame` 10 → 20; `0x49562be6[0]` 1.2 → 0.6; `mGravity` 1.5 → 0.375 |
 | `Param/Actor/FishFieldActor.byml` | 4 | x1/2 (2), x2 (2) | `mMoveSpeedMin` 0.125 → 0.0625; `mScaleOutFrame` 15 → 30; `mMoveSpeedMax` 0.25 → 0.125 |
 | `Param/Actor/FtrActor.byml` | 5 | x1/2 (2), x1/4 (1), x2 (2) | `mLeafGravity` 0.1 → 0.025; `mDemiseScaleDownFrame` 7 → 14; `mLocalWindAddCalcMaxDecrement` 0.05 → 0.025 |
@@ -95,10 +96,11 @@ Why: the game advances its logic once per frame. At 60 FPS it runs twice as many
 | `Param/Fish/Museum/RoundsSwimming/FishInsect00.byml` | 2 | x2 (2) | `mWaitFrameRangeMin` 20 → 40; `mWaitFrameRangeMax` 90 → 180 |
 | `Param/Fish/Museum/RoundsSwimming/FishMuseum00.byml` | 10 | x2 (10) | `mWaitFrameRangeMin` 30 → 60; `mWaitFrameRangeMax` 120 → 240 |
 | `Param/Fish/Museum/RoundsSwimming/FishMuseum02.byml` | 4 | x2 (4) | `mWaitFrameRangeMin` 20 → 40; `mWaitFrameRangeMax` 60 → 120 |
-| `Param/Gfx/CloudDrawer.byml` | 4 | x1/2 (4) | `mWindScrollSpeedZ` 0.005 → 0.0025; `mProjectionShadowScrollSpeedX` 3 → 1.5; `mProjectionShadowScrollSpeedZ` 2 → 1 |
+| `Param/Gfx/CloudDrawer.byml` | 6 | x1/2 (6) | `mWindScrollSpeedZ` 0.005 → 0.0025; `mProjectionShadowScrollSpeedX` 3 → 1.5; `mProjectionShadowScrollSpeedZ` 2 → 1 |
 | `Param/Gfx/FieldUnitModelMgr.byml` | 3 | x2 (3) | `mUvScrollLoopTimingSRT1` 29 → 58; `mUvScrollLoopTimingSRT0` 40 → 80; `mUvScrollLoopTimingSRT2` 32 → 64 |
 | `Param/Gfx/ShootingStarParam.byml` | 3 | x1/2 (2), x2 (1) | `mLife` 90 → 180; `mSpeed[0]` -2 → -1 |
 | `Param/Gfx/WaveSimulation.byml` | 10 | x1/2 (9), x2 (1) | `mPropagationFrame` 30 → 60; `mRainUnitRate` 0.004 → 0.002; `mSeaChoppyScrollRate2Min` -0.1 → -0.05 |
+| `Param/Gfx/StarDrawer.byml` | 1 | x1/2 (1) | `mAnimSpeed` 0.392699 → 0.1963495 |
 | `Param/Insect/FieldAttackerParams.byml` | 21 | x1/2 (10), x2 (11) | `mMoveMinSec` 2 → 4; `mPursueSpeed` 1.5 → 0.75; `mMoveMaxSec` 4 → 8 |
 | `Param/Insect/FieldAutumnLeafParams.byml` | 16 | x1/2 (10), x1/4 (6) | `mDumpAccel` 0.00625 → 0.0015625; `mDumpSpeed` 0.3125 → 0.15625; `mGravity` -0.00625 → -0.0015625 |
 | `Param/Insect/FieldBeeParams.byml` | 12 | x1/2 (6), x1/4 (2), x2 (4) | `mAddDirAng` 9.997559 → 4.9987793; `mAroundFrame` 60 → 120; `mAccel` 0.3125 → 0.078125 |
@@ -161,6 +163,6 @@ Each key in these files is the CRC32 of `<name>.<type>` (for example `mRunSpeedM
 
 ## Check
 
-- 1,905 bytes differ between the two files; all 1,905 lie inside the 1,429 listed values (bytes outside a listed value: 0).
-- Writing the 1,429 new values into the game's own file reproduces the mod's file exactly: yes.
+- 1,918 bytes differ between the two files; all 1,918 lie inside the 1,437 listed values (bytes outside a listed value: 0).
+- Writing the 1,437 new values into the game's own file reproduces the mod's file exactly: yes.
 - The file structure (keys, types, positions) is identical in both files; only values change.

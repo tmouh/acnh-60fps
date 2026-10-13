@@ -1428,3 +1428,11 @@ Param/RadioGymnastics/RadioGymnasticsParam/RadioGymnasticsData.byml,mFirstLookFr
 Param/RadioGymnastics/RadioGymnasticsParam/RadioGymnasticsData.byml,mStartEmotionSmileOffsetFrameMax,s32,15,30,2,update count x2
 Param/RadioGymnastics/RadioGymnasticsParam/RadioGymnasticsData.byml,mSecondLookFrameMin,s32,15,30,2,update count x2
 Param/RadioGymnastics/RadioGymnasticsParam/RadioGymnasticsData.byml,mSecondLookFrameMax,s32,30,60,2,update count x2
+Param/Actor/BbsBirdActorWherearen.byml,mWherearenDayFlySpeed,f32,2,1,0.5,speed x1/2
+Param/Actor/BbsBirdActorWherearen.byml,mWherearenNightFlySpeed,f32,1.3,0.65,0.5,speed x1/2
+Param/Actor/BbsBirdActorWherearen.byml,mWherearenNightHoldFrame,s32,4,8,2,update count x2
+Param/Actor/BbsBirdActorWherearen.byml,mWherearenDayDownScale,f32,0.6,0.7745967,1.290994,other: per-update decay k -> sqrt(k)
+Param/Actor/BbsBirdActorWherearen.byml,mWherearenNightDownScale,f32,0.98,0.9899495,1.010153,other: per-update decay k -> sqrt(k)
+Param/Gfx/CloudDrawer.byml,mWindInfluence,f32,3e-05,1.5e-05,0.5,speed x1/2
+Param/Gfx/CloudDrawer.byml,mWindInfluenceSpecialCloud,f32,0.001,0.0005,0.5,speed x1/2
+Param/Gfx/StarDrawer.byml,mAnimSpeed,f32,0.392699,0.1963495,0.5,speed x1/2

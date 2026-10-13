@@ -18,7 +18,7 @@ The result is a smoother picture at the pace of the normal game. I've personally
 Built from scratch for this project: the 60 FPS patch, the SpeedFix code patch and the parameter changes were all made from the game's own files. No other mod's files are included.
 
 <!-- counts -->
-**In numbers:** the SpeedFix rescales 1,428 values in the game's parameter file, 107 values in three villager data files and 5,836 code patches.
+**In numbers:** the SpeedFix rescales 1,437 values in the game's parameter file, 107 values in three villager data files and 7,381 code patches.
 
 ## How it was made
 
@@ -55,7 +55,7 @@ I used multiple expensive Claude Code subscriptions to fan out agents operating 
 
 ## Emulator setup
 
-The emulator files are `60fps-emulator-speedfix-v1-4-0-acnh.zip`, `45fps-emulator-speedfix-v1-4-0-acnh.zip` and `120fps-emulator-speedfix-v1-4-0-acnh.zip`. Copy your version's folder whole: it must directly contain both `exefs` and `romfs`. With only one of them the game runs at the wrong speed. The pack and Bcsv files must all come from the version you play.
+The emulator files are `60fps-emulator-speedfix-v1-4-1-acnh.zip`, `45fps-emulator-speedfix-v1-4-1-acnh.zip` and `120fps-emulator-speedfix-v1-4-1-acnh.zip`. Copy your version's folder whole: it must directly contain both `exefs` and `romfs`. With only one of them the game runs at the wrong speed. The pack and Bcsv files must all come from the version you play.
 
 ### Windows
 
@@ -105,7 +105,7 @@ To start the emulator at High priority every time: right-click its desktop short
 
 You need Atmosphere custom firmware and sys-clk. An FPS counter (Status Monitor overlay, needs SaltyNX) helps for the first session.
 
-1. Download the Switch file of your version (60 or 45 FPS; 120 FPS has no Switch file): `60fps-switch-speedfix-v1-4-0-acnh.zip` or `45fps-switch-speedfix-v1-4-0-acnh.zip`.
+1. Download the Switch file of your version (60 or 45 FPS; 120 FPS has no Switch file): `60fps-switch-speedfix-v1-4-1-acnh.zip` or `45fps-switch-speedfix-v1-4-1-acnh.zip`.
 2. Copy its `atmosphere` folder to the root of your SD card.
 3. Set a sys-clk profile for this game with the clocks below. sys-clk must be running with this profile while you play.
 
@@ -176,6 +176,8 @@ This mod needs no ResourceSizeTable file. If your other mods need one, use one m
 This repo holds the sources: the code patches for 45, 60 and 120 FPS, the parameter-file patches (`pack/StaticParam.pack.ips`, `pack45/StaticParam45.pack.ips` and `pack120/StaticParam120.pack.ips`, applied to the game's own `romfs/Pack/StaticParam.pack`), the three `romfs/Bcsv/` villager data files for each rate, and the tools that build the zips. The ready-made pack and the matching three `romfs/Bcsv/` files are in each zip. How the patches work and how to build the files yourself: [docs/how-it-works.md](https://github.com/tmouh/acnh-60fps/blob/main/docs/how-it-works.md). Measurements: [docs/measured.md](https://github.com/tmouh/acnh-60fps/blob/main/docs/measured.md) (60 FPS) and [docs/measured-45.md](https://github.com/tmouh/acnh-60fps/blob/main/docs/measured-45.md) (45 FPS).
 
 ## What's new
+
+**v1.4.1:** Birds, balloons, fish and sea creatures move and wait at the normal game pace. Boat-tour weather transitions, cloud drift and star twinkling keep their normal speed. Items falling from trees, villagers falling into pitfalls, opening letters, the clock returning after actions and releasing creatures keep their normal timing. Sound playback, sound-effect waits and music fades also keep their normal pace. Idle and wait blends and the tilt of settling items keep their normal pace.
 
 **v1.4.0:** more of the game is back at its normal pace at 45, 60 and 120 FPS:
 
