@@ -18,11 +18,11 @@ There is no single global speed setting to turn down. The fix is to rescale ever
 - Each rate also includes `romfs/Bcsv/ItemNpcFtrActionParam.bcsv`, `romfs/Bcsv/ItemNpcWherearenFtrActionParam.bcsv` and `romfs/Bcsv/NpcInterest.bcsv`, rescaled for villager activity and wait timers (107 values); 45 and 60 ship for Switch and emulators, 120 for emulators.
 
 **3. SpeedFix code patches** (`speedfix_main.pchtxt` for 3.0.3; `speedfix_main_302.pchtxt`, `speedfix_main_301.pchtxt` and `speedfix_main_300.pchtxt` for 3.0.2, 3.0.1 and 3.0.0: the same changes at each version's addresses)
-- 6,303 code and data patches (4-byte words) for places where the speed is fixed in code rather than in the parameter file, such as:
+- 6,417 code and data patches (4-byte words) for places where the speed is fixed in code rather than in the parameter file, such as:
   - literal frame rates (30 per second, 1/30 s)
   - fixed update counts
   - per-update physics
-- Covers, among others: the default animation step of models, dialogue text and the villager voices, the UI animation clock, particle effects, hops, the vaulting pole, warp pipes, the camera, villager wait timers (also in shops, the museum and Happy Home Paradise), fishing, items falling from trees, holding a direction in menus and keyboards, the HUD hiding and returning around actions, chat balloons and the timer display, K.K. Slider concerts, turning and skidding while running, river ripples and foam, walking through doors, fruit swaying on trees, the autosave icon, light flicker, and the fishing bite window.
+- Covers, among others: the default animation step of models, dialogue text and the villager voices, the island tune (villagers humming and whistling it, the Resident Services speakers, the doorbell), the UI animation clock, particle effects, hops, the vaulting pole, warp pipes, the camera, villager wait timers (also in shops, the museum and Happy Home Paradise), fishing, items falling from trees, holding a direction in menus and keyboards, the HUD hiding and returning around actions, chat balloons and the timer display, K.K. Slider concerts, turning and skidding while running, river ripples and foam, walking through doors, fruit swaying on trees, the autosave icon, light flicker, and the fishing bite window.
 - Each patch group has a one-line comment saying what it changes.
 
 ## The rules
@@ -85,7 +85,7 @@ Each rounded value is off by at most half an update at 45 FPS (0.011 s).
 - The tool that builds it takes the factor as an input: with a factor of 2 it rebuilds the 60 FPS version's file byte for byte.
 
 **3. SpeedFix code patches** (the rest of `speedfix45_main.pchtxt` for 3.0.3 and `speedfix45_main_302.pchtxt`, `_301`, `_300` for the older versions; on Switch, one `.ips` per game version)
-- 7,381 code and data words (including the 26-word 45 FPS cadence) rescale the game for 45 FPS; menu navigation and camera response keep their snappy feel.
+- 7,495 code and data words (including the 26-word 45 FPS cadence) rescale the game for 45 FPS; menu navigation and camera response keep their snappy feel.
 - Most words are the 60 FPS version's patches with the 45 rules applied. One tool generates them from the factor: with a factor of 2 it reproduces the 60 FPS version's generated words bit for bit.
 - Where an instruction can't hold the 45 value (some float constants and fixed-point frame-count conversions), the value moves to a new constant or a short routine in unused space.
 
@@ -112,7 +112,7 @@ The same way as the 60 FPS version: the normal game and the 45 FPS version ran s
 
 ## The 120 FPS version
 
-The emulator-only 120 FPS version uses a factor of 4: speeds are divided by 4, acceleration by 16, and update-counted timers multiplied by 4. Its frame-rate and SpeedFix code (6,548 code and data words, 1,437 parameter values, the same 107 villager-data values) is in `speedfix120_main*.pchtxt`, its parameter patch is `pack120/StaticParam120.pack.ips`, and its three `romfs/Bcsv/` files match the 120 rate. It needs a PC that holds a steady 120; below that, the game slows down, so use 60.
+The emulator-only 120 FPS version uses a factor of 4: speeds are divided by 4, acceleration by 16, and update-counted timers multiplied by 4. Its frame-rate and SpeedFix code (6,662 code and data words, 1,437 parameter values, the same 107 villager-data values) is in `speedfix120_main*.pchtxt`, its parameter patch is `pack120/StaticParam120.pack.ips`, and its three `romfs/Bcsv/` files match the 120 rate. It needs a PC that holds a steady 120; below that, the game slows down, so use 60.
 
 ## Building the files yourself
 
