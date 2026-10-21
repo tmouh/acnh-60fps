@@ -18,11 +18,11 @@ The result is a smoother picture at the pace of the normal game. I've personally
 Built from scratch for this project: the 60 FPS patch, the SpeedFix code patch and the parameter changes were all made from the game's own files. No other mod's files are included.
 
 <!-- counts -->
-**In numbers:** the SpeedFix rescales 1,437 values in the game's parameter file, 107 values in three villager data files and 7,495 code patches.
+The SpeedFix rescales 1,437 values in the game's parameter file, 107 values in three villager data files and 7,495 code patches.
 
 ## How it was made
 
-I used multiple expensive Claude Code subscriptions to fan out agents operating emulators and running tests. I personally tested the mod on a real V1 2017 modded Switch and held 60 FPS at clocks (1785/844/1600), finding that most stress was on the CPU, with my top core at about 91-92% usage.
+I used Claude Code to fan out agents operating emulators, reading game state from memory, and running timing tests. I tested the mod on a real V1 2017 modded Switch and held 60 FPS at clocks (1785/844/1600), finding that most stress was on the CPU, with my top core at about 91-92% usage.
 
 - **Side-by-side testing:** Two copies of the game ran together in emulators, the normal game and the mod, from the same save with the same scripted button presses. For every single update, the agent read each game's state from memory and timed actions to the frame.
 - **Finding what counts frames:** Turning around while running skipped the skidding animation and instead played a normal walking animation at 60 FPS, making it look very odd. This is because the game picks animations by how far you moved in one frame, which halves at 60 FPS without adjustment. The agent pulled the animation data out of the game, rebuilt that choice in a small model that matched the measurements frame for frame, and fixed it with one change.
