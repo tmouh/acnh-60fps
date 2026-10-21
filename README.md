@@ -28,7 +28,7 @@ I used Claude Code to fan out agents operating emulators, reading game state fro
 - **Finding what counts frames:** Turning around while running skipped the skidding animation and instead played a normal walking animation at 60 FPS, making it look very odd. This is because the game picks animations by how far you moved in one frame, which halves at 60 FPS without adjustment. The agent pulled the animation data out of the game, rebuilt that choice in a small model that matched the measurements frame for frame, and fixed it with one change.
 - **Checking its own footage:** While cutting the comparison video, the agent went through the clips frame by frame and caught a small difference I hadn't noticed while testing. It saw the clock and minimap come back about 0.4 s early after an axe swing and traced this to fixed frame counts in the game's HUD code (15 frames after an action, 30 after walking), doubled them, and brought the gap down to about 0.1 s.
 
-## Do these or it won't play right
+## REQUIREMENTS
 
 **Emulators**
 
@@ -53,7 +53,7 @@ I used Claude Code to fan out agents operating emulators, reading game state fro
 - **Download ONE version, and the right file for your device**, from the [GameBanana page](https://gamebanana.com/mods/722295) (Files section): on an emulator the emulator file, on a Switch the Switch file. Keep only one version installed: they change the same parts of the game.
 - **Turn off every other 60 FPS or frame-rate mod, cheat or tool**, including FPSLocker.
 
-## Emulator setup
+## EMULATOR SETUP
 
 The emulator files are `60fps-emulator-speedfix-v1-4-2-acnh.zip`, `45fps-emulator-speedfix-v1-4-2-acnh.zip` and `120fps-emulator-speedfix-v1-4-2-acnh.zip`. Copy your version's folder whole: it must directly contain both `exefs` and `romfs`. With only one of them the game runs at the wrong speed. The pack and Bcsv files must all come from the version you play.
 
@@ -101,7 +101,7 @@ To start the emulator at High priority every time: right-click its desktop short
 
 **Updating from an earlier version (emulators):** copy the new version's folder over the old one and let it replace everything.
 
-## Switch setup
+## SWITCH SETUP
 
 You need Atmosphere custom firmware and sys-clk. An FPS counter (Status Monitor overlay, needs SaltyNX) helps for the first session.
 
