@@ -7103,4 +7103,19 @@
 028CF3E4 09050071
 028CF3E8 3F98FF17
 
+// Cockroach (GitHub issue #1): runs at its normal speed, with its normal pauses between runs and its normal squash and fade timing
+@enabled
+0083241C 89C9A772
+00831FBC 295A8052
+00831FCC 08810711
+00832134 291E8052
+00832144 08810711
+008326F4 1F810271
+008329B8 1F810271
+00832A80 A87EB772
+
+// Talking to residents and shopkeepers: the message window starts opening at its normal moment, so the first line begins after its normal delay (open lead 4 updates x N)
+@enabled
+01AF9D2C 086D1C53
+
 @stop
