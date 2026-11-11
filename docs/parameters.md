@@ -1,6 +1,6 @@
 # StaticParam.pack: changed values
 
-The mod replaces `romfs/Pack/StaticParam.pack`. Compared with the game's own 3.0.3 file (SHA-256 `4a3d6530d6430b6b…`), **1,437 values in 106 files** are changed, each in place: same file size, same structure, 1,918 bytes differ (mod file SHA-256 `7ea1622e9367b063…`). The full list is in `parameters.csv`.
+The mod replaces `romfs/Pack/StaticParam.pack`. Compared with the game's own 3.0.3 file (SHA-256 `4a3d6530d6430b6b…`), **1,443 values in 107 files** are changed, each in place: same file size, same structure, 1,927 bytes differ (mod file SHA-256 `0ac83f400c56185f…`). The full list is in `parameters.csv`.
 
 Why: the game advances its logic once per frame. At 60 FPS it runs twice as many updates per second, so the values it applies once per update are rescaled to give the same real-time result as the 30 FPS game. Each value's rule below is read from its numbers alone (new against original).
 
@@ -8,14 +8,14 @@ Why: the game advances its logic once per frame. At 60 FPS it runs twice as many
 
 | rule | values | what it keeps the same in real time |
 |---|---:|---|
-| speed x1/2 | 612 | speeds: distance or angle moved per second (applied twice as often, so halved). Includes turn, scroll and spawn rates |
-| acceleration/gravity x1/4 | 111 | acceleration and gravity: speed-up and falling arcs (a change to a per-update speed, applied twice as often: 1/2 x 1/2) |
-| update count x2 | 684 | timers and durations counted in updates. Includes some values whose names end in `Sec` or `Time` |
+| speed x1/2 | 614 | speeds: distance or angle moved per second (applied twice as often, so halved). Includes turn, scroll and spawn rates |
+| acceleration/gravity x1/4 | 112 | acceleration and gravity: speed-up and falling arcs (a change to a per-update speed, applied twice as often: 1/2 x 1/2) |
+| update count x2 | 687 | timers and durations counted in updates. Includes some values whose names end in `Sec` or `Time` |
 | smoothing r -> 1-sqrt(1-r) | 22 | easing toward a target: two new steps close the same share of the gap as one original step, since (1 - new)^2 = 1 - r |
 | other: per-update decay k -> sqrt(k) | 5 | per-update decay: two new steps equal one original step, since new^2 = k |
 | other: start frame 0 -> 1 (timing alignment) | 2 | warp pipe entry: fall and shrink start frames, one update later so they line up with the 30 FPS timing |
 | other: x2 + 2 (timing alignment) | 1 | warp pipe entry: fade-out start, doubled plus two updates so the fade lines up with the 30 FPS timing |
-| **total** | **1,437** | |
+| **total** | **1,443** | |
 
 3 values (mRotateSpeed, mSwimWaitTurnChaseDegreeY, each 4 → 2) fit both x1/2 and k → sqrt(k); they are turn speeds and are listed as speed x1/2.
 
@@ -23,16 +23,16 @@ Why: the game advances its logic once per frame. At 60 FPS it runs twice as many
 
 | folder | files | values | x1/2 | x1/4 | x2 | smoothing | sqrt(k) | pipe timing |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| `Param/Actor` | 11 | 155 | 62 | 23 | 40 | 22 | 5 | 3 |
+| `Param/Actor` | 12 | 159 | 62 | 24 | 43 | 22 | 5 | 3 |
 | `Param/Camera` | 37 | 190 |  |  | 190 |  |  |  |
 | `Param/Fg` | 1 | 6 | 4 | 1 | 1 |  |  |  |
 | `Param/Fish` | 9 | 161 | 117 |  | 44 |  |  |  |
 | `Param/Gfx` | 5 | 23 | 18 |  | 5 |  |  |  |
-| `Param/Insect` | 39 | 847 | 411 | 87 | 349 |  |  |  |
+| `Param/Insect` | 39 | 849 | 413 | 87 | 349 |  |  |  |
 | `Param/Npc` | 2 | 44 |  |  | 44 |  |  |  |
 | `Param/Others` | 1 | 6 |  |  | 6 |  |  |  |
 | `Param/RadioGymnastics` | 1 | 5 |  |  | 5 |  |  |  |
-| **total** | **106** | **1,437** | **612** | **111** | **684** | **22** | **5** | **3** |
+| **total** | **107** | **1,443** | **614** | **112** | **687** | **22** | **5** | **3** |
 
 ## By file
 
@@ -43,12 +43,13 @@ Why: the game advances its logic once per frame. At 60 FPS it runs twice as many
 | `Param/Actor/BbsBirdActorWherearen.byml` | 5 | x1/2 (2), x2 (1), sqrt(k) (2) | `mWherearenDayFlySpeed` 2 → 1; `mWherearenNightHoldFrame` 4 → 8; `mWherearenDayDownScale` 0.6 → 0.7745967 |
 | `Param/Actor/CreatureShowActorMgr.byml` | 10 | x1/2 (7), x1/4 (2), x2 (1) | `mShellfishAlphaOutFrame` 10 → 20; `0x49562be6[0]` 1.2 → 0.6; `mGravity` 1.5 → 0.375 |
 | `Param/Actor/FishFieldActor.byml` | 4 | x1/2 (2), x2 (2) | `mMoveSpeedMin` 0.125 → 0.0625; `mScaleOutFrame` 15 → 30; `mMoveSpeedMax` 0.25 → 0.125 |
-| `Param/Actor/FtrActor.byml` | 5 | x1/2 (2), x1/4 (1), x2 (2) | `mLeafGravity` 0.1 → 0.025; `mDemiseScaleDownFrame` 7 → 14; `mLocalWindAddCalcMaxDecrement` 0.05 → 0.025 |
+| `Param/Actor/FtrActor.byml` | 6 | x1/2 (2), x1/4 (1), x2 (3) | `mLeafGravity` 0.1 → 0.025; `mDemiseScaleDownFrame` 7 → 14; `mLocalWindAddCalcMaxDecrement` 0.05 → 0.025 |
 | `Param/Actor/ItemPreviewSwapActor.byml` | 2 | x1/2 (2) | `mCatalogRotateSpeed` 1 → 0.5; `mMyDesignRotateSpeed` 1.4 → 0.7 |
 | `Param/Actor/ObjectBalloonActor.byml` | 1 | x1/2 (1) | `mDefaultSpeed` 0.085 → 0.0425 |
 | `Param/Actor/ObjectKKFesShip.byml` | 5 | x1/2 (3), x2 (2) | `mWave2CycleSpd` 2.5 → 1.25; `mNpcFoundDelay` 240 → 480; `mFrame` 950 → 1900 |
 | `Param/Actor/PlayerActor.byml` | 113 | x1/2 (39), x1/4 (20), x2 (29), smoothing (22), pipe timing (3) | `mRunSpeedMax` 1.25 → 0.625; `mDefaultGravity` -0.25 → -0.0625; `mBreathTimer` 220 → 440 |
-| `Param/Actor/StructureHouseDoorDecoActor.byml` | 1 | x2 (1) | `mDemiseScaleDownFrame` 7 → 14 |
+| `Param/Actor/SeafoodFieldActorMgr.byml` | 1 | x2 (1) | `0x725f8ec3/mCreateCycle` 9 → 18 |
+| `Param/Actor/StructureHouseDoorDecoActor.byml` | 3 | x1/4 (1), x2 (2) | `mDemiseScaleDownFrame` 7 → 14 |
 | `Param/Camera/AirPlane_DemoInterporateParams.byml` | 1 | x2 (1) | `mFrame` 60 → 120 |
 | `Param/Camera/CameraInterpolateParams.byml` | 43 | x2 (43) | `mFrame` 30 → 60 |
 | `Param/Camera/CloudIsland_DemoInterporateParams.byml` | 2 | x2 (2) | `mFrame` 150 → 300 |
@@ -127,7 +128,7 @@ Why: the game advances its logic once per frame. At 60 FPS it runs twice as many
 | `Param/Insect/FieldStumpParams.byml` | 18 | x1/2 (10), x2 (8) | `mMoveSecMax` 10 → 20; `mRotSpeedDeg` 1.40625 → 0.703125; `mMoveSecMin` 5 → 10 |
 | `Param/Insect/FieldThreadParams.byml` | 18 | x1/2 (6), x1/4 (6), x2 (6) | `mDumpAccel` 0.05 → 0.0125; `mDumpSpeed` 1 → 0.5; `mStopSecMax` 4 → 8 |
 | `Param/Insect/FieldTigerBeetleParams.byml` | 21 | x1/2 (6), x1/4 (3), x2 (12) | `mEscapeSpeed` 0.9375 → 0.46875; `mMoveSecMax` 8 → 16; `mAccel` 0.03125 → 0.0078125 |
-| `Param/Insect/FieldWispParams.byml` | 6 | x1/2 (6) | `mBreathMax` 0.0625 → 0.03125; `mMoveSpeed` 0.117188 → 0.058594; `mSpeedY` 0.0625 → 0.03125 |
+| `Param/Insect/FieldWispParams.byml` | 8 | x1/2 (8) | `mBreathMax` 0.0625 → 0.03125; `mMoveSpeed` 0.117188 → 0.058594; `mSpeedY` 0.0625 → 0.03125 |
 | `Param/Insect/MuseumBeetleBattleParams.byml` | 17 | x1/2 (6), x2 (11) | `mEscapeLastAngleXStepDeg` 10 → 5; `mInitialChargeMaxSec` 3 → 6; `mKnockOverSpeed` 0.4 → 0.2 |
 | `Param/Insect/MuseumBeetleParams.byml` | 8 | x2 (8) | `mStopFramesMin` 90 → 180; `mStopFramesMax` 180 → 360; `mMoveFramesMax` 150 → 300 |
 | `Param/Insect/MuseumFlyInCageParams.byml` | 12 | x1/2 (9), x2 (3) | `mCycleSec` 0.5 → 1; `mGyrateAngleYStepDeg` 15 → 7.5; `mBreadthMax` 0.1 → 0.05 |
@@ -163,6 +164,6 @@ Each key in these files is the CRC32 of `<name>.<type>` (for example `mRunSpeedM
 
 ## Check
 
-- 1,918 bytes differ between the two files; all 1,918 lie inside the 1,437 listed values (bytes outside a listed value: 0).
-- Writing the 1,437 new values into the game's own file reproduces the mod's file exactly: yes.
+- 1,927 bytes differ between the two files; all 1,927 lie inside the 1,443 listed values (bytes outside a listed value: 0).
+- Writing the 1,443 new values into the game's own file reproduces the mod's file exactly: yes.
 - The file structure (keys, types, positions) is identical in both files; only values change.

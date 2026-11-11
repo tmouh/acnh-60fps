@@ -1436,3 +1436,9 @@ Param/Actor/BbsBirdActorWherearen.byml,mWherearenNightDownScale,f32,0.98,0.98994
 Param/Gfx/CloudDrawer.byml,mWindInfluence,f32,3e-05,1.5e-05,0.5,speed x1/2
 Param/Gfx/CloudDrawer.byml,mWindInfluenceSpecialCloud,f32,0.001,0.0005,0.5,speed x1/2
 Param/Gfx/StarDrawer.byml,mAnimSpeed,f32,0.392699,0.1963495,0.5,speed x1/2
+Param/Actor/FtrActor.byml,0x978bc211/mRotateFrame,f32,10,20,2,update count x2
+Param/Actor/SeafoodFieldActorMgr.byml,0x725f8ec3/mCreateCycle,f32,9,18,2,update count x2
+Param/Actor/StructureHouseDoorDecoActor.byml,0x8ecf916f/mLeafGravity,f32,0.1,0.025,0.25,acceleration/gravity x1/4
+Param/Actor/StructureHouseDoorDecoActor.byml,0x8ecf916f/mLeafFlyFrame,f32,20,40,2,update count x2
+Param/Insect/FieldWispParams.byml,0x9fcf378f/0x35ab039e/mAddDirDeg,f32,0.999756,0.499878,0.5,speed x1/2
+Param/Insect/FieldWispParams.byml,0x9fcf378f/0xb8b250e4[0]/mAddDirDeg,f32,0.999756,0.499878,0.5,speed x1/2
